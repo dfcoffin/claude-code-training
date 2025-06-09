@@ -43,6 +43,66 @@ layout: two-cols
 layoutClass: gap-16
 ---
 
+# About Ken Kousen
+
+## Author • Speaker • Developer
+
+<div class="text-sm">
+
+<v-clicks>
+
+- **President of Kousen IT, Inc.** - Training and consulting
+- **Author of multiple books** including *Modern Java Recipes*, *Mockito Made Clear*, and *Help Your Boss Help You*
+- **Java Champion**
+- **Expert in:** Java, Spring, Gradle, Groovy, Kotlin, and AI/ML
+- **International speaker**
+- **Computer Science professor** at Trinity College, Hartford, CT
+
+</v-clicks>
+
+</div>
+
+::right::
+
+## Connect & Learn More
+
+<div class="mt-4 space-y-3 text-sm">
+
+<v-click>
+
+**📧 Email:** ken.kousen@kousenit.com  
+**🌐 Website:** https://kousenit.com
+
+</v-click>
+
+<v-click>
+
+**📱 Social:**  
+LinkedIn: https://www.linkedin.com/in/kenkousen/  
+GitHub: https://github.com/kousen  
+Twitter/X: @kenkousen  
+Bluesky: https://bsky.app/profile/kousenit.com
+
+</v-click>
+
+<v-click>
+
+**📰 Newsletter:** https://kenkousen.substack.com  
+**📺 YouTube:** https://youtube.com/@talesfromthejarside  
+
+</v-click>
+
+</div>
+
+<div class="mt-6 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
+  <strong>🎯 Mission:</strong> Making technical concepts accessible and practical
+</div>
+
+---
+layout: two-cols
+layoutClass: gap-16
+---
+
 # Course Overview
 
 ## What You'll Learn
@@ -147,7 +207,7 @@ layout: default
 
 ```bash {all|1-2|4-5|all}
 # Install via npm
-npm install -g @anthropic-ai/claude
+npm install -g @anthropic-ai/claude-code
 
 # Or download from GitHub releases
 # https://github.com/anthropic-ai/claude/releases
@@ -278,6 +338,265 @@ layoutClass: gap-16
 
 <div class="mt-8 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
   <strong>📝 From Anthropic teams:</strong> "Claude Code becomes a primary tool, open 80% of the time alongside your IDE"
+</div>
+
+---
+layout: default
+---
+
+# Headless Mode
+
+Non-interactive execution
+
+```bash
+claude -p "update the README" with the latest changes"
+```
+
+- Use `-p` or `--print`
+- Make sure `ANTHROPIC_API_KEY` is set
+
+---
+layout: default
+---
+
+# Other Helpful Flags
+
+- Use `-c` or `--continue` to continue a conversation
+- `--allowed-tools` does what it sounds like, as does `--disallowed-tools`
+- `--model` to change between Sonnet or Opus
+- `claude mcp` configures MCP servers
+- `claude update` to update to the latest version
+
+---
+layout: default
+---
+
+# Memory and Context Management
+
+## CLAUDE.md Files
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+<v-clicks>
+
+- **Project-specific instructions** - Guide Claude's behavior
+- **Coding standards** - Enforce team conventions
+- **Architecture decisions** - Document design patterns
+- **Testing preferences** - Specify test frameworks and styles
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Example CLAUDE.md
+
+```markdown
+# Project Guidelines
+
+## Code Style
+- Use Java 21 features where appropriate
+- Prefer records over traditional classes
+- Use virtual threads for I/O operations
+
+## Testing
+- Write unit tests with JUnit 5
+- Use Mockito for mocking
+- Aim for 80%+ code coverage
+
+## Documentation
+- Update README for any new features
+- Include API documentation
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+---
+layout: default
+---
+
+# Project Memory with CLAUDE.md
+
+## Persistent Context Across Sessions
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+<v-clicks>
+
+- **Automatically loaded** - Claude reads CLAUDE.md on startup
+- **Session persistence** - Information carries between runs
+- **Team knowledge** - Share project context with teammates
+- **Living documentation** - Update as project evolves
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### What to Include
+
+```markdown
+# Project Context
+
+## Current Work
+- Working on user authentication system
+- Using Spring Security 6.x
+- Database: PostgreSQL with JPA
+
+## Recent Decisions
+- Chose JWT tokens over sessions
+- Using BCrypt for password hashing
+- Repository pattern for data access
+
+## Known Issues
+- Performance bottleneck in UserService.findAll()
+- Need to add rate limiting to login endpoint
+
+## Next Steps
+- Implement OAuth2 integration
+- Add comprehensive integration tests
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+<div class="mt-8 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
+  <strong>🧠 Key Benefit:</strong> Claude remembers your project context, decisions, and current work without having to re-explain everything
+</div>
+
+---
+layout: default
+---
+
+# Advanced CLI Features
+
+## Conversation Management
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+<v-clicks>
+
+- **Continue conversations** with `-c` flag
+- **Model selection** with `--model` flag
+- **Tool control** with `--allowed-tools` and `--disallowed-tools`
+- **Update Claude Code** with `claude update`
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Practical Examples
+
+```bash
+# Continue previous conversation
+claude -c
+
+# Use a specific model
+claude --model claude-3-opus-20240229
+
+# Restrict tools for security
+claude --disallowed-tools bash
+
+# Update to latest version
+claude update
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+<div class="mt-8 p-4 bg-purple-100 rounded-lg border-l-4 border-purple-500">
+  <strong>🔧 Pro Tip:</strong> Use conversation continuity for complex, multi-step development tasks
+</div>
+
+---
+layout: default
+---
+
+# Working with Images
+
+## Visual Debugging and Analysis
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+<v-clicks>
+
+- **Screenshot analysis** - Paste error dialogs and stack traces
+- **UI debugging** - Analyze interface issues
+- **Chart interpretation** - Understand dashboards and metrics
+- **Documentation** - Process architectural diagrams
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### How to Use
+
+```bash
+# Take a screenshot of an error
+# Copy to clipboard (Cmd+Shift+4 then Space)
+
+# In Claude Code terminal:
+# Paste the image with Ctrl+V (Mac/Windows/Linux)
+# Note: Ctrl+V works better than Cmd+V on Mac
+
+"Explain this error and suggest a fix"
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+<v-click>
+
+## Real-World Example
+
+<div class="mt-6 p-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-lg border-l-4 border-orange-500">
+
+**Data Infrastructure Team Success:**
+- 📊 Used dashboard screenshots to diagnose Kubernetes cluster issues
+- 🔧 Claude provided exact commands to fix pod IP address exhaustion
+- ⚡ Reduced debugging time from hours to minutes
+
+</div>
+
+</v-click>
+
+<div class="mt-6 p-4 bg-blue-100 rounded-lg border-l-4 border-blue-500">
+  <strong>💡 Pro Tip:</strong> Screenshots work great for error dialogs, browser developer tools, and IDE error panels
 </div>
 
 ---
@@ -876,6 +1195,199 @@ echo "# Project Guidelines
 </v-click>
 
 ---
+layout: default
+---
+
+# Custom Slash Commands
+
+## Creating Your Own Workflows
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+<v-clicks>
+
+- **Automate repetitive tasks** - Package common workflows
+- **Team standardization** - Share commands across projects
+- **Domain-specific actions** - Create commands for your tech stack
+- **Quick shortcuts** - Access complex operations instantly
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Creating a Slash Command
+
+```bash
+# Create .claude/slash_commands directory
+mkdir -p .claude/slash_commands
+
+# Create a command file
+touch .claude/slash_commands/spring-service.md
+```
+
+```markdown
+# Create Spring Service
+
+Create a new Spring Boot service class with:
+- @Service annotation
+- Constructor injection
+- Basic CRUD operations
+- Comprehensive logging
+- Exception handling
+- Unit tests with @MockBean
+
+Use modern Java features and follow Spring best practices.
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+---
+layout: default
+---
+
+# Slash Command Examples
+
+## Practical Commands for Java/Spring Development
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+### `/spring-controller`
+
+<v-click>
+
+```markdown
+# Create Spring REST Controller
+
+Generate a REST controller with:
+- @RestController and @RequestMapping
+- CRUD endpoints (GET, POST, PUT, DELETE)
+- Proper HTTP status codes
+- Request/response DTOs
+- Validation annotations
+- OpenAPI documentation
+- Integration tests
+```
+
+</v-click>
+
+</div>
+
+<div>
+
+### `/modernize-java`
+
+<v-click>
+
+```markdown
+# Modernize Java Code
+
+Update the selected code to use:
+- Records instead of traditional classes
+- Switch expressions
+- Pattern matching where applicable
+- Virtual threads for I/O operations
+- Modern collection methods
+- Text blocks for multiline strings
+- Sealed classes if appropriate
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+<v-click>
+
+### `/review-security`
+
+```markdown
+# Security Code Review
+
+Review the selected code for security issues:
+- SQL injection vulnerabilities
+- XSS prevention
+- Authentication/authorization flaws
+- Input validation gaps
+- Sensitive data exposure
+- Security best practices compliance
+```
+
+</v-click>
+
+---
+layout: default
+---
+
+# Advanced Slash Commands
+
+## Team-Specific Workflows
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+### Organization-Wide Commands
+
+<v-clicks>
+
+- **Code review templates** - Standardized review processes
+- **Deployment scripts** - Environment-specific deployments
+- **Testing patterns** - Consistent test structures
+- **Documentation formats** - Company documentation standards
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Command Best Practices
+
+```markdown
+# Command Structure Tips
+
+## Clear Instructions
+- Be specific about requirements
+- Include technology preferences
+- Specify coding standards
+
+## Context Awareness
+- Reference project patterns
+- Include file naming conventions
+- Mention team preferences
+
+## Quality Assurance
+- Always include tests
+- Add error handling
+- Include documentation
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+<div class="mt-8 p-4 bg-purple-100 rounded-lg border-l-4 border-purple-500">
+  <strong>🔧 Security Engineering Success:</strong> Uses 50% of all custom slash command implementations across the monorepo for streamlined workflows
+</div>
+
+---
 layout: two-cols
 layoutClass: gap-16
 ---
@@ -923,6 +1435,174 @@ layoutClass: gap-16
 
 <div class="mt-6 p-4 bg-red-100 rounded-lg border-l-4 border-red-500">
   <strong>🔒 Security Note:</strong> Use MCP servers instead of CLI for sensitive data to maintain better security control
+</div>
+
+---
+layout: default
+---
+
+# Setting Up MCP Servers
+
+## Configuration with `claude mcp`
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+<v-clicks>
+
+- **Interactive setup** - `claude mcp` guides you through configuration
+- **Pre-built servers** - Choose from available MCP servers
+- **Custom servers** - Add your own MCP implementations
+- **Easy management** - Enable/disable servers as needed
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Setup Process
+
+```bash
+# Configure MCP servers
+claude mcp
+
+# Follow interactive prompts to:
+# 1. Select available servers
+# 2. Configure connection details
+# 3. Test connections
+# 4. Enable for Claude Code
+
+# Servers are stored in:
+# ~/.config/claude/mcp_servers.json
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+<div class="mt-8 p-4 bg-blue-100 rounded-lg border-l-4 border-blue-500">
+  <strong>💡 Pro Tip:</strong> Start with GitHub or file system MCP servers for immediate productivity gains
+</div>
+
+---
+layout: default
+---
+
+# Available MCP Servers
+
+## Popular Server Types
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+### Development Tools
+
+<v-clicks>
+
+- **GitHub** - Repository management, issues, PRs
+- **File System** - Enhanced file operations
+- **Database** - Query and schema operations
+- **Docker** - Container management
+- **Kubernetes** - Cluster operations
+
+</v-clicks>
+
+</div>
+
+<div>
+
+### Data & Analytics
+
+<v-clicks>
+
+- **Slack** - Team communication integration
+- **Google Drive** - Document access
+- **Notion** - Knowledge base integration
+- **Postgres** - Database queries
+- **Memory** - Persistent storage across sessions
+
+</v-clicks>
+
+</div>
+
+</div>
+
+<v-click>
+
+## Security Considerations
+
+<div class="mt-6 p-6 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+
+- **Controlled access** - MCP servers provide sandboxed tool access
+- **Credential management** - Secure API key handling
+- **Audit trails** - Track what actions Claude performs
+- **Permission boundaries** - Limit scope of operations
+
+</div>
+
+</v-click>
+
+---
+layout: default
+---
+
+# MCP in Practice
+
+## Real-World Workflows
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+### Development Workflow
+
+<v-clicks>
+
+1. **Code analysis** via File System MCP
+2. **Issue tracking** through GitHub MCP
+3. **Database queries** with Postgres MCP
+4. **Documentation updates** using GitHub MCP
+5. **Team communication** via Slack MCP
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Example Commands
+
+```bash
+# Using GitHub MCP
+"Create an issue for the authentication bug 
+and assign it to the security team"
+
+# Using Database MCP
+"Show me all users created in the last week
+and their activity patterns"
+
+# Using File System MCP
+"Find all TODO comments in the codebase
+and create GitHub issues for them"
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+<div class="mt-8 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
+  <strong>🚀 Impact:</strong> MCP servers transform Claude Code from a code assistant to a complete development ecosystem integrator
 </div>
 
 ---
@@ -1404,6 +2084,19 @@ layout: default
 </div>
 
 </v-click>
+
+---
+layout: default
+---
+
+# Good Practices
+
+- Create a new branch before turning Claude Code loose
+- Don't forget to ask it to update the README files
+- Be sure to update CLAUDE.md as well
+- Use `/compact` during natural breaks in development
+- Add *think* or *think hard* or *think deeply* as necessary
+- Remember: once your console scrolls past your buffer, the conversation is lost forever. Use console logging if you need to save it
 
 ---
 layout: two-cols
