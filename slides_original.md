@@ -201,6 +201,403 @@ Spring Boot applications • Complex enterprise codebases • API development �
 layout: default
 ---
 
+# Installation & Setup
+
+## Installation Methods
+
+```bash {all|1-2|4-5|all}
+# Install via npm
+npm install -g @anthropic-ai/claude-code
+
+# Or download from GitHub releases
+# https://github.com/anthropic-ai/claude/releases
+```
+
+<div class="grid grid-cols-2 gap-8 mt-8">
+
+<div>
+
+## Authentication Setup
+
+```bash {1-2|4-5}
+# Set your API key
+export ANTHROPIC_API_KEY="your-api-key-here"
+
+# Or configure interactively
+claude auth login
+```
+
+</div>
+
+<div>
+
+## Verify Installation
+
+```bash
+claude --version
+claude --help
+```
+
+</div>
+
+</div>
+
+<div class="mt-8 p-4 bg-yellow-100 rounded-lg border-l-4 border-yellow-500">
+  <strong>💡 Pro Tip:</strong> Add your API key to your shell profile (.bashrc, .zshrc) for persistent access
+</div>
+
+---
+layout: default
+---
+
+# Basic Command Structure
+
+## Core Commands
+
+```bash {1-2|4-5|7-8|all}
+# Navigate to your project
+cd /path/to/your/spring-boot-project
+
+# Start Claude Code
+claude
+
+# Or start with specific instructions
+claude "Help me understand this Spring application"
+```
+
+<div class="grid grid-cols-2 gap-8 mt-8">
+
+<div>
+
+## Command Syntax
+
+<v-clicks>
+
+- **Natural language prompts** - Describe what you want to accomplish
+- **File-specific requests** - Reference files directly  
+- **Multi-step workflows** - Chain complex operations
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+<div class="text-center p-6 bg-blue-50 rounded-lg border-2 border-dashed border-blue-300">
+  <h3 class="text-lg font-bold text-blue-800">🚀 Demo Time!</h3>
+  <p class="text-blue-600">Let's see Claude Code in action with a Spring Boot project</p>
+</div>
+
+</v-click>
+
+</div>
+
+</div>
+
+---
+layout: two-cols
+layoutClass: gap-16
+---
+
+# Understanding the Interface
+
+## Command Mode
+<v-clicks>
+
+- Interactive chat interface
+- Context-aware responses
+- File system access
+- Git integration
+
+</v-clicks>
+
+## Auto-Accept Mode
+<v-clicks>
+
+- Press `Shift+Tab`
+- Autonomous execution
+- Minimal supervision
+- Great for prototyping
+
+</v-clicks>
+
+::right::
+
+## Key Features
+
+<v-clicks>
+
+- **Project memory** - Remembers context
+- **File awareness** - Knows your codebase
+- **Smart suggestions** - Contextual recommendations
+- **Error handling** - Explains and fixes issues
+
+</v-clicks>
+
+<div class="mt-8 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
+  <strong>📝 From Anthropic teams:</strong> "Claude Code becomes a primary tool, open 80% of the time alongside your IDE"
+</div>
+
+---
+layout: default
+---
+
+# Headless Mode
+
+Non-interactive execution
+
+```bash
+claude -p "update the README" with the latest changes"
+```
+
+- Use `-p` or `--print`
+- Make sure `ANTHROPIC_API_KEY` is set
+
+---
+layout: default
+---
+
+# Other Helpful Flags
+
+- Use `-c` or `--continue` to continue a conversation
+- `--allowed-tools` does what it sounds like, as does `--disallowed-tools`
+- `--model` to change between Sonnet or Opus
+- `claude mcp` configures MCP servers
+- `claude update` to update to the latest version
+
+---
+layout: default
+---
+
+# Memory and Context Management
+
+## CLAUDE.md Files
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+<v-clicks>
+
+- **Project-specific instructions** - Guide Claude's behavior
+- **Coding standards** - Enforce team conventions
+- **Architecture decisions** - Document design patterns
+- **Testing preferences** - Specify test frameworks and styles
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Example CLAUDE.md
+
+```markdown
+# Project Guidelines
+
+## Code Style
+- Use Java 21 features where appropriate
+- Prefer records over traditional classes
+- Use virtual threads for I/O operations
+
+## Testing
+- Write unit tests with JUnit 5
+- Use Mockito for mocking
+- Aim for 80%+ code coverage
+
+## Documentation
+- Update README for any new features
+- Include API documentation
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+---
+layout: default
+---
+
+# Project Memory with CLAUDE.md
+
+## Persistent Context Across Sessions
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+<v-clicks>
+
+- **Automatically loaded** - Claude reads CLAUDE.md on startup
+- **Session persistence** - Information carries between runs
+- **Team knowledge** - Share project context with teammates
+- **Living documentation** - Update as project evolves
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### What to Include
+
+```markdown
+# Project Context
+
+## Current Work
+- Working on user authentication system
+- Using Spring Security 6.x
+- Database: PostgreSQL with JPA
+
+## Recent Decisions
+- Chose JWT tokens over sessions
+- Using BCrypt for password hashing
+- Repository pattern for data access
+
+## Known Issues
+- Performance bottleneck in UserService.findAll()
+- Need to add rate limiting to login endpoint
+
+## Next Steps
+- Implement OAuth2 integration
+- Add comprehensive integration tests
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+<div class="mt-8 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
+  <strong>🧠 Key Benefit:</strong> Claude remembers your project context, decisions, and current work without having to re-explain everything
+</div>
+
+---
+layout: default
+---
+
+# Advanced CLI Features
+
+## Conversation Management
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+<v-clicks>
+
+- **Continue conversations** with `-c` flag
+- **Model selection** with `--model` flag
+- **Tool control** with `--allowed-tools` and `--disallowed-tools`
+- **Update Claude Code** with `claude update`
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Practical Examples
+
+```bash
+# Continue previous conversation
+claude -c
+
+# Use a specific model
+claude --model claude-3-opus-20240229
+
+# Restrict tools for security
+claude --disallowed-tools bash
+
+# Update to latest version
+claude update
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+<div class="mt-8 p-4 bg-purple-100 rounded-lg border-l-4 border-purple-500">
+  <strong>🔧 Pro Tip:</strong> Use conversation continuity for complex, multi-step development tasks
+</div>
+
+---
+layout: default
+---
+
+# Working with Images
+
+## Visual Debugging and Analysis
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+<v-clicks>
+
+- **Screenshot analysis** - Paste error dialogs and stack traces
+- **UI debugging** - Analyze interface issues
+- **Chart interpretation** - Understand dashboards and metrics
+- **Documentation** - Process architectural diagrams
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### How to Use
+
+```bash
+# Take a screenshot of an error
+# Copy to clipboard (Cmd+Shift+4 then Space)
+
+# In Claude Code terminal:
+# Paste the image with Ctrl+V (Mac/Windows/Linux)
+# Note: Ctrl+V works better than Cmd+V on Mac
+
+"Explain this error and suggest a fix"
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+<v-click>
+
+<div class="mt-4 p-4 bg-gradient-to-r from-orange-50 to-red-50 rounded-lg border-l-4 border-orange-500">
+
+**Data Infrastructure Team:** Used dashboard screenshots to diagnose Kubernetes cluster issues and received exact commands to fix pod IP exhaustion - **reduced debugging time from hours to minutes**
+
+</div>
+
+</v-click>
+
+<div class="mt-4 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
+  <strong>💡 Pro Tip:</strong> Screenshots work great for error dialogs, browser developer tools, and IDE error panels
+</div>
+
+---
+layout: default
+---
+
 # Code Search & Understanding
 
 ## Codebase Navigation
@@ -734,403 +1131,6 @@ layout: default
 
 <div class="mt-8 p-4 bg-orange-100 rounded-lg border-l-4 border-orange-500">
   <strong>🛠️ Data Infrastructure Team:</strong> Used screenshots of dashboards to diagnose Kubernetes cluster issues, with Claude providing exact commands to fix pod IP address exhaustion
-</div>
-
----
-layout: default
----
-
-# Installation & Setup
-
-## Installation Methods
-
-```bash {all|1-2|4-5|all}
-# Install via npm
-npm install -g @anthropic-ai/claude-code
-
-# Or download from GitHub releases
-# https://github.com/anthropic-ai/claude/releases
-```
-
-<div class="grid grid-cols-2 gap-8 mt-8">
-
-<div>
-
-## Authentication Setup
-
-```bash {1-2|4-5}
-# Set your API key
-export ANTHROPIC_API_KEY="your-api-key-here"
-
-# Or configure interactively
-claude auth login
-```
-
-</div>
-
-<div>
-
-## Verify Installation
-
-```bash
-claude --version
-claude --help
-```
-
-</div>
-
-</div>
-
-<div class="mt-8 p-4 bg-yellow-100 rounded-lg border-l-4 border-yellow-500">
-  <strong>💡 Pro Tip:</strong> Add your API key to your shell profile (.bashrc, .zshrc) for persistent access
-</div>
-
----
-layout: default
----
-
-# Basic Command Structure
-
-## Core Commands
-
-```bash {1-2|4-5|7-8|all}
-# Navigate to your project
-cd /path/to/your/spring-boot-project
-
-# Start Claude Code
-claude
-
-# Or start with specific instructions
-claude "Help me understand this Spring application"
-```
-
-<div class="grid grid-cols-2 gap-8 mt-8">
-
-<div>
-
-## Command Syntax
-
-<v-clicks>
-
-- **Natural language prompts** - Describe what you want to accomplish
-- **File-specific requests** - Reference files directly  
-- **Multi-step workflows** - Chain complex operations
-
-</v-clicks>
-
-</div>
-
-<div>
-
-<v-click>
-
-<div class="text-center p-6 bg-blue-50 rounded-lg border-2 border-dashed border-blue-300">
-  <h3 class="text-lg font-bold text-blue-800">🚀 Demo Time!</h3>
-  <p class="text-blue-600">Let's see Claude Code in action with a Spring Boot project</p>
-</div>
-
-</v-click>
-
-</div>
-
-</div>
-
----
-layout: two-cols
-layoutClass: gap-16
----
-
-# Understanding the Interface
-
-## Command Mode
-<v-clicks>
-
-- Interactive chat interface
-- Context-aware responses
-- File system access
-- Git integration
-
-</v-clicks>
-
-## Auto-Accept Mode
-<v-clicks>
-
-- Press `Shift+Tab`
-- Autonomous execution
-- Minimal supervision
-- Great for prototyping
-
-</v-clicks>
-
-::right::
-
-## Key Features
-
-<v-clicks>
-
-- **Project memory** - Remembers context
-- **File awareness** - Knows your codebase
-- **Smart suggestions** - Contextual recommendations
-- **Error handling** - Explains and fixes issues
-
-</v-clicks>
-
-<div class="mt-8 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
-  <strong>📝 From Anthropic teams:</strong> "Claude Code becomes a primary tool, open 80% of the time alongside your IDE"
-</div>
-
----
-layout: default
----
-
-# Headless Mode
-
-Non-interactive execution
-
-```bash
-claude -p "update the README" with the latest changes"
-```
-
-- Use `-p` or `--print`
-- Make sure `ANTHROPIC_API_KEY` is set
-
----
-layout: default
----
-
-# Other Helpful Flags
-
-- Use `-c` or `--continue` to continue a conversation
-- `--allowed-tools` does what it sounds like, as does `--disallowed-tools`
-- `--model` to change between Sonnet or Opus
-- `claude mcp` configures MCP servers
-- `claude update` to update to the latest version
-
----
-layout: default
----
-
-# Memory and Context Management
-
-## CLAUDE.md Files
-
-<div class="grid grid-cols-2 gap-8">
-
-<div>
-
-<v-clicks>
-
-- **Project-specific instructions** - Guide Claude's behavior
-- **Coding standards** - Enforce team conventions
-- **Architecture decisions** - Document design patterns
-- **Testing preferences** - Specify test frameworks and styles
-
-</v-clicks>
-
-</div>
-
-<div>
-
-<v-click>
-
-### Example CLAUDE.md
-
-```markdown
-# Project Guidelines
-
-## Code Style
-- Use Java 21 features where appropriate
-- Prefer records over traditional classes
-- Use virtual threads for I/O operations
-
-## Testing
-- Write unit tests with JUnit 5
-- Use Mockito for mocking
-- Aim for 80%+ code coverage
-
-## Documentation
-- Update README for any new features
-- Include API documentation
-```
-
-</v-click>
-
-</div>
-
-</div>
-
----
-layout: default
----
-
-# Project Memory with CLAUDE.md
-
-## Persistent Context Across Sessions
-
-<div class="grid grid-cols-2 gap-8">
-
-<div>
-
-<v-clicks>
-
-- **Automatically loaded** - Claude reads CLAUDE.md on startup
-- **Session persistence** - Information carries between runs
-- **Team knowledge** - Share project context with teammates
-- **Living documentation** - Update as project evolves
-
-</v-clicks>
-
-</div>
-
-<div>
-
-<v-click>
-
-### What to Include
-
-```markdown
-# Project Context
-
-## Current Work
-- Working on user authentication system
-- Using Spring Security 6.x
-- Database: PostgreSQL with JPA
-
-## Recent Decisions
-- Chose JWT tokens over sessions
-- Using BCrypt for password hashing
-- Repository pattern for data access
-
-## Known Issues
-- Performance bottleneck in UserService.findAll()
-- Need to add rate limiting to login endpoint
-
-## Next Steps
-- Implement OAuth2 integration
-- Add comprehensive integration tests
-```
-
-</v-click>
-
-</div>
-
-</div>
-
-<div class="mt-8 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
-  <strong>🧠 Key Benefit:</strong> Claude remembers your project context, decisions, and current work without having to re-explain everything
-</div>
-
----
-layout: default
----
-
-# Advanced CLI Features
-
-## Conversation Management
-
-<div class="grid grid-cols-2 gap-8">
-
-<div>
-
-<v-clicks>
-
-- **Continue conversations** with `-c` flag
-- **Model selection** with `--model` flag
-- **Tool control** with `--allowed-tools` and `--disallowed-tools`
-- **Update Claude Code** with `claude update`
-
-</v-clicks>
-
-</div>
-
-<div>
-
-<v-click>
-
-### Practical Examples
-
-```bash
-# Continue previous conversation
-claude -c
-
-# Use a specific model
-claude --model claude-3-opus-20240229
-
-# Restrict tools for security
-claude --disallowed-tools bash
-
-# Update to latest version
-claude update
-```
-
-</v-click>
-
-</div>
-
-</div>
-
-<div class="mt-8 p-4 bg-purple-100 rounded-lg border-l-4 border-purple-500">
-  <strong>🔧 Pro Tip:</strong> Use conversation continuity for complex, multi-step development tasks
-</div>
-
----
-layout: default
----
-
-# Working with Images
-
-## Visual Debugging and Analysis
-
-<div class="grid grid-cols-2 gap-8">
-
-<div>
-
-<v-clicks>
-
-- **Screenshot analysis** - Paste error dialogs and stack traces
-- **UI debugging** - Analyze interface issues
-- **Chart interpretation** - Understand dashboards and metrics
-- **Documentation** - Process architectural diagrams
-
-</v-clicks>
-
-</div>
-
-<div>
-
-<v-click>
-
-### How to Use
-
-```bash
-# Take a screenshot of an error
-# Copy to clipboard (Cmd+Shift+4 then Space)
-
-# In Claude Code terminal:
-# Paste the image with Ctrl+V (Mac/Windows/Linux)
-# Note: Ctrl+V works better than Cmd+V on Mac
-
-"Explain this error and suggest a fix"
-```
-
-</v-click>
-
-</div>
-
-</div>
-
-<v-click>
-
-<div class="mt-4 p-4 bg-gradient-to-r from-orange-50 to-red-50 rounded-lg border-l-4 border-orange-500">
-
-**Data Infrastructure Team:** Used dashboard screenshots to diagnose Kubernetes cluster issues and received exact commands to fix pod IP exhaustion - **reduced debugging time from hours to minutes**
-
-</div>
-
-</v-click>
-
-<div class="mt-4 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
-  <strong>💡 Pro Tip:</strong> Screenshots work great for error dialogs, browser developer tools, and IDE error panels
 </div>
 
 ---
@@ -1678,78 +1678,6 @@ layout: default
 </div>
 
 ---
-layout: default
----
-
-# Ken's Projects for Practice
-
-## Real Production Applications to Explore
-
-<div class="grid grid-cols-2 gap-8">
-
-<div>
-
-### 🎵 Lyrics Trainer
-**JavaScript/TypeScript Web App**
-
-<v-click>
-
-**Repository:** https://github.com/kousen/lyrics_trainer
-
-**Tech Stack:**
-- Modern JavaScript/TypeScript
-- Web APIs and DOM manipulation
-- Client-side application architecture
-
-**Great for:** Frontend development practice, API integration, modern JS patterns
-
-</v-click>
-
-</div>
-
-<div>
-
-### 📜 Certificate Service
-**Spring Boot PDF Generator**
-
-<v-click>
-
-**Repository:** https://github.com/kousen/certificate-service
-
-**Tech Stack:**
-- Spring Boot application
-- PDF generation capabilities
-- Heroku deployment ready
-
-**Great for:** Backend services, PDF processing, cloud deployment patterns
-
-</v-click>
-
-</div>
-
-</div>
-
-<v-click>
-
-### 🛒 Shopping Service
-**Spring Boot RESTful Teaching App**
-
-**Repository:** https://github.com/kousen/shopping_v3
-
-**Tech Stack:**
-- Spring Boot 3.x
-- RESTful web service architecture
-- Teaching-focused codebase
-
-**Great for:** REST API development, Spring Boot patterns, service layer design
-
-</v-click>
-
-<div class="mt-8 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
-  <strong>🎯 Advantage:</strong> These are Ken's real projects - ask him questions about architecture decisions and implementation choices during the training!
-</div>
-
----
 layout: center
 class: text-center
 ---
@@ -2079,21 +2007,6 @@ layout: default
 layout: default
 ---
 
-# Good Practices
-
-- Create a new branch before turning Claude Code loose
-- Don't forget to ask it to update the README files
-- Be sure to update CLAUDE.md as well
-- Use `/compact` during natural breaks in development
-- Add *think* or *think hard* or *think deeply* as necessary
-- Use `--continue` or `--resume` to access previous conversations
-- Note: if console scrolls past buffer, you lose visibility (not the actual conversation)
-- Use console logging to save important outputs for reference
-
----
-layout: default
----
-
 # Future Developments
 
 <div class="grid grid-cols-2 gap-8">
@@ -2243,6 +2156,21 @@ layout: default
 </div>
 
 </v-click>
+
+---
+layout: default
+---
+
+# Good Practices
+
+- Create a new branch before turning Claude Code loose
+- Don't forget to ask it to update the README files
+- Be sure to update CLAUDE.md as well
+- Use `/compact` during natural breaks in development
+- Add *think* or *think hard* or *think deeply* as necessary
+- Use `--continue` or `--resume` to access previous conversations
+- Note: if console scrolls past buffer, you lose visibility (not the actual conversation)
+- Use console logging to save important outputs for reference
 
 ---
 layout: two-cols
