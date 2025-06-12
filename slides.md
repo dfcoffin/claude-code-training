@@ -39,15 +39,14 @@ mdc: true
 </div>
 
 ---
-layout: two-cols
-layoutClass: gap-16
+layout: default
 ---
 
 # About Ken Kousen
 
 ## Author • Speaker • Developer
 
-<div class="text-sm">
+<div class="mt-8">
 
 <v-clicks>
 
@@ -55,47 +54,17 @@ layoutClass: gap-16
 - **Author of multiple books** including *Modern Java Recipes*, *Mockito Made Clear*, and *Help Your Boss Help You*
 - **Java Champion**
 - **Expert in:** Java, Spring, Gradle, Groovy, Kotlin, and AI/ML
-- **International speaker**
+- **International speaker** at conferences worldwide
 - **Computer Science professor** at Trinity College, Hartford, CT
+- **30+ years** of enterprise software development
+- **Trainer and consultant** for Fortune 500 companies
 
 </v-clicks>
 
 </div>
 
-::right::
-
-## Connect & Learn More
-
-<div class="mt-4 space-y-3 text-sm">
-
-<v-click>
-
-**📧 Email:** ken.kousen@kousenit.com  
-**🌐 Website:** https://kousenit.com
-
-</v-click>
-
-<v-click>
-
-**📱 Social:**  
-LinkedIn: https://www.linkedin.com/in/kenkousen/  
-GitHub: https://github.com/kousen  
-Twitter/X: @kenkousen  
-Bluesky: https://bsky.app/profile/kousenit.com
-
-</v-click>
-
-<v-click>
-
-**📰 Newsletter:** https://kenkousen.substack.com  
-**📺 YouTube:** https://youtube.com/@talesfromthejarside  
-
-</v-click>
-
-</div>
-
-<div class="mt-6 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
-  <strong>🎯 Mission:</strong> Making technical concepts accessible and practical
+<div class="mt-12 p-6 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-center">
+  <strong class="text-lg">🎯 Mission:</strong> Making technical concepts accessible and practical for real-world development teams
 </div>
 
 ---
@@ -145,6 +114,241 @@ h1 {
   -moz-text-fill-color: transparent;
 }
 </style>
+
+---
+layout: default
+---
+
+# Installation & Setup
+
+## Installation Methods
+
+```bash {all|1-2|4-5|all}
+# Install via npm
+npm install -g @anthropic-ai/claude-code
+
+# Or download from GitHub releases
+# https://github.com/anthropic-ai/claude/releases
+```
+
+<div class="grid grid-cols-2 gap-8 mt-8">
+
+<div>
+
+## Authentication Setup
+
+```bash {1-2|4-5}
+# Set your API key
+export ANTHROPIC_API_KEY="your-api-key-here"
+
+# Or configure interactively
+claude auth login
+```
+
+</div>
+
+<div>
+
+## Verify Installation
+
+```bash
+claude --version
+claude --help
+```
+
+</div>
+
+</div>
+
+<div class="mt-8 p-4 bg-yellow-100 rounded-lg border-l-4 border-yellow-500">
+  <strong>💡 Pro Tip:</strong> Add your API key to your shell profile (.bashrc, .zshrc) for persistent access
+</div>
+
+---
+layout: default
+---
+
+# Basic Command Structure
+
+## Core Commands
+
+```bash {1-2|4-5|7-8|all}
+# Navigate to your project
+cd /path/to/your/spring-boot-project
+
+# Start Claude Code
+claude
+
+# Or start with specific instructions
+claude "Help me understand this Spring application"
+```
+
+<div class="grid grid-cols-2 gap-8 mt-8">
+
+<div>
+
+## Command Syntax
+
+<v-clicks>
+
+- **Natural language prompts** - Describe what you want to accomplish
+- **File-specific requests** - Reference files directly  
+- **Multi-step workflows** - Chain complex operations
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+<div class="text-center p-6 bg-blue-50 rounded-lg border-2 border-dashed border-blue-300">
+  <h3 class="text-lg font-bold text-blue-800">🚀 Demo Time!</h3>
+  <p class="text-blue-600">Let's see Claude Code in action with a Spring Boot project</p>
+</div>
+
+</v-click>
+
+</div>
+
+</div>
+
+---
+layout: default
+---
+
+# 🚀 First Hands-On Exercise
+
+## Get Claude Code Running in Your Project
+
+**Time: 5 minutes**
+
+<div class="grid grid-cols-2 gap-8 mt-6">
+
+<div>
+
+### Your Tasks
+
+<v-clicks>
+
+1. **Navigate to any code project** on your machine
+2. **Start Claude Code** with `claude`
+3. **Ask it to explore** the project structure
+4. **Try a simple request** like "explain this codebase"
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Example Commands
+
+```bash
+# Navigate to your project
+cd ~/my-spring-project
+
+# Start Claude Code
+claude
+
+# Try these prompts:
+"Give me an overview of this project"
+"What files are most important here?"
+"Explain the main entry point"
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+<div class="mt-8 p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
+  <strong>🎯 Goal:</strong> Get comfortable with the basic Claude Code interface and see it analyze a real project
+</div>
+
+<div class="mt-4 p-4 bg-blue-100 rounded-lg border-l-4 border-blue-500">
+  <strong>💡 Don't have a project handy?</strong> Try it in this presentation's directory - Claude Code can analyze any codebase!
+</div>
+
+---
+layout: default
+---
+
+# 💰 Claude Code Pricing & Plans
+
+## Understanding Your Options
+
+<div class="grid grid-cols-3 gap-6 mt-8">
+
+<div class="p-6 bg-blue-50 rounded-lg border-2 border-blue-200">
+
+### Pro Plan
+**$20/month**
+
+<v-clicks>
+
+- **~10-40 prompts** per 5 hours
+- **Sonnet 4 only**
+- Best for small repos (<1,000 lines)
+- Light development work
+
+</v-clicks>
+
+</div>
+
+<div class="p-6 bg-purple-50 rounded-lg border-2 border-purple-200">
+
+### Max Plan - 5x
+**$100/month**
+
+<v-clicks>
+
+- **~50-200 prompts** per 5 hours
+- **Sonnet or Opus 4**
+- Medium to large repos
+- Regular development work
+
+</v-clicks>
+
+</div>
+
+<div class="p-6 bg-green-50 rounded-lg border-2 border-green-200">
+
+### Max Plan - 20x
+**$200/month**
+
+<v-clicks>
+
+- **~200-800 prompts** per 5 hours
+- **Sonnet or Opus 4**
+- Large enterprise repos
+- Heavy development work
+
+</v-clicks>
+
+</div>
+
+</div>
+
+<v-click>
+
+<div class="mt-8 p-4 bg-yellow-100 rounded-lg border-l-4 border-yellow-500">
+  <strong>⚠️ Important:</strong> Opus 4 uses ~5x more credits than Sonnet 4. Rate limits are shared between Claude and Claude Code and reset every 5 hours.
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="mt-4 p-4 bg-blue-100 rounded-lg border-l-4 border-blue-500">
+  <strong>💡 Pro Tip:</strong> Start with Pro plan to learn, then upgrade based on your usage patterns and project complexity
+</div>
+
+</v-click>
 
 ---
 layout: default
@@ -242,6 +446,65 @@ layout: default
 
 <div class="mt-8 p-4 bg-blue-100 rounded-lg border-l-4 border-blue-500">
   <strong>🔍 Anthropic Insight:</strong> Data Infrastructure team replaces traditional data catalogs with Claude Code for codebase discovery
+</div>
+
+---
+layout: default
+---
+
+# 🔍 Hands-On Exercise: Explore a Codebase
+
+## Practice Code Search & Understanding
+
+**Time: 10 minutes**
+
+<div class="grid grid-cols-2 gap-8 mt-6">
+
+<div>
+
+### Your Mission
+
+<v-clicks>
+
+1. **Choose a project** (Spring Boot, Node.js, Python, etc.)
+2. **Ask Claude to map the architecture**
+3. **Find specific components** (controllers, services, etc.)
+4. **Trace execution flows**
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Try These Prompts
+
+```bash
+"What's the overall architecture of this project?"
+
+"Find all the REST endpoints in this codebase"
+
+"Show me how data flows from API to database"
+
+"What design patterns are used here?"
+
+"Identify the main configuration files"
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+<div class="mt-8 p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
+  <strong>🎯 Goal:</strong> Experience Claude Code's ability to quickly understand and explain complex codebases
+</div>
+
+<div class="mt-4 p-4 bg-purple-100 rounded-lg border-l-4 border-purple-500">
+  <strong>⭐ Pro Tip:</strong> Start with high-level questions, then dive deeper into specific areas that interest you
 </div>
 
 ---
@@ -453,6 +716,66 @@ layout: default
 
 <div class="mt-8 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
   <strong>🎯 Anthropic Teams:</strong> "Claude automatically includes missed edge cases, completing what would normally take significant mental energy in minutes"
+</div>
+
+---
+layout: default
+---
+
+# ✅ Hands-On Exercise: Generate Tests
+
+## Practice Test Creation with Claude Code
+
+**Time: 15 minutes**
+
+<div class="grid grid-cols-2 gap-8 mt-6">
+
+<div>
+
+### Your Challenge
+
+<v-clicks>
+
+1. **Pick a class or function** in your project
+2. **Ask Claude to generate unit tests**
+3. **Request edge case tests**
+4. **Add integration tests**
+5. **Review and run the tests**
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Example Prompts
+
+```bash
+"Create comprehensive unit tests for this UserService class"
+
+"Add edge case tests for null inputs and empty strings"
+
+"Generate integration tests for the REST API endpoints"
+
+"Create mock objects for the database dependencies"
+
+"Add performance tests for this method"
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+<div class="mt-8 p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
+  <strong>🎯 Goal:</strong> Experience how Claude Code identifies edge cases and creates comprehensive test suites
+</div>
+
+<div class="mt-4 p-4 bg-yellow-100 rounded-lg border-l-4 border-yellow-500">
+  <strong>💡 Bonus:</strong> Ask Claude to explain why it chose specific test cases - learn testing best practices!
 </div>
 
 ---
@@ -690,6 +1013,68 @@ layout: default
 layout: default
 ---
 
+# 📝 Hands-On Exercise: Create Documentation
+
+## Practice Documentation Generation
+
+**Time: 15 minutes**
+
+<div class="grid grid-cols-2 gap-8 mt-6">
+
+<div>
+
+### Documentation Challenge
+
+<v-clicks>
+
+1. **Choose an undocumented project** or component
+2. **Generate a README.md** file
+3. **Add inline code comments**
+4. **Create API documentation**
+5. **Write setup instructions**
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Powerful Prompts
+
+```bash
+"Create a comprehensive README for this project"
+
+"Add detailed comments to this complex method"
+
+"Generate API documentation for these endpoints"
+
+"Write installation and setup instructions"
+
+"Create a troubleshooting guide for common issues"
+
+"Document the architecture and design decisions"
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+<div class="mt-8 p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
+  <strong>🎯 Goal:</strong> Transform an undocumented project into professional, well-documented code
+</div>
+
+<div class="mt-4 p-4 bg-indigo-100 rounded-lg border-l-4 border-indigo-500">
+  <strong>⭐ Pro Tip:</strong> Ask Claude to follow your organization's documentation standards or create a CLAUDE.md file with documentation guidelines
+</div>
+
+---
+layout: default
+---
+
 # Debugging Workflows
 
 <div class="grid grid-cols-2 gap-8">
@@ -734,105 +1119,6 @@ layout: default
 
 <div class="mt-8 p-4 bg-orange-100 rounded-lg border-l-4 border-orange-500">
   <strong>🛠️ Data Infrastructure Team:</strong> Used screenshots of dashboards to diagnose Kubernetes cluster issues, with Claude providing exact commands to fix pod IP address exhaustion
-</div>
-
----
-layout: default
----
-
-# Installation & Setup
-
-## Installation Methods
-
-```bash {all|1-2|4-5|all}
-# Install via npm
-npm install -g @anthropic-ai/claude-code
-
-# Or download from GitHub releases
-# https://github.com/anthropic-ai/claude/releases
-```
-
-<div class="grid grid-cols-2 gap-8 mt-8">
-
-<div>
-
-## Authentication Setup
-
-```bash {1-2|4-5}
-# Set your API key
-export ANTHROPIC_API_KEY="your-api-key-here"
-
-# Or configure interactively
-claude auth login
-```
-
-</div>
-
-<div>
-
-## Verify Installation
-
-```bash
-claude --version
-claude --help
-```
-
-</div>
-
-</div>
-
-<div class="mt-8 p-4 bg-yellow-100 rounded-lg border-l-4 border-yellow-500">
-  <strong>💡 Pro Tip:</strong> Add your API key to your shell profile (.bashrc, .zshrc) for persistent access
-</div>
-
----
-layout: default
----
-
-# Basic Command Structure
-
-## Core Commands
-
-```bash {1-2|4-5|7-8|all}
-# Navigate to your project
-cd /path/to/your/spring-boot-project
-
-# Start Claude Code
-claude
-
-# Or start with specific instructions
-claude "Help me understand this Spring application"
-```
-
-<div class="grid grid-cols-2 gap-8 mt-8">
-
-<div>
-
-## Command Syntax
-
-<v-clicks>
-
-- **Natural language prompts** - Describe what you want to accomplish
-- **File-specific requests** - Reference files directly  
-- **Multi-step workflows** - Chain complex operations
-
-</v-clicks>
-
-</div>
-
-<div>
-
-<v-click>
-
-<div class="text-center p-6 bg-blue-50 rounded-lg border-2 border-dashed border-blue-300">
-  <h3 class="text-lg font-bold text-blue-800">🚀 Demo Time!</h3>
-  <p class="text-blue-600">Let's see Claude Code in action with a Spring Boot project</p>
-</div>
-
-</v-click>
-
-</div>
-
 </div>
 
 ---
@@ -1311,13 +1597,11 @@ Update the selected code to use:
 ```markdown
 # Security Code Review
 
-Review the selected code for security issues:
+Review code for security issues:
 - SQL injection vulnerabilities
 - XSS prevention
 - Authentication/authorization flaws
 - Input validation gaps
-- Sensitive data exposure
-- Security best practices compliance
 ```
 
 </v-click>
@@ -1354,22 +1638,20 @@ layout: default
 ### Command Best Practices
 
 ```markdown
-# Command Structure Tips
+# Structure Tips
 
-## Clear Instructions
+## Instructions
 - Be specific about requirements
-- Include technology preferences
+- Include tech preferences
 - Specify coding standards
 
-## Context Awareness
+## Context
 - Reference project patterns
-- Include file naming conventions
-- Mention team preferences
+- Include naming conventions
 
-## Quality Assurance
+## Quality
 - Always include tests
 - Add error handling
-- Include documentation
 ```
 
 </v-click>
@@ -1378,8 +1660,8 @@ layout: default
 
 </div>
 
-<div class="mt-8 p-4 bg-purple-100 rounded-lg border-l-4 border-purple-500">
-  <strong>🔧 Security Engineering Success:</strong> Uses 50% of all custom slash command implementations across the monorepo for streamlined workflows
+<div class="mt-4 p-3 bg-purple-100 rounded-lg border-l-4 border-purple-500 text-sm">
+  <strong>🔧 Security Engineering:</strong> Uses 50% of all custom slash commands across monorepo
 </div>
 
 ---
@@ -1428,8 +1710,8 @@ layoutClass: gap-16
 
 </div>
 
-<div class="mt-6 p-4 bg-red-100 rounded-lg border-l-4 border-red-500">
-  <strong>🔒 Security Note:</strong> Use MCP servers instead of CLI for sensitive data to maintain better security control
+<div class="mt-4 p-3 bg-red-100 rounded-lg border-l-4 border-red-500 text-sm">
+  <strong>🔒 Security Note:</strong> Use MCP servers instead of CLI for sensitive data
 </div>
 
 ---
@@ -1619,14 +1901,13 @@ layout: default
 
 **Repository:** https://github.com/XD-DENG/flask-example
 
-**Great for demonstrating:**
-- How quickly Claude Code identifies issues
-- Automatic detection of security problems
+**Great for:**
+- Quick issue identification
+- Security problem detection
 - Code quality analysis
-- Missing best practices
-- Improvement suggestions
+- Best practice validation
 
-**Perfect for:** Anyone wanting to see Claude Code analyze problematic code
+**Perfect for:** Seeing Claude Code analysis in action
 
 </v-click>
 
@@ -1641,13 +1922,13 @@ layout: default
 
 **Repository:** https://github.com/rachanahegde/python-weather-app
 
-**What makes it good:**
-- Clear structure and purpose
+**Great for:**
+- Clear structure
 - Working functionality
 - Room for improvements
-- Beginner-friendly codebase
+- Beginner-friendly
 
-**Perfect for:** Adding tests, improving documentation, modern Python features
+**Perfect for:** Adding tests, docs, modern Python
 
 </v-click>
 
@@ -1662,19 +1943,18 @@ layout: default
 
 **URL:** https://jsonplaceholder.typicode.com/
 
-**Great for practicing:**
-- Building API clients from scratch
-- Creating integration tests
-- Implementing error handling
-- Working with async operations
-- Type-safe API wrappers
+**Great for:**
+- Building API clients
+- Integration testing
+- Error handling
+- Async operations
 
-**Perfect for:** Testing Claude Code's ability to generate API clients, handle HTTP requests, and create robust service layers
+**Perfect for:** API client generation and HTTP request handling
 
 </v-click>
 
-<div class="mt-8 p-4 bg-blue-100 rounded-lg border-l-4 border-blue-500">
-  <strong>💡 Exercise Ideas:</strong> Clone repos for analysis, or use Claude Code to build API clients, add tests, improve documentation, or implement new features
+<div class="mt-6 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
+  <strong>💡 Exercise Ideas:</strong> Clone for analysis, build API clients, add tests, improve docs
 </div>
 
 ---
@@ -1683,25 +1963,23 @@ layout: default
 
 # Ken's Projects for Practice
 
-## Real Production Applications to Explore
-
-<div class="grid grid-cols-2 gap-8">
+<div class="grid grid-cols-3 gap-6 mt-6">
 
 <div>
 
 ### 🎵 Lyrics Trainer
-**JavaScript/TypeScript Web App**
+<p class="text-sm">JavaScript/TypeScript Web App</p>
 
 <v-click>
 
-**Repository:** https://github.com/kousen/lyrics_trainer
+**Repo:** kousen/lyrics_trainer
 
-**Tech Stack:**
-- Modern JavaScript/TypeScript
-- Web APIs and DOM manipulation
-- Client-side application architecture
+**Tech:**
+- Modern JS/TypeScript
+- Web APIs & DOM
+- Client-side architecture
 
-**Great for:** Frontend development practice, API integration, modern JS patterns
+**Practice:** Frontend dev, API integration
 
 </v-click>
 
@@ -1710,43 +1988,47 @@ layout: default
 <div>
 
 ### 📜 Certificate Service
-**Spring Boot PDF Generator**
+<p class="text-sm">Spring Boot PDF Generator</p>
 
 <v-click>
 
-**Repository:** https://github.com/kousen/certificate-service
+**Repo:** kousen/certificate-service
 
-**Tech Stack:**
-- Spring Boot application
-- PDF generation capabilities
-- Heroku deployment ready
+**Tech:**
+- Spring Boot
+- PDF generation
+- Heroku deployment
 
-**Great for:** Backend services, PDF processing, cloud deployment patterns
+**Practice:** Backend services, cloud deployment
 
 </v-click>
 
 </div>
 
-</div>
-
-<v-click>
+<div>
 
 ### 🛒 Shopping Service
-**Spring Boot RESTful Teaching App**
+<p class="text-sm">Spring Boot RESTful Teaching App</p>
 
-**Repository:** https://github.com/kousen/shopping_v3
+<v-click>
 
-**Tech Stack:**
+**Repo:** kousen/shopping_v3
+
+**Tech:**
 - Spring Boot 3.x
-- RESTful web service architecture
-- Teaching-focused codebase
+- RESTful architecture
+- Teaching-focused
 
-**Great for:** REST API development, Spring Boot patterns, service layer design
+**Practice:** REST APIs, Spring patterns
 
 </v-click>
 
-<div class="mt-8 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
-  <strong>🎯 Advantage:</strong> These are Ken's real projects - ask him questions about architecture decisions and implementation choices during the training!
+</div>
+
+</div>
+
+<div class="mt-6 p-3 bg-green-100 rounded-lg border-l-4 border-green-500 text-sm">
+  <strong>🎯 Advantage:</strong> These are Ken's real projects - ask him about architecture decisions during training!
 </div>
 
 ---
@@ -2075,6 +2357,22 @@ layout: default
   <strong>💡 Growth Marketing Insight:</strong> Focus on API-enabled repetitive tasks where Claude Code provides the most value
 </div>
 
+<v-click>
+
+<div class="mt-6 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg border-l-4 border-green-500">
+
+**💰 Plan Optimization Tips:**
+
+- **Pro Plan ($20):** Perfect for learning and small projects
+- **Max 5x ($100):** Sweet spot for most professional developers  
+- **Max 20x ($200):** Enterprise teams with large codebases
+- **Sonnet vs Opus:** Use Sonnet 4 for most tasks (5x cheaper than Opus)
+- **Rate Limit Timing:** Limits reset every 5 hours - plan intensive work accordingly
+
+</div>
+
+</v-click>
+
 ---
 layout: default
 ---
@@ -2301,6 +2599,49 @@ layoutClass: gap-16
 
 <div class="mt-8 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg border-l-4 border-purple-500 text-center">
   <strong class="text-lg">🚀 Claude Code isn't just a tool - it's a development force multiplier</strong>
+</div>
+
+---
+layout: default
+---
+
+# Contact Info & Resources
+
+<div class="grid grid-cols-2 gap-12 items-start">
+
+<div>
+
+**Ken Kousen**  
+Kousen IT, Inc.
+
+ken.kousen@kousenit.com  
+http://www.kousenit.com  
+https://kousenit.org (blog)  
+<a href="https://twitter.com/kenkousen" target="_blank">@kenkousen</a> (twitter)  
+https://foojay.social/@kenkousen (mastodon)  
+https://bsky.app/profile/kousenit.com (bluesky)  
+
+*Tales from the jar side* (free newsletter)  
+https://kenkousen.substack.com  
+https://youtube.com/@talesfromthejarside
+
+</div>
+
+<div>
+
+**Books by Ken Kousen:**
+
+<div class="mt-4 space-y-2">
+<div><a href="https://pragprog.com/titles/kkmanage/help-your-boss-help-you/" target="_blank">📚 Help Your Boss Help You</a></div>
+<div><a href="https://www.amazon.com/Kotlin-Cookbook-Problem-Focused-Ken-Kousen/dp/1492046671" target="_blank">📚 Kotlin Cookbook</a></div>
+<div><a href="https://www.amazon.com/Modern-Java-Recipes-Solutions-Difficult/dp/149197317X" target="_blank">📚 Modern Java Recipes</a></div>
+<div><a href="https://www.manning.com/books/making-java-groovy" target="_blank">📚 Making Java Groovy</a></div>
+<div><a href="https://www.amazon.com/Gradle-Recipes-Android-Master-System/dp/1491947020" target="_blank">📚 Gradle Recipes for Android</a></div>
+<div><a href="https://pragprog.com/titles/mockito/mockito-made-clear/" target="_blank">📚 Mockito Made Clear</a></div>
+</div>
+
+</div>
+
 </div>
 
 ---
