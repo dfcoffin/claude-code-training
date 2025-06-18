@@ -48,8 +48,6 @@ layout: default
 
 <div class="mt-8">
 
-<v-clicks>
-
 - **President of Kousen IT, Inc.** - Training and consulting
 - **Author of multiple books** including *Modern Java Recipes*, *Mockito Made Clear*, and *Help Your Boss Help You*
 - **Java Champion**
@@ -59,8 +57,6 @@ layout: default
 - **30+ years** of enterprise software development
 - **Trainer and consultant** for Fortune 500 companies
 
-</v-clicks>
-
 </div>
 
 <div class="mt-12 p-6 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-center">
@@ -68,40 +64,109 @@ layout: default
 </div>
 
 ---
-layout: two-cols
-layoutClass: gap-16
+layout: default
 ---
 
-# Course Overview
+# What You'll Learn
 
-## What You'll Learn
-- Master Claude Code fundamentals
-- Navigate and understand codebases
-- Implement effective testing strategies
-- Streamline Git operations
-- Create professional documentation
-- Debug complex issues efficiently
+## Master Claude Code for Professional Development
 
-## Course Structure
-- **5 hours** of core content
-- **Hands-on exercises** throughout
-- **Real-world examples** from production code
-- **Best practices** from industry use
+<div class="grid grid-cols-2 gap-12 mt-8">
 
-::right::
+<div>
 
-<div class="text-center mt-8">
-  <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=400&h=300&fit=crop" class="rounded-lg shadow-lg mb-4"/>
+- **Claude Code fundamentals** - Installation, setup, and core concepts
+- **Codebase navigation** - Intelligent search and understanding
+- **Testing strategies** - Automated test generation and debugging
+
 </div>
 
-<v-clicks>
+<div>
 
-- ✅ **Based on real experience**
-- ✅ **Production Java/Spring projects**
-- ✅ **Anthropic team insights**
-- ✅ **Practical workflows**
+- **Git operations** - Streamlined version control workflows  
+- **Documentation** - Professional docs and comments
+- **Complex debugging** - Advanced troubleshooting techniques
 
-</v-clicks>
+</div>
+
+</div>
+
+<div class="text-center mt-12">
+  <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=400&h=300&fit=crop" class="rounded-lg shadow-lg"/>
+</div>
+
+---
+layout: default
+---
+
+# Course Structure
+
+## Professional Training Format
+
+<div class="text-center mt-8">
+
+### 📚 **5 Hours** of Core Content
+
+<div class="grid grid-cols-2 gap-8 mt-8">
+
+<div class="p-6 bg-blue-50 rounded-lg">
+
+**🎯 Hands-On Exercises**
+Practical coding throughout each section
+
+</div>
+
+<div class="p-6 bg-green-50 rounded-lg">
+
+**🏢 Real-World Examples**
+Production code from enterprise projects
+
+</div>
+
+</div>
+
+</div>
+
+<div class="mt-8 p-6 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+  <strong>💡 Industry Best Practices:</strong> Based on proven workflows from Anthropic teams and Fortune 500 companies
+</div>
+
+---
+layout: default
+---
+
+# Why This Course Works
+
+## Proven in Production
+
+<div class="grid grid-cols-3 gap-6 mt-8">
+
+<div class="text-center p-6 bg-green-50 rounded-lg">
+
+### ✅ Real Experience
+**Based on actual enterprise development**
+
+</div>
+
+<div class="text-center p-6 bg-blue-50 rounded-lg">
+
+### ✅ Spring Focus
+**Production Java/Spring Boot projects**
+
+</div>
+
+<div class="text-center p-6 bg-purple-50 rounded-lg">
+
+### ✅ Team Insights
+**Anthropic engineering workflows**
+
+</div>
+
+</div>
+
+<div class="mt-12 p-6 bg-yellow-50 rounded-lg border-l-4 border-yellow-500 text-center">
+  <strong>🚀 Ready to transform your development workflow?</strong>
+</div>
 
 <style>
 h1 {
@@ -356,26 +421,12 @@ layout: default
 
 # What is Claude Code?
 
-<div class="grid grid-cols-2 gap-8 mt-8">
-
-<div>
-
 ## Agentic Coding Assistant
-
-<v-clicks>
 
 - **Command-line AI tool** that works directly in your development environment
 - **Context-aware** - understands your entire codebase
 - **Autonomous capabilities** - can work independently or collaboratively
 - **Multi-language support** - Java, Python, JavaScript, and more
-
-</v-clicks>
-
-</div>
-
-<div>
-
-<v-click>
 
 ### Key Capabilities
 ```mermaid
@@ -388,18 +439,8 @@ graph TD
     A --> G[Codebase Exploration]
 ```
 
-</v-click>
-
-</div>
-
-</div>
-
-<v-click>
-
 ### Perfect For
 Spring Boot applications • Complex enterprise codebases • API development • Microservices architectures • Testing workflows
-
-</v-click>
 
 ---
 layout: default
@@ -574,63 +615,48 @@ graph LR
 </v-click>
 
 ---
-layout: two-cols
-layoutClass: gap-16
+layout: default
 ---
 
 # File Editing & Refactoring
 
-## Editing Capabilities
-
-<v-clicks>
+## Core Editing Capabilities
 
 - **Multi-file operations** - Change multiple files simultaneously
 - **Smart refactoring** - Maintain code consistency
 - **Pattern replacement** - Apply changes across codebase
 - **Modern syntax adoption** - Upgrade to newer language features
 
-</v-clicks>
-
-::right::
-
-<div class="grid grid-cols-1 gap-4">
-
-<div>
-
-### Java Modernization
-
-<v-clicks>
-
-- Convert to Records
-- Add Virtual Threads
-- Switch expressions
-- Pattern matching
-
-</v-clicks>
-
-</div>
-
-<div>
-
-### Spring Updates
-
-<v-clicks>
-
-- Configuration properties
-- Dependency injection patterns
-- Test modernization
-- Security improvements
-
-</v-clicks>
-
-</div>
-
-</div>
-
 <div class="mt-8 text-center p-4 bg-purple-50 rounded-lg border-2 border-dashed border-purple-300">
   <h3 class="text-lg font-bold text-purple-800">🔄 Live Demo</h3>
   <p class="text-purple-600">Refactoring a Spring service to use modern Java features</p>
 </div>
+
+---
+layout: default
+---
+
+# File Editing & Refactoring-2
+
+## Java Modernization
+
+- **Convert to Records** - Replace boilerplate POJOs
+- **Add Virtual Threads** - Modern concurrency patterns
+- **Switch expressions** - Cleaner conditional logic
+- **Pattern matching** - Enhanced type checking
+
+---
+layout: default
+---
+
+# File Editing & Refactoring-3
+
+## Spring Framework Updates
+
+- **Configuration properties** - Type-safe configuration
+- **Dependency injection patterns** - Constructor injection best practices
+- **Test modernization** - Updated testing approaches
+- **Security improvements** - Latest security patterns
 
 ---
 layout: default
@@ -1222,54 +1248,56 @@ layout: default
 </div>
 
 ---
-layout: two-cols
-layoutClass: gap-16
+layout: default
 ---
 
 # Understanding the Interface
 
 ## Command Mode
-<v-clicks>
 
-- Interactive chat interface
-- Context-aware responses
-- File system access
-- Git integration
+- **Interactive chat interface** - Natural language conversation
+- **Context-aware responses** - Understands your project
+- **File system access** - Can read and modify files
+- **Git integration** - Handles version control
 
-</v-clicks>
+---
+layout: default
+---
+
+# Understanding the Interface-2
 
 ## Auto-Accept Mode
-<v-clicks>
 
-- Press `Shift+Tab`
-- Autonomous execution
-- Minimal supervision
-- Great for prototyping
+- **Press `Shift+Tab`** - Activate autonomous mode
+- **Autonomous execution** - Runs without constant approval
+- **Minimal supervision** - Claude works independently
+- **Great for prototyping** - Rapid development cycles
 
-</v-clicks>
+---
+layout: default
+---
+
+# Understanding the Interface-3
 
 ## Plan Mode
-<v-clicks>
 
-- Press `Shift+Tab+Tab`
-- Review implementation plans first
-- Approve before execution
-- Perfect for complex changes
+- **Press `Shift+Tab+Tab`** - Strategic implementation planning
+- **Review implementation plans first** - See the approach before coding
+- **Approve before execution** - You control when code changes
+- **Perfect for complex changes** - Ideal for major refactoring
 
-</v-clicks>
+---
+layout: default
+---
 
-::right::
+# Understanding the Interface-4
 
 ## Key Features
 
-<v-clicks>
-
-- **Project memory** - Remembers context
-- **File awareness** - Knows your codebase
-- **Smart suggestions** - Contextual recommendations
-- **Error handling** - Explains and fixes issues
-
-</v-clicks>
+- **Project memory** - Remembers context across sessions
+- **File awareness** - Knows your entire codebase structure
+- **Smart suggestions** - Contextual recommendations based on patterns
+- **Error handling** - Explains issues and provides fixes
 
 <div class="mt-8 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
   <strong>📝 From Anthropic teams:</strong> "Claude Code becomes a primary tool, open 80% of the time alongside your IDE"
@@ -1281,47 +1309,31 @@ layout: default
 
 # Plan Mode: Review Before Execute
 
-## Strategic Implementation Planning
-
-<div class="grid grid-cols-2 gap-8">
-
-<div>
-
-### How to Activate
-
-<v-clicks>
+## How to Activate
 
 - **Press `Shift+Tab+Tab`** in any conversation
-- Claude presents implementation plan
+- **Claude presents implementation plan** - See the full strategy first
 - **Review the strategy** before any code changes
-- **Approve or modify** the approach
-- **Execute with confidence**
-
-</v-clicks>
-
-</div>
-
-<div>
-
-<v-click>
-
-### Perfect For
-
-- **Complex refactoring** across multiple files
-- **Architecture changes** requiring coordination
-- **Security-sensitive** modifications  
-- **Learning scenarios** where you want to understand the approach
-- **Team reviews** of implementation strategies
-
-</v-click>
-
-</div>
-
-</div>
+- **Approve or modify** the approach as needed
+- **Execute with confidence** knowing the plan
 
 <div class="mt-6 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
   <strong>🚀 NEW FEATURE:</strong> Plan Mode bridges autonomous execution and manual oversight - perfect for enterprise development
 </div>
+
+---
+layout: default
+---
+
+# Plan Mode: Review Before Execute-2
+
+## Perfect For
+
+- **Complex refactoring** across multiple files
+- **Architecture changes** requiring coordination
+- **Security-sensitive** modifications with compliance requirements
+- **Learning scenarios** where you want to understand the approach
+- **Team reviews** of implementation strategies
 
 ---
 layout: default
@@ -2103,46 +2115,30 @@ layout: default
 
 # Claude Code SDKs: Programmatic Integration
 
-## Building Custom AI-Powered Development Tools
+## Available SDKs
 
-<div class="grid grid-cols-2 gap-8">
-
-<div>
-
-### Available SDKs
-
-<v-clicks>
-
-- **TypeScript SDK** - Node.js and web apps
-- **Python SDK** - Data science and automation
-- **CLI integration** - Subprocess scripting
-- **Cross-platform** - Windows, macOS, Linux
-
-</v-clicks>
-
-</div>
-
-<div>
-
-<v-click>
-
-### Key Capabilities
-
-- **Multi-turn conversations** - Maintain context
-- **Custom system prompts** - Define AI behavior
-- **MCP integration** - Connect external tools
-- **Streaming responses** - Real-time output
-- **Tool permissions** - Fine-grained control
-
-</v-click>
-
-</div>
-
-</div>
+- **TypeScript SDK** - Node.js and web applications
+- **Python SDK** - Data science and automation workflows
+- **CLI integration** - Subprocess scripting and system automation
+- **Cross-platform** - Windows, macOS, Linux support
 
 <div class="mt-6 p-4 bg-purple-100 rounded-lg border-l-4 border-purple-500 text-sm">
   <strong>🚀 SDK Power:</strong> Transform Claude Code from CLI tool into programmable AI assistant for custom workflows
 </div>
+
+---
+layout: default
+---
+
+# Claude Code SDKs: Programmatic Integration-2
+
+## Key Capabilities
+
+- **Multi-turn conversations** - Maintain context across interactions
+- **Custom system prompts** - Define AI behavior for specific tasks
+- **MCP integration** - Connect external tools and services
+- **Streaming responses** - Real-time output for better UX
+- **Tool permissions** - Fine-grained control over AI capabilities
 
 ---
 layout: default
@@ -2244,54 +2240,47 @@ to weekly_report.md as a narrative." \
 </div>
 
 ---
-layout: two-cols
-layoutClass: gap-16
+layout: default
 ---
 
 # Model Context Protocol (MCP)
 
 ## What is MCP?
 
-<v-clicks>
-
 - **Standard protocol** - Connect AI to external systems
 - **Tool integration** - Access APIs, databases, services
 - **Context enhancement** - Provide relevant data to AI
 - **Security controls** - Manage access and permissions
 
-</v-clicks>
-
-::right::
-
-## Your MCP Server Examples
-
-<div class="space-y-4">
-
-<v-click>
-
-### GitHub MCP Server
-- Repository operations
-- Issue management
-- Pull request handling
-- File content access
-
-</v-click>
-
-<v-click>
-
-### Osquery MCP Server
-- System diagnostics
-- Process monitoring
-- Network analysis
-- Security insights
-
-</v-click>
-
-</div>
-
 <div class="mt-4 p-3 bg-red-100 rounded-lg border-l-4 border-red-500 text-sm">
   <strong>🔒 Security Note:</strong> Use MCP servers instead of CLI for sensitive data
 </div>
+
+---
+layout: default
+---
+
+# Model Context Protocol (MCP)-2
+
+## GitHub MCP Server
+
+- **Repository operations** - Clone, create, manage repositories
+- **Issue management** - Create, update, search issues
+- **Pull request handling** - Review, merge, comment on PRs
+- **File content access** - Read and modify repository files
+
+---
+layout: default
+---
+
+# Model Context Protocol (MCP)-3
+
+## Osquery MCP Server
+
+- **System diagnostics** - Query system information
+- **Process monitoring** - Track running applications
+- **Network analysis** - Monitor connections and traffic
+- **Security insights** - Detect anomalies and threats
 
 ---
 layout: default
@@ -2359,47 +2348,63 @@ claude mcp  # Configure local servers
 layout: default
 ---
 
-# Available MCP Servers
+# Development MCP Servers
 
-## Local and Remote Server Options
+## Core Development Tools
 
 <div class="grid grid-cols-2 gap-8">
 
 <div>
 
-### Development Tools
-
-<v-clicks>
-
+### Code Management
 - **GitHub** - Repository management, issues, PRs
-- **Sentry** - Error tracking and debugging context
-- **Linear** - Project management and issue tracking
-- **File System** - Enhanced local file operations
+- **File System** - Enhanced local file operations  
 - **Database** - Query and schema operations
-
-</v-clicks>
 
 </div>
 
 <div>
 
-### Enterprise & SaaS
+### Debugging & Tracking
+- **Sentry** - Error tracking and debugging context
+- **Linear** - Project management and issue tracking
 
-<v-clicks>
+</div>
 
+</div>
+
+<div class="mt-8 p-6 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+  <strong>💡 Perfect for:</strong> Daily coding tasks, debugging, and local development workflows
+</div>
+
+---
+layout: default
+---
+
+# Enterprise MCP Servers
+
+## SaaS & Infrastructure Integration
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+### Team Collaboration
 - **Slack** - Team communication integration
 - **Google Drive** - Document access
 - **Notion** - Knowledge base integration
+
+</div>
+
+<div>
+
+### Infrastructure
 - **Docker** - Container management
 - **Kubernetes** - Cluster operations
 
-</v-clicks>
-
 </div>
 
 </div>
-
-<v-click>
 
 ## Security & Authentication
 
@@ -2416,8 +2421,6 @@ Zero-maintenance remote infrastructure
 </div>
 
 </div>
-
-</v-click>
 
 ---
 layout: default
@@ -3134,16 +3137,26 @@ layout: default
 layout: default
 ---
 
-# Good Practices
+# Development Best Practices
 
-- Create a new branch before turning Claude Code loose
-- Don't forget to ask it to update the README files
-- Be sure to update CLAUDE.md as well
-- Use `/compact` during natural breaks in development
-- Add *think* or *think hard* or *think deeply* as necessary
-- Use `--continue` or `--resume` to access previous conversations
-- Note: if console scrolls past buffer, you lose visibility (not the actual conversation)
-- Use console logging to save important outputs for reference
+## Safe Development Workflow
+
+- **Create a new branch** before turning Claude Code loose
+- **Update documentation** - Don't forget README and CLAUDE.md files
+- **Use `/compact`** during natural breaks in development
+- **Add thinking prompts** - Use *think* or *think deeply* as necessary
+
+---
+layout: default
+---
+
+# Session Management
+
+## Conversation Continuity
+
+- **Use `--continue` or `--resume`** to access previous conversations
+- **Console visibility** - If console scrolls past buffer, you lose visibility (not the actual conversation)
+- **Save important outputs** - Use console logging for reference
 
 ---
 layout: default
@@ -3151,46 +3164,12 @@ layout: default
 
 # Future Developments
 
-<div class="grid grid-cols-2 gap-8">
-
-<div>
-
 ## Emerging Capabilities
-
-<v-clicks>
 
 - **Enhanced MCP integration** - More tool connections
 - **Improved autonomous operation** - Longer independent work
 - **Better error recovery** - Self-correction capabilities
 - **IDE integration** - Deeper development environment integration
-
-</v-clicks>
-
-</div>
-
-<div>
-
-<v-click>
-
-### Industry Trends
-
-**Technical Evolution:**
-- More sophisticated reasoning
-- Better code understanding
-- Enhanced multi-language support
-- Improved testing capabilities
-
-**Workflow Integration:**
-- CI/CD pipeline integration
-- Code review automation
-- Security scanning integration
-- Performance optimization
-
-</v-click>
-
-</div>
-
-</div>
 
 <div class="mt-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border-l-4 border-blue-500 text-sm">
   <strong>🚀 Vision:</strong> Claude Code as a fundamental part of the development lifecycle, not just a helper tool
@@ -3200,51 +3179,83 @@ layout: default
 layout: default
 ---
 
+# Future Developments-2
+
+## Technical Evolution
+
+- **More sophisticated reasoning** - Advanced problem-solving capabilities
+- **Better code understanding** - Deeper semantic comprehension  
+- **Enhanced multi-language support** - Broader technology ecosystem
+- **Improved testing capabilities** - Smarter test generation
+
+---
+layout: default
+---
+
+# Future Developments-3
+
+## Workflow Integration
+
+- **CI/CD pipeline integration** - Automated deployment workflows
+- **Code review automation** - Intelligent review assistance
+- **Security scanning integration** - Built-in vulnerability detection
+- **Performance optimization** - Automated performance tuning
+
+---
+layout: default
+---
+
 # Real-World Success Stories
 
-<div class="grid grid-cols-2 gap-6">
+## Product Development & Data Science 
+
+<div class="grid grid-cols-2 gap-8">
 
 <div>
 
 ### Product Development
-<v-clicks>
-
 - **70% code autonomy** for Vim mode implementation
 - **Faster prototyping** with auto-accept mode
 - **Quality maintenance** through automated testing
-
-</v-clicks>
-
-### Data Science
-<v-clicks>
-
-- **5,000-line TypeScript apps** built with minimal JS knowledge
-- **2-4x time savings** on routine refactoring
-- **Persistent tools** instead of throwaway notebooks
-
-</v-clicks>
 
 </div>
 
 <div>
 
-### Security Engineering
-<v-clicks>
+### Data Science
+- **5,000-line TypeScript apps** built with minimal JS knowledge
+- **2-4x time savings** on routine refactoring
+- **Persistent tools** instead of throwaway notebooks
 
+</div>
+
+</div>
+
+---
+layout: default
+---
+
+# Real-World Success Stories-2
+
+## Security Engineering & Marketing
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+### Security Engineering
 - **50% reduction** in incident resolution time
 - **Days to weeks** improvement in project onboarding
 - **Autonomous documentation** synthesis
 
-</v-clicks>
+</div>
+
+<div>
 
 ### Growth Marketing
-<v-clicks>
-
 - **2 hours to 15 minutes** for ad copy creation
 - **10x increase** in creative output
 - **Team-level productivity** with single-person team
-
-</v-clicks>
 
 </div>
 
@@ -3300,15 +3311,12 @@ layout: default
 </v-click>
 
 ---
-layout: two-cols
-layoutClass: gap-16
+layout: default
 ---
 
 # Key Takeaways
 
 ## Transform Your Development Process
-
-<v-clicks>
 
 - **Code understanding** - Navigate complex codebases effortlessly
 - **Quality assurance** - Generate comprehensive tests automatically
@@ -3316,46 +3324,38 @@ layoutClass: gap-16
 - **Debugging** - Resolve issues faster with AI assistance
 - **Modernization** - Refactor legacy code to modern patterns
 
-</v-clicks>
-
-::right::
-
-<div class="space-y-6">
-
-<div>
-
-### Technical Excellence
-
-<v-clicks>
-
-- Precise, detailed prompts
-- Iterative collaboration
-- Checkpoint-driven development
-- Context-aware workflows
-
-</v-clicks>
-
-</div>
-
-<div>
-
-### Strategic Integration
-
-<v-clicks>
-
-- Team knowledge sharing
-- Progressive complexity adoption
-- Cost-conscious usage
-- Continuous improvement
-
-</v-clicks>
-
-</div>
-
-</div>
-
 <div class="mt-8 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg border-l-4 border-purple-500 text-center">
   <strong class="text-lg">🚀 Claude Code isn't just a tool - it's a development force multiplier</strong>
+</div>
+
+---
+layout: default
+---
+
+# Key Takeaways-2
+
+## Technical Excellence
+
+- **Precise, detailed prompts** - Clear communication drives better results
+- **Iterative collaboration** - Work together with Claude through refinement
+- **Checkpoint-driven development** - Save progress at logical intervals
+- **Context-aware workflows** - Leverage Claude's understanding of your codebase
+
+---
+layout: default
+---
+
+# Key Takeaways-3
+
+<div class="text-left">
+
+## Strategic Integration
+
+- **Team knowledge sharing** - Document and share Claude workflows
+- **Progressive complexity adoption** - Start simple, build confidence
+- **Cost-conscious usage** - Optimize for efficiency and value
+- **Continuous improvement** - Refine processes based on results
+
 </div>
 
 ---
@@ -3403,14 +3403,17 @@ https://youtube.com/@talesfromthejarside
 
 ---
 layout: end
-class: text-center
 ---
+
+<div class="text-center">
 
 # Thank You!
 
 ## Questions & Discussion
 
-<div class="mt-12 space-y-4">
+</div>
+
+<div class="mt-12 space-y-4 text-left">
 
 **📚 Official Documentation:** [docs.anthropic.com](https://docs.anthropic.com/en/docs/claude-code/overview)
 
@@ -3426,7 +3429,7 @@ class: text-center
 
 </div>
 
-<div class="mt-16 text-lg italic text-gray-600">
+<div class="mt-16 text-lg italic text-gray-600 text-center">
   Continue your Claude Code journey<br>
   Build amazing things with AI assistance
 </div>

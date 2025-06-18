@@ -26,16 +26,32 @@ This is a comprehensive Slidev presentation for Claude Code training, targeting 
 
 ## Current Architecture
 - Built with Slidev framework using Seriph theme
-- Main content in slides.md with 95+ slides
+- Main content in slides.md with 110+ slides
 - Comprehensive coverage from basics to advanced features
 - Integration of latest Claude Code features (Plan Mode, Remote MCP, SDKs)
+- Refactored to eliminate "bullet-riddled corpse" anti-pattern
 
 ## Recent Updates
+- **Major refactoring** - Split dense slides to follow "many slides with few lines" principle
+- **Eliminated bullet-riddled corpse** - Converted 12+ problematic slides into focused, digestible content
+- **Improved layouts** - Fixed column layouts and centering issues for better readability
 - Added Plan Mode functionality (Shift+Tab+Tab activation)
 - Enhanced MCP section with remote server capabilities
 - Added Claude Code SDKs for programmatic integration
-- Fixed multiple layout and overflow issues
 - Updated with latest Anthropic best practices
+
+## Refactoring Completed
+- Course Overview → 3 focused slides (What You'll Learn, Course Structure, Why This Course Works)
+- Understanding the Interface → 4 slides (Command Mode, Auto-Accept, Plan Mode, Key Features)
+- Plan Mode → 2 slides (How to Activate, Perfect For)
+- File Editing & Refactoring → 3 slides (Core Capabilities, Java Modernization, Spring Updates)
+- Model Context Protocol → 3 slides (What is MCP, GitHub Server, Osquery Server)
+- Claude Code SDKs → 2 slides (Available SDKs, Key Capabilities)
+- Future Developments → 3 slides (Emerging Capabilities, Technical Evolution, Workflow Integration)
+- Real-World Success Stories → 2 slides (Dev/Data Science, Security/Marketing)
+- Good Practices → 2 slides (Development Best Practices, Session Management)
+- Available MCP Servers → 2 slides (Development Tools, Enterprise Tools)
+- Key Takeaways → 3 slides (Transform Process, Technical Excellence, Strategic Integration)
 
 ## Content Organization
 1. Installation and setup fundamentals

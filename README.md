@@ -29,6 +29,14 @@ This Slidev presentation covers:
 - Real-world examples from Anthropic teams
 - Best practices for enterprise development
 
+## 📐 Presentation Design
+
+This course follows modern presentation principles:
+- **Anti "bullet-riddled corpse"** - Multiple focused slides instead of dense bullet lists
+- **One concept per slide** - Clear, digestible content structure
+- **Professional layout** - Clean, readable design optimized for corporate training
+- **110+ slides** - Comprehensive coverage with manageable slide density
+
 ## 🎨 Theme
 
 This presentation uses the [Seriph theme](https://github.com/slidevjs/themes/tree/main/packages/theme-seriph) for a clean, professional look.
