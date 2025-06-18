@@ -266,11 +266,11 @@ claude
 
 </div>
 
-<div class="mt-8 p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
+<div class="mt-6 p-4 bg-green-50 rounded-lg border-l-4 border-green-500 text-sm">
   <strong>🎯 Goal:</strong> Get comfortable with the basic Claude Code interface and see it analyze a real project
 </div>
 
-<div class="mt-4 p-4 bg-blue-100 rounded-lg border-l-4 border-blue-500">
+<div class="mt-3 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
   <strong>💡 Don't have a project handy?</strong> Try it in this presentation's directory - Claude Code can analyze any codebase!
 </div>
 
@@ -336,16 +336,16 @@ layout: default
 
 <v-click>
 
-<div class="mt-8 p-4 bg-yellow-100 rounded-lg border-l-4 border-yellow-500">
-  <strong>⚠️ Important:</strong> Opus 4 uses ~5x more credits than Sonnet 4. Rate limits are shared between Claude and Claude Code and reset every 5 hours.
+<div class="mt-6 p-3 bg-yellow-100 rounded-lg border-l-4 border-yellow-500 text-sm">
+  <strong>⚠️ Important:</strong> Opus 4 uses 5x more credits. Limits reset every 5 hours.
 </div>
 
 </v-click>
 
 <v-click>
 
-<div class="mt-4 p-4 bg-blue-100 rounded-lg border-l-4 border-blue-500">
-  <strong>💡 Pro Tip:</strong> Start with Pro plan to learn, then upgrade based on your usage patterns and project complexity
+<div class="mt-3 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
+  <strong>💡 Pro Tip:</strong> Start with Pro plan, then upgrade based on usage patterns and project complexity
 </div>
 
 </v-click>
@@ -499,12 +499,12 @@ layout: default
 
 </div>
 
-<div class="mt-8 p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
+<div class="mt-6 p-4 bg-green-50 rounded-lg border-l-4 border-green-500 text-sm">
   <strong>🎯 Goal:</strong> Experience Claude Code's ability to quickly understand and explain complex codebases
 </div>
 
-<div class="mt-4 p-4 bg-purple-100 rounded-lg border-l-4 border-purple-500">
-  <strong>⭐ Pro Tip:</strong> Start with high-level questions, then dive deeper into specific areas that interest you
+<div class="mt-3 p-3 bg-purple-100 rounded-lg border-l-4 border-purple-500 text-sm">
+  <strong>⭐ Pro Tip:</strong> Start with high-level questions, then dive deeper into specific areas
 </div>
 
 ---
@@ -722,6 +722,86 @@ layout: default
 layout: default
 ---
 
+# The EPCC Workflow: Explore → Plan → Code → Commit
+
+## A Systematic Approach to Development with Claude Code
+
+<div class="grid grid-cols-4 gap-3 mt-6">
+
+<div class="p-3 bg-blue-50 rounded-lg border-l-4 border-blue-400 text-sm">
+
+### 🔍 Explore
+<v-clicks>
+
+- Read relevant files
+- Understand structure
+- Identify patterns
+- Map architecture
+
+</v-clicks>
+
+</div>
+
+<div class="p-3 bg-purple-50 rounded-lg border-l-4 border-purple-400 text-sm">
+
+### 📋 Plan
+<v-clicks>
+
+- Define objectives
+- Break down tasks
+- Identify risks
+- Create strategy
+
+</v-clicks>
+
+</div>
+
+<div class="p-3 bg-green-50 rounded-lg border-l-4 border-green-400 text-sm">
+
+### 💻 Code
+<v-clicks>
+
+- Implement systematically
+- Follow patterns
+- Write tests first
+- Maintain quality
+
+</v-clicks>
+
+</div>
+
+<div class="p-3 bg-orange-50 rounded-lg border-l-4 border-orange-400 text-sm">
+
+### 📦 Commit
+<v-clicks>
+
+- Review changes
+- Generate messages
+- Document decisions
+- Create pull requests
+
+</v-clicks>
+
+</div>
+
+</div>
+
+<v-click>
+
+<div class="mt-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border-l-4 border-blue-500 text-sm">
+
+**🔑 Key Principle:** "Claude performs best when it has a clear target to iterate against"
+
+**Example:** Explore codebase → Plan OAuth2 addition → Implement security config → Commit with docs
+
+</div>
+
+</v-click>
+
+---
+layout: default
+---
+
 # ✅ Hands-On Exercise: Generate Tests
 
 ## Practice Test Creation with Claude Code
@@ -770,12 +850,12 @@ layout: default
 
 </div>
 
-<div class="mt-8 p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
-  <strong>🎯 Goal:</strong> Experience how Claude Code identifies edge cases and creates comprehensive test suites
+<div class="mt-6 p-4 bg-green-50 rounded-lg border-l-4 border-green-500 text-sm">
+  <strong>🎯 Goal:</strong> Experience edge case identification and comprehensive test suite creation
 </div>
 
-<div class="mt-4 p-4 bg-yellow-100 rounded-lg border-l-4 border-yellow-500">
-  <strong>💡 Bonus:</strong> Ask Claude to explain why it chose specific test cases - learn testing best practices!
+<div class="mt-3 p-3 bg-yellow-100 rounded-lg border-l-4 border-yellow-500 text-sm">
+  <strong>💡 Bonus:</strong> Ask Claude to explain its test case choices - learn best practices!
 </div>
 
 ---
@@ -939,23 +1019,43 @@ layout: default
 
 # Onboarding Acceleration
 
-<div class="mt-8 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border-l-4 border-blue-500">
+## Transforming New Developer Experience
 
-**From Inference Team:**
-- 📚 Codebase comprehension in **seconds** instead of asking colleagues
-- 🏗️ Find relevant files and understand architecture quickly
-- ⚡ Reduce onboarding time from **weeks to days**
+<div class="grid grid-cols-2 gap-8 mt-8">
+
+<div>
+
+### Real Impact from Inference Team
+
+<v-clicks>
+
+- 📚 **Codebase comprehension in seconds** instead of asking colleagues
+- 🏗️ **Find relevant files** and understand architecture quickly  
+- ⚡ **Reduce onboarding time** from weeks to days
+
+</v-clicks>
 
 </div>
 
-<div class="mt-8 text-center">
-<v-clicks>
+<div>
 
-- New team members become productive faster
-- Less interruption for senior developers
-- Self-service learning through AI assistance
+<v-click>
 
-</v-clicks>
+### Benefits for Everyone
+
+- **New team members** become productive faster
+- **Senior developers** experience less interruption
+- **Self-service learning** through AI assistance
+- **Consistent onboarding** across all projects
+
+</v-click>
+
+</div>
+
+</div>
+
+<div class="mt-8 p-4 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg border-l-4 border-green-500">
+  <strong>🚀 Result:</strong> Transform onboarding from a weeks-long process requiring constant mentorship to self-directed exploration in days
 </div>
 
 ---
@@ -1310,6 +1410,66 @@ layout: default
 layout: default
 ---
 
+# Mastering CLAUDE.md: Your AI Assistant's Knowledge Base
+
+## Creating Effective Project Guidelines
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+<v-clicks>
+
+- **Bash commands** - Document project-specific scripts and tools
+- **Code style guidelines** - Enforce team conventions automatically
+- **Testing preferences** - Specify frameworks, patterns, and coverage goals
+- **Architecture decisions** - Record design patterns and rationale
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Example CLAUDE.md
+
+```markdown
+# Project Development Guide
+
+## Build Commands
+- `./gradlew build` - Full build with tests
+- `./gradlew bootRun` - Start development server
+
+## Code Standards
+- Use Java 21 records for data classes
+- Prefer constructor injection in Spring
+- Write tests with @SpringBootTest for integration
+
+## Current Architecture
+- Clean Architecture pattern
+- Repository pattern for data access
+
+## Known Issues
+- UserService.findAll() has N+1 query problem
+- Need to migrate from deprecated @RequestMapping
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+<div class="mt-8 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
+  <strong>🧠 Pro Tip:</strong> Update CLAUDE.md as your project evolves - it becomes your team's institutional memory
+</div>
+
+---
+layout: default
+---
+
 # Advanced CLI Features
 
 ## Conversation Management
@@ -1355,7 +1515,7 @@ claude update
 
 </div>
 
-<div class="mt-8 p-4 bg-purple-100 rounded-lg border-l-4 border-purple-500">
+<div class="mt-6 p-3 bg-purple-100 rounded-lg border-l-4 border-purple-500 text-sm">
   <strong>🔧 Pro Tip:</strong> Use conversation continuity for complex, multi-step development tasks
 </div>
 
@@ -1423,6 +1583,76 @@ layout: default
 layout: default
 ---
 
+# Enhance Communication with Visual References
+
+## Using Screenshots and Mockups to Improve Claude's Understanding
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+<v-clicks>
+
+- **Error screenshots** - Paste IDE errors, browser console messages
+- **UI mockups** - Share design sketches, wireframes, prototypes
+- **Dashboard screenshots** - Debug system metrics and monitoring
+- **Architectural diagrams** - Upload system design drawings
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Enhanced Workflow Examples
+
+```bash
+# Screenshot-driven debugging:
+# 1. Take screenshot of error (Cmd+Shift+4)
+# 2. Paste into Claude Code (Ctrl+V)
+# 3. Ask for analysis
+
+"Analyze this Spring Boot error and suggest a fix"
+
+# UI implementation from mockup:
+# 1. Share design mockup
+# 2. Get implementation guidance
+
+"Create a React component matching this design"
+
+# Dashboard analysis:
+# 1. Screenshot monitoring dashboard
+# 2. Get diagnostic assistance
+
+"What does this Kubernetes dashboard tell us about the pod issues?"
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+<v-click>
+
+<div class="mt-8 p-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-lg border-l-4 border-orange-500">
+
+**🔍 Data Infrastructure Team Example:** Used dashboard screenshots to identify and resolve Kubernetes cluster issues in minutes instead of hours - Claude provided exact commands to fix pod IP exhaustion after analyzing visual metrics
+
+</div>
+
+</v-click>
+
+<div class="mt-4 p-4 bg-blue-100 rounded-lg border-l-4 border-blue-500">
+  <strong>🎯 Key Principle:</strong> "A picture is worth a thousand words" - Visual context dramatically improves Claude's problem-solving accuracy
+</div>
+
+---
+layout: default
+---
+
 # Advanced Features
 
 <div class="grid grid-cols-2 gap-8">
@@ -1479,9 +1709,112 @@ echo "# Project Guidelines
 layout: default
 ---
 
-# Custom Slash Commands
+# Supercharge Claude with Custom Bash Scripts
 
-## Creating Your Own Workflows
+## Integrating Powerful Automation
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+<v-clicks>
+
+- **Project-specific tools** - Custom build scripts, deployment helpers
+- **Development workflows** - Automated testing, linting, formatting
+- **Environment management** - Database setup, service orchestration
+- **Code analysis** - Custom metrics, quality checks, dependency audits
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Example Integration Scripts
+
+```bash
+#!/bin/bash
+# project-setup.sh - Environment initialization
+
+echo "Setting up Spring Boot development environment..."
+
+# Start required services
+docker-compose -f docker/dev-compose.yml up -d
+
+# Install dependencies and build
+./gradlew clean build -x test
+
+# Run database migrations
+./gradlew flywayMigrate
+
+# Generate test data
+./gradlew loadTestData
+
+echo "Development environment ready!"
+echo "Run './gradlew bootRun' to start the application"
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+---
+layout: default
+---
+
+# Claude Code Integration with Custom Scripts
+
+## Putting Your Automation to Work
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+### Benefits
+
+- **Seamless execution** - Claude runs your scripts directly
+- **Contextual understanding** - Explains what each script does
+- **Error handling** - Helps debug script failures
+- **Workflow automation** - Chains multiple scripts together
+- **Documentation integration** - Works with your CLAUDE.md files
+- **Team consistency** - Standardized automation across projects
+
+</div>
+
+<div>
+
+### Example Commands
+
+```bash
+"Run the project setup script"
+
+"Use our deployment script for staging"
+
+"Run the test suite with coverage"
+```
+
+**Common Use Cases:**
+- Environment setup automation
+- Deployment pipeline execution
+- Testing and quality checks
+
+</div>
+
+</div>
+
+<div class="mt-8 p-4 bg-blue-100 rounded-lg border-l-4 border-blue-500">
+  <strong>🔧 Pro Tip:</strong> Document your scripts in CLAUDE.md so Claude knows when and how to use them effectively
+</div>
+
+---
+layout: default
+---
+
+# Custom Slash Commands
 
 <div class="grid grid-cols-2 gap-8">
 
@@ -1515,16 +1848,18 @@ touch .claude/slash_commands/spring-service.md
 ```markdown
 # Create Spring Service
 
-Create a new Spring Boot service class with:
+Create a new Spring Boot service class named $ARGUMENTS with:
 - @Service annotation
-- Constructor injection
-- Basic CRUD operations
+- Constructor injection for $ARGUMENTS repository
+- Basic CRUD operations for $ARGUMENTS entity
 - Comprehensive logging
 - Exception handling
 - Unit tests with @MockBean
 
 Use modern Java features and follow Spring best practices.
 ```
+
+**Usage:** `/spring-service User` creates a UserService class
 
 </v-click>
 
@@ -1551,14 +1886,16 @@ layout: default
 ```markdown
 # Create Spring REST Controller
 
-Generate a REST controller with:
-- @RestController and @RequestMapping
+Generate a $ARGUMENTS REST controller with:
+- @RestController and @RequestMapping("/$ARGUMENTS")
 - CRUD endpoints (GET, POST, PUT, DELETE)
 - Proper HTTP status codes
-- Request/response DTOs
+- Request/response DTOs for $ARGUMENTS
 - Validation annotations
 - OpenAPI documentation
 - Integration tests
+
+**Usage:** `/spring-controller users` creates UsersController
 ```
 
 </v-click>
@@ -1590,7 +1927,17 @@ Update the selected code to use:
 
 </div>
 
-<v-click>
+---
+layout: default
+---
+
+# Security-Focused Slash Commands
+
+## Code Review and Security Analysis
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
 
 ### `/review-security`
 
@@ -1602,9 +1949,37 @@ Review code for security issues:
 - XSS prevention
 - Authentication/authorization flaws
 - Input validation gaps
+- Sensitive data exposure
+- Insecure cryptography
 ```
 
-</v-click>
+</div>
+
+<div>
+
+### `/security-audit`
+
+```markdown
+# Security Audit
+
+Perform comprehensive security analysis on $ARGUMENTS:
+- Authentication mechanisms
+- Authorization controls  
+- Data encryption practices
+- API security patterns
+- Dependency vulnerabilities
+- Configuration security
+```
+
+**Usage:** `/security-audit UserController` audits specific class
+
+</div>
+
+</div>
+
+<div class="mt-8 p-4 bg-red-100 rounded-lg border-l-4 border-red-500">
+  <strong>🔒 Security Focus:</strong> Use these commands regularly during code reviews and before production deployments
+</div>
 
 ---
 layout: default
@@ -1662,6 +2037,105 @@ layout: default
 
 <div class="mt-4 p-3 bg-purple-100 rounded-lg border-l-4 border-purple-500 text-sm">
   <strong>🔧 Security Engineering:</strong> Uses 50% of all custom slash commands across monorepo
+</div>
+
+---
+layout: default
+---
+
+# Advanced Automation: Beyond Code
+
+## Dynamic Documentation and Presentation Generation
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+<v-clicks>
+
+- **Auto-generated onboarding** - Convert codebase analysis to presentations
+- **Scripted reporting workflows** - Automated git analysis and summaries  
+- **Multi-modal outputs** - Text to slides, speech, documentation
+- **Team standardization** - Consistent onboarding across projects
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Slidev Integration Example
+
+```bash
+# Create dynamic onboarding slash command
+# .claude/slash_commands/onboard.md
+
+# Codebase Onboarding Generator
+1. Analyze project structure and key components
+2. Write findings to CODEBASE.md with architecture overview
+3. Convert analysis to PRESENTATION.md using Slidev format
+4. Include: setup instructions, key patterns, gotchas
+5. Run: npm run dev to view presentation
+
+Use professional tone, focus on practical insights.
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+---
+layout: default
+---
+
+# Automated Reporting with Claude Code
+
+## Weekly Summaries and Project Analysis
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+### Automated Weekly Reports
+
+```bash
+#!/bin/bash
+# weekly_summary.sh - Project analysis
+
+claude -p "Analyze last week's git changes. 
+Focus on most edited files, new features, 
+and technical decisions. Write results 
+to weekly_report.md as a narrative." \
+--allowedTools "Bash(git log:*)" \
+"Bash(git diff:*)" "Write"
+
+# Optional: Convert to presentation
+# slidev build weekly_report.md
+```
+
+</div>
+
+<div>
+
+### Other Automation Ideas
+
+- **Sprint retrospectives** - Analyze completed work and blockers
+- **Code quality reports** - Track technical debt and improvements  
+- **Dependency audits** - Monitor library updates and vulnerabilities
+- **Performance tracking** - Analyze build times and test execution
+- **Team productivity** - Summarize commits, PRs, and code reviews
+- **Documentation updates** - Auto-generate changelog entries
+
+</div>
+
+</div>
+
+<div class="mt-6 p-3 bg-gradient-to-r from-yellow-50 to-blue-50 rounded-lg border-l-4 border-yellow-500 text-sm">
+  <strong>⚠️ Security:</strong> Use specific `--allowedTools` instead of dangerous permissions | <strong>💰 Cost:</strong> Test on smaller projects first - large codebases consume significant tokens
 </div>
 
 ---
@@ -2032,6 +2506,78 @@ layout: default
 </div>
 
 ---
+layout: default
+---
+
+# Advanced: Multi-Claude Parallel Workflows
+
+## Scaling Development with Parallel AI Assistance
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+<v-clicks>
+
+- **Git worktrees** - Multiple Claude instances on different branches
+- **Parallel feature development** - Simultaneous work on independent features
+- **Team coordination** - Shared Claude.md files and conventions
+- **Distributed debugging** - Multiple Claude instances analyzing different system components
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Practical Implementation
+
+```bash
+# Setup parallel workspaces
+git worktree add ../project-feature-auth feature/oauth2
+git worktree add ../project-feature-api feature/api-v2
+git worktree add ../project-hotfix hotfix/security-patch
+
+# Terminal 1: OAuth2 feature
+cd ../project-feature-auth
+claude "Implement OAuth2 integration with Spring Security"
+
+# Terminal 2: API development
+cd ../project-feature-api
+claude "Design and implement REST API v2 with OpenAPI docs"
+
+# Terminal 3: Security hotfix
+cd ../project-hotfix
+claude "Fix the authentication bypass vulnerability"
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+<v-click>
+
+<div class="mt-8 p-6 bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg border-l-4 border-purple-500">
+
+**🔧 Advanced Team Strategy:**
+- **Shared CLAUDE.md** templates ensure consistency across all parallel work
+- **Branch-specific instructions** guide Claude toward feature-appropriate solutions
+- **Merge coordination** with Claude helping resolve conflicts between parallel streams
+- **Quality gates** where Claude reviews and validates integration points
+
+</div>
+
+</v-click>
+
+<div class="mt-4 p-3 bg-yellow-100 rounded-lg border-l-4 border-yellow-500 text-sm">
+  <strong>⚠️ Resource Note:</strong> Multiple Claude instances consume rate limits faster - consider higher-tier plans
+</div>
+
+---
 layout: center
 class: text-center
 ---
@@ -2312,6 +2858,78 @@ layoutClass: gap-16
 layout: default
 ---
 
+# The Power of Iteration
+
+## Mastering the Iterative Development Process
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+<v-clicks>
+
+- **Start with broad questions** - Get the big picture first
+- **Refine incrementally** - Add details and constraints progressively  
+- **Use visual references** - Screenshots, mockups, diagrams for clarity
+- **Course-correct immediately** - Don't let Claude go down wrong paths
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Effective Iteration Examples
+
+```bash
+# Iteration 1: Broad exploration
+"Analyze this Spring Boot application structure"
+
+# Iteration 2: Focused investigation  
+"Focus on the security configuration - what authentication method is used?"
+
+# Iteration 3: Specific improvement
+"Update the security config to use JWT tokens with proper validation"
+
+# Iteration 4: Quality enhancement
+"Add comprehensive tests for the JWT token validation logic"
+
+# Iteration 5: Documentation
+"Document the JWT implementation in the README and add setup instructions"
+```
+
+</v-click>
+
+</div>
+
+</div>
+
+<v-click>
+
+<div class="mt-8 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border-l-4 border-blue-500">
+
+**🔑 Key Insight:** "Claude performs best when it has a clear target to iterate against"
+
+**Success Pattern:**
+1. **Provide context** through visuals, examples, or detailed descriptions
+2. **Guide progressively** with specific, actionable feedback
+3. **Correct course early** when Claude heads in the wrong direction
+4. **Build on successes** by iterating on what works well
+
+</div>
+
+</v-click>
+
+<div class="mt-3 p-3 bg-yellow-100 rounded-lg border-l-4 border-yellow-500 text-sm">
+  <strong>⚡ Pro Tip:</strong> Think of Claude as a collaborative partner - provide feedback like you would to a skilled teammate
+</div>
+
+---
+layout: default
+---
+
 # Cost Optimization Strategies
 
 <div class="grid grid-cols-2 gap-8">
@@ -2435,7 +3053,7 @@ layout: default
 
 </div>
 
-<div class="mt-8 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border-l-4 border-blue-500">
+<div class="mt-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border-l-4 border-blue-500 text-sm">
   <strong>🚀 Vision:</strong> Claude Code as a fundamental part of the development lifecycle, not just a helper tool
 </div>
 
@@ -2607,7 +3225,7 @@ layout: default
 
 # Contact Info & Resources
 
-<div class="grid grid-cols-2 gap-12 items-start">
+<div class="grid grid-cols-2 gap-12 items-start text-left">
 
 <div>
 
@@ -2655,7 +3273,9 @@ class: text-center
 
 <div class="mt-12 space-y-4">
 
-**📚 Documentation:** [docs.anthropic.com](https://docs.anthropic.com/en/docs/claude-code/overview)
+**📚 Official Documentation:** [docs.anthropic.com](https://docs.anthropic.com/en/docs/claude-code/overview)
+
+**🏆 Best Practices Guide:** [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)
 
 **📧 Ken Kousen:** ken.kousen@kousenit.com
 
