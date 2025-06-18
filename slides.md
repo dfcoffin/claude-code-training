@@ -340,12 +340,24 @@ layout: default
 
 # What is Claude Code?
 
+<div class="grid grid-cols-2 gap-12">
+
+<div>
+
 ## Agentic Coding Assistant
 
 - **Command-line AI tool** that works directly in your development environment
 - **Context-aware** - understands your entire codebase
 - **Autonomous capabilities** - can work independently or collaboratively
 - **Multi-language support** - Java, Python, JavaScript, and more
+
+</div>
+
+<div class="text-center">
+  <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop" class="rounded-lg shadow-lg"/>
+</div>
+
+</div>
 
 ---
 layout: default
@@ -449,6 +461,10 @@ layout: default
 </div>
 
 <div>
+
+<div class="text-center mb-4">
+  <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop" class="rounded-lg shadow-lg"/>
+</div>
 
 <div class="mt-4 p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
   <strong>🎯 Goal:</strong> Master the day-to-day development capabilities that transform your workflow
@@ -711,6 +727,10 @@ layout: default
 ---
 
 # Testing & Quality Assurance
+
+<div class="text-center mb-6">
+  <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&h=200&fit=crop" class="rounded-lg shadow-lg mx-auto" style="height: 150px; object-fit: cover;"/>
+</div>
 
 <div class="grid grid-cols-2 gap-8">
 
@@ -1286,6 +1306,10 @@ layout: default
 
 <div>
 
+<div class="text-center mb-4">
+  <img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=400&h=300&fit=crop" class="rounded-lg shadow-lg"/>
+</div>
+
 <div class="mt-4 p-6 bg-purple-50 rounded-lg border-l-4 border-purple-500">
   <strong>🎯 Goal:</strong> Leverage advanced capabilities for enterprise development at scale
 </div>
@@ -1364,6 +1388,10 @@ layout: default
 
 # Model Context Protocol (MCP)
 
+<div class="grid grid-cols-2 gap-12">
+
+<div>
+
 ## Extending Claude Code Capabilities
 
 - **Standard protocol** - Connect AI to external systems
@@ -1375,8 +1403,16 @@ layout: default
   <strong>💡 Think of MCP as:</strong> Plugins that give Claude Code superpowers to integrate with your existing tools and workflows
 </div>
 
-<div class="mt-3 p-3 bg-red-100 rounded-lg border-l-4 border-red-500 text-sm">
-  <strong>🔒 Security Note:</strong> Use MCP servers instead of CLI for sensitive data access
+</div>
+
+<div class="text-center">
+  <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop" class="rounded-lg shadow-lg mb-4"/>
+  
+  <div class="p-3 bg-red-100 rounded-lg border-l-4 border-red-500 text-sm">
+    <strong>🔒 Security Note:</strong> Use MCP servers instead of CLI for sensitive data access
+  </div>
+</div>
+
 </div>
 
 ---
@@ -3219,6 +3255,10 @@ layout: default
 
 <div>
 
+<div class="text-center mb-4">
+  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" class="rounded-lg shadow-lg"/>
+</div>
+
 <div class="mt-4 p-6 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
   <strong>🎯 Goal:</strong> Apply learning to real enterprise scenarios and scale adoption
 </div>
@@ -3300,6 +3340,10 @@ layout: default
 ---
 
 # Real-World Success Stories
+
+<div class="text-center mb-6">
+  <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&h=200&fit=crop" class="rounded-lg shadow-lg mx-auto" style="height: 150px; object-fit: cover;"/>
+</div>
 
 ## Product Development & Data Science 
 
