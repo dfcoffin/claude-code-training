@@ -368,24 +368,6 @@ graph TD
 Spring Boot applications • Complex enterprise codebases • API development • Microservices architectures • Testing workflows
 
 ---
-layout: center
-class: text-center
----
-
-# 📚 Section 2: Claude Code Fundamentals
-
-## Understanding the Tool and Its Capabilities
-
-- What Claude Code is and how it works
-- Pricing and value proposition  
-- Core development features
-- Basic interface and operation modes
-
-<div class="mt-8 p-4 bg-blue-50 rounded-lg">
-  <strong>🎯 Goal:</strong> Establish foundation knowledge before hands-on practice
-</div>
-
----
 layout: default
 ---
 
@@ -442,22 +424,38 @@ layout: default
 </div>
 
 ---
-layout: center
-class: text-center
+layout: default
 ---
 
-# 🛠️ Section 3: Core Development Features
+<div class="text-center mb-8">
+
+# 🛠️ Section 2: Core Development Features
 
 ## Essential Claude Code Workflows
 
+</div>
+
+<div class="grid grid-cols-2 gap-12">
+
+<div>
+
+### What We'll Cover
 - Code exploration and understanding
 - File editing and refactoring
 - Testing and quality assurance
 - Git operations and debugging
 - Documentation generation
 
-<div class="mt-8 p-4 bg-green-50 rounded-lg">
-  <strong>🎯 Goal:</strong> Master the day-to-day development capabilities
+</div>
+
+<div>
+
+<div class="mt-4 p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
+  <strong>🎯 Goal:</strong> Master the day-to-day development capabilities that transform your workflow
+</div>
+
+</div>
+
 </div>
 
 ---
@@ -472,14 +470,10 @@ layout: default
 
 <div>
 
-<v-clicks>
-
 - **Intelligent search** - Find files, functions, patterns
 - **Architecture overview** - Understand system structure
 - **Dependency mapping** - Trace relationships
 - **Pattern recognition** - Identify common frameworks
-
-</v-clicks>
 
 </div>
 
@@ -1266,22 +1260,38 @@ layout: default
 </div>
 
 ---
-layout: center
-class: text-center
+layout: default
 ---
 
-# 🚀 Section 4: Advanced Interface & Features
+<div class="text-center mb-8">
+
+# 🚀 Section 3: Advanced Interface & Features
 
 ## Mastering Claude Code's Full Potential
 
+</div>
+
+<div class="grid grid-cols-2 gap-12">
+
+<div>
+
+### Advanced Capabilities
 - Operation modes and interfaces
 - Model Context Protocol (MCP)
 - Plan Mode for complex changes
 - Memory management and context
 - Custom commands and automation
 
-<div class="mt-8 p-4 bg-purple-50 rounded-lg">
-  <strong>🎯 Goal:</strong> Leverage advanced capabilities for enterprise development
+</div>
+
+<div>
+
+<div class="mt-4 p-6 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+  <strong>🎯 Goal:</strong> Leverage advanced capabilities for enterprise development at scale
+</div>
+
+</div>
+
 </div>
 
 ---
@@ -3183,22 +3193,38 @@ layout: default
 </v-click>
 
 ---
-layout: center
-class: text-center
+layout: default
 ---
 
-# 🎯 Section 5: Best Practices & Success
+<div class="text-center mb-8">
+
+# 🎯 Section 4: Best Practices & Success
 
 ## Enterprise Implementation Strategies
 
+</div>
+
+<div class="grid grid-cols-2 gap-12">
+
+<div>
+
+### Implementation Focus
 - Development best practices and workflows
 - Session management and optimization
 - Real-world success stories
 - Strategic integration approaches
 - Future developments and trends
 
-<div class="mt-8 p-4 bg-yellow-50 rounded-lg">
-  <strong>🎯 Goal:</strong> Apply learning to real enterprise scenarios
+</div>
+
+<div>
+
+<div class="mt-4 p-6 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+  <strong>🎯 Goal:</strong> Apply learning to real enterprise scenarios and scale adoption
+</div>
+
+</div>
+
 </div>
 
 ---
@@ -3379,22 +3405,38 @@ layout: default
 </v-click>
 
 ---
-layout: center
-class: text-center
+layout: default
 ---
 
-# 🎓 Section 6: Course Conclusion
+<div class="text-center mb-8">
+
+# 🎓 Section 5: Course Conclusion
 
 ## Key Takeaways and Next Steps
 
+</div>
+
+<div class="grid grid-cols-2 gap-12">
+
+<div>
+
+### Wrap-Up Focus
 - Core concepts and transformative benefits
 - Technical excellence principles
 - Strategic integration approaches
 - Resources and continued learning
 - Your journey forward with Claude Code
 
-<div class="mt-8 p-4 bg-green-50 rounded-lg">
-  <strong>🎯 Goal:</strong> Consolidate learning and plan implementation
+</div>
+
+<div>
+
+<div class="mt-4 p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
+  <strong>🎯 Goal:</strong> Consolidate learning and plan your implementation strategy
+</div>
+
+</div>
+
 </div>
 
 ---
