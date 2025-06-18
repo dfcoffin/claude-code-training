@@ -19,10 +19,13 @@ A comprehensive training presentation on using Claude Code for professional soft
 ## 📖 About This Course
 
 This Slidev presentation covers:
-- Claude Code fundamentals and installation
+- Claude Code fundamentals, Plan Mode, and SDKs
+- Remote MCP server integration and OAuth authentication
 - Code navigation and understanding techniques
 - Testing strategies and documentation generation
+- Visual debugging with screenshots and mockups
 - Git operations and debugging workflows
+- Multi-Claude parallel workflows for teams
 - Real-world examples from Anthropic teams
 - Best practices for enterprise development
 
@@ -46,6 +49,9 @@ This presentation uses the [Seriph theme](https://github.com/slidevjs/themes/tre
 
 - [Slidev Documentation](https://sli.dev/)
 - [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code/overview)
+- [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)
+- [Remote MCP Announcement](https://www.anthropic.com/news/claude-code-remote-mcp)
+- [Claude Code SDKs](https://docs.anthropic.com/en/docs/claude-code/sdk)
 - [Markdown Syntax](https://sli.dev/guide/syntax.html)
 
 ## 👤 Author

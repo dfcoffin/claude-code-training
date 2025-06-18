@@ -1248,6 +1248,16 @@ layoutClass: gap-16
 
 </v-clicks>
 
+## Plan Mode
+<v-clicks>
+
+- Press `Shift+Tab+Tab`
+- Review implementation plans first
+- Approve before execution
+- Perfect for complex changes
+
+</v-clicks>
+
 ::right::
 
 ## Key Features
@@ -1263,6 +1273,54 @@ layoutClass: gap-16
 
 <div class="mt-8 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
   <strong>📝 From Anthropic teams:</strong> "Claude Code becomes a primary tool, open 80% of the time alongside your IDE"
+</div>
+
+---
+layout: default
+---
+
+# Plan Mode: Review Before Execute
+
+## Strategic Implementation Planning
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+### How to Activate
+
+<v-clicks>
+
+- **Press `Shift+Tab+Tab`** in any conversation
+- Claude presents implementation plan
+- **Review the strategy** before any code changes
+- **Approve or modify** the approach
+- **Execute with confidence**
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Perfect For
+
+- **Complex refactoring** across multiple files
+- **Architecture changes** requiring coordination
+- **Security-sensitive** modifications  
+- **Learning scenarios** where you want to understand the approach
+- **Team reviews** of implementation strategies
+
+</v-click>
+
+</div>
+
+</div>
+
+<div class="mt-6 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
+  <strong>🚀 NEW FEATURE:</strong> Plan Mode bridges autonomous execution and manual oversight - perfect for enterprise development
 </div>
 
 ---
@@ -2043,6 +2101,53 @@ layout: default
 layout: default
 ---
 
+# Claude Code SDKs: Programmatic Integration
+
+## Building Custom AI-Powered Development Tools
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+### Available SDKs
+
+<v-clicks>
+
+- **TypeScript SDK** - Node.js and web apps
+- **Python SDK** - Data science and automation
+- **CLI integration** - Subprocess scripting
+- **Cross-platform** - Windows, macOS, Linux
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-click>
+
+### Key Capabilities
+
+- **Multi-turn conversations** - Maintain context
+- **Custom system prompts** - Define AI behavior
+- **MCP integration** - Connect external tools
+- **Streaming responses** - Real-time output
+- **Tool permissions** - Fine-grained control
+
+</v-click>
+
+</div>
+
+</div>
+
+<div class="mt-6 p-4 bg-purple-100 rounded-lg border-l-4 border-purple-500 text-sm">
+  <strong>🚀 SDK Power:</strong> Transform Claude Code from CLI tool into programmable AI assistant for custom workflows
+</div>
+
+---
+layout: default
+---
+
 # Advanced Automation: Beyond Code
 
 ## Dynamic Documentation and Presentation Generation
@@ -2194,18 +2299,20 @@ layout: default
 
 # Setting Up MCP Servers
 
-## Configuration with `claude mcp`
+## Local and Remote Configuration Options
 
 <div class="grid grid-cols-2 gap-8">
 
 <div>
 
+### Local MCP Servers
+
 <v-clicks>
 
-- **Interactive setup** - `claude mcp` guides you through configuration
-- **Pre-built servers** - Choose from available MCP servers
-- **Custom servers** - Add your own MCP implementations
-- **Easy management** - Enable/disable servers as needed
+- **`claude mcp`** - Interactive local setup
+- **Self-hosted control** - Full configuration access
+- **Custom implementations** - Build your own servers
+- **Development testing** - Perfect for experimentation
 
 </v-clicks>
 
@@ -2213,32 +2320,39 @@ layout: default
 
 <div>
 
+### Remote MCP Servers
+
+<v-clicks>
+
+- **Cloud-hosted services** - Vendor-managed infrastructure
+- **OAuth authentication** - Enterprise-secure connections
+- **Zero maintenance** - No updates or scaling needed
+- **SaaS integrations** - Direct tool connections
+
+</v-clicks>
+
+</div>
+
+</div>
+
 <v-click>
 
-### Setup Process
+### Setup Examples
 
 ```bash
-# Configure MCP servers
-claude mcp
+# Local setup
+claude mcp  # Configure local servers
 
-# Follow interactive prompts to:
-# 1. Select available servers
-# 2. Configure connection details
-# 3. Test connections
-# 4. Enable for Claude Code
-
-# Servers are stored in:
-# ~/.config/claude/mcp_servers.json
+# Remote services (OAuth-enabled)
+# Connect to Sentry, Linear, GitHub Enterprise
+# Authentication handled via secure OAuth flow
+# No local server management required
 ```
 
 </v-click>
 
-</div>
-
-</div>
-
-<div class="mt-8 p-4 bg-blue-100 rounded-lg border-l-4 border-blue-500">
-  <strong>💡 Pro Tip:</strong> Start with GitHub or file system MCP servers for immediate productivity gains
+<div class="mt-6 p-4 bg-green-100 rounded-lg border-l-4 border-green-500 text-sm">
+  <strong>🚀 NEW:</strong> Remote MCP servers eliminate local setup complexity while providing enterprise-grade security
 </div>
 
 ---
@@ -2247,7 +2361,7 @@ layout: default
 
 # Available MCP Servers
 
-## Popular Server Types
+## Local and Remote Server Options
 
 <div class="grid grid-cols-2 gap-8">
 
@@ -2258,10 +2372,10 @@ layout: default
 <v-clicks>
 
 - **GitHub** - Repository management, issues, PRs
-- **File System** - Enhanced file operations
+- **Sentry** - Error tracking and debugging context
+- **Linear** - Project management and issue tracking
+- **File System** - Enhanced local file operations
 - **Database** - Query and schema operations
-- **Docker** - Container management
-- **Kubernetes** - Cluster operations
 
 </v-clicks>
 
@@ -2269,15 +2383,15 @@ layout: default
 
 <div>
 
-### Data & Analytics
+### Enterprise & SaaS
 
 <v-clicks>
 
 - **Slack** - Team communication integration
 - **Google Drive** - Document access
 - **Notion** - Knowledge base integration
-- **Postgres** - Database queries
-- **Memory** - Persistent storage across sessions
+- **Docker** - Container management
+- **Kubernetes** - Cluster operations
 
 </v-clicks>
 
@@ -2287,14 +2401,19 @@ layout: default
 
 <v-click>
 
-## Security Considerations
+## Security & Authentication
 
-<div class="mt-6 p-6 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+<div class="mt-6 grid grid-cols-2 gap-6">
 
-- **Controlled access** - MCP servers provide sandboxed tool access
-- **Credential management** - Secure API key handling
-- **Audit trails** - Track what actions Claude performs
-- **Permission boundaries** - Limit scope of operations
+<div class="p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
+<strong>OAuth Integration</strong><br>
+Secure enterprise authentication for remote servers
+</div>
+
+<div class="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+<strong>Vendor-Managed</strong><br>
+Zero-maintenance remote infrastructure
+</div>
 
 </div>
 
@@ -2306,21 +2425,21 @@ layout: default
 
 # MCP in Practice
 
-## Real-World Workflows
+## Real-World Workflows with Remote Integration
 
 <div class="grid grid-cols-2 gap-8">
 
 <div>
 
-### Development Workflow
+### Enhanced Development Workflow
 
 <v-clicks>
 
-1. **Code analysis** via File System MCP
-2. **Issue tracking** through GitHub MCP
-3. **Database queries** with Postgres MCP
-4. **Documentation updates** using GitHub MCP
-5. **Team communication** via Slack MCP
+1. **Error tracking** via Sentry MCP integration
+2. **Issue management** through Linear MCP
+3. **Code analysis** with GitHub MCP
+4. **Team coordination** via Slack MCP
+5. **Documentation sync** across all tools
 
 </v-clicks>
 
@@ -2333,17 +2452,17 @@ layout: default
 ### Example Commands
 
 ```bash
+# Using Linear MCP
+"Show me high-priority issues assigned to my team
+and create a work plan"
+
+# Using Sentry MCP  
+"Analyze recent errors in production
+and suggest fixes based on stack traces"
+
 # Using GitHub MCP
-"Create an issue for the authentication bug 
-and assign it to the security team"
-
-# Using Database MCP
-"Show me all users created in the last week
-and their activity patterns"
-
-# Using File System MCP
-"Find all TODO comments in the codebase
-and create GitHub issues for them"
+"Review this PR and check if it addresses
+the Linear issue requirements"
 ```
 
 </v-click>
@@ -2352,8 +2471,16 @@ and create GitHub issues for them"
 
 </div>
 
-<div class="mt-8 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
-  <strong>🚀 Impact:</strong> MCP servers transform Claude Code from a code assistant to a complete development ecosystem integrator
+<v-click>
+
+<div class="mt-6 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border-l-4 border-blue-500">
+<strong>💡 Linear Example:</strong> "Linear's MCP integration brings Linear projects and issues directly into Claude Code... Fewer tabs, less copy-paste. Better software, faster." - Tom Moor, Linear
+</div>
+
+</v-click>
+
+<div class="mt-4 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
+  <strong>🚀 Impact:</strong> Remote MCP transforms Claude Code into a unified development hub that eliminates context switching
 </div>
 
 ---
@@ -2578,8 +2705,7 @@ claude "Fix the authentication bypass vulnerability"
 </div>
 
 ---
-layout: center
-class: text-center
+layout: default
 ---
 
 # Hands-On Exercise Overview
@@ -2807,29 +2933,38 @@ layoutClass: gap-16
 
 # Maintaining Control
 
-## Auto-Accept vs. Supervised Mode
+## Three Levels of AI Autonomy
 
-### Auto-Accept Mode
+### Supervised Mode (Default)
 
 <v-clicks>
 
-- Peripheral features
-- Prototyping
-- Documentation tasks
-- Test generation
-- Routine refactoring
+- Review each change individually
+- Core business logic
+- Security-critical code
+- Learning and exploration
 
 </v-clicks>
 
-### Supervised Mode
+### Plan Mode (`Shift+Tab+Tab`)
 
 <v-clicks>
 
-- Core business logic
-- Security-critical code
-- Complex integrations
-- Architecture decisions
-- Performance-critical paths
+- Review implementation plans first
+- Complex multi-file changes
+- Architecture modifications
+- Strategic refactoring
+
+</v-clicks>
+
+### Auto-Accept Mode (`Shift+Tab`)
+
+<v-clicks>
+
+- Minimal supervision
+- Prototyping and experimentation
+- Documentation and tests
+- Routine tasks
 
 </v-clicks>
 
@@ -2850,7 +2985,11 @@ layoutClass: gap-16
 
 </v-click>
 
-<div class="mt-6 p-4 bg-yellow-100 rounded-lg border-l-4 border-yellow-500">
+<div class="mt-4 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
+  <strong>🚀 NEW Plan Mode:</strong> Use `Shift+Tab+Tab` to review implementation strategies before execution - perfect for complex changes
+</div>
+
+<div class="mt-3 p-3 bg-yellow-100 rounded-lg border-l-4 border-yellow-500 text-sm">
   <strong>📊 Rule of Thumb:</strong> Claude works on first attempt about one-third of the time - plan accordingly
 </div>
 
@@ -3276,6 +3415,10 @@ class: text-center
 **📚 Official Documentation:** [docs.anthropic.com](https://docs.anthropic.com/en/docs/claude-code/overview)
 
 **🏆 Best Practices Guide:** [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)
+
+**🚀 Remote MCP Announcement:** [Claude Code Remote MCP](https://www.anthropic.com/news/claude-code-remote-mcp)
+
+**⚙️ SDK Documentation:** [Claude Code SDKs](https://docs.anthropic.com/en/docs/claude-code/sdk)
 
 **📧 Ken Kousen:** ken.kousen@kousenit.com
 
