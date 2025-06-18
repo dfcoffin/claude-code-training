@@ -48,12 +48,12 @@ layout: default
 
 <div class="mt-8">
 
-- **President of Kousen IT, Inc.** - Training and consulting
+- **President of [Kousen IT, Inc.](https://kousenit.com)** - Training and consulting
 - **Author of multiple books** including *Modern Java Recipes*, *Mockito Made Clear*, and *Help Your Boss Help You*
 - **Java Champion**
 - **Expert in:** Java, Spring, Gradle, Groovy, Kotlin, and AI/ML
 - **International speaker** at conferences worldwide
-- **Computer Science professor** at Trinity College, Hartford, CT
+- **Computer Science professor** at [Trinity College](https://trincoll.edu), Hartford, CT
 - **30+ years** of enterprise software development
 - **Trainer and consultant** for Fortune 500 companies
 
@@ -78,21 +78,16 @@ layout: default
 - **Claude Code fundamentals** - Installation, setup, and core concepts
 - **Codebase navigation** - Intelligent search and understanding
 - **Testing strategies** - Automated test generation and debugging
-
-</div>
-
-<div>
-
 - **Git operations** - Streamlined version control workflows  
 - **Documentation** - Professional docs and comments
 - **Complex debugging** - Advanced troubleshooting techniques
 
 </div>
 
+<div class="text-center">
+  <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=400&h=300&fit=crop" class="rounded-lg shadow-lg"/>
 </div>
 
-<div class="text-center mt-12">
-  <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=400&h=300&fit=crop" class="rounded-lg shadow-lg"/>
 </div>
 
 ---
@@ -428,7 +423,13 @@ layout: default
 - **Autonomous capabilities** - can work independently or collaboratively
 - **Multi-language support** - Java, Python, JavaScript, and more
 
-### Key Capabilities
+---
+layout: default
+---
+
+# What is Claude Code?-2
+
+## Key Capabilities
 ```mermaid
 graph TD
     A[Claude Code] --> B[Code Generation]
@@ -439,7 +440,7 @@ graph TD
     A --> G[Codebase Exploration]
 ```
 
-### Perfect For
+## Perfect For
 Spring Boot applications • Complex enterprise codebases • API development • Microservices architectures • Testing workflows
 
 ---
