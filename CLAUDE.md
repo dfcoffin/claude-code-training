@@ -16,6 +16,14 @@ This is a comprehensive Slidev presentation for Claude Code training, targeting 
 - Maintain professional tone suitable for corporate training
 - Keep slides concise and readable (avoid text overflow)
 
+## Slide Design Principles
+- **Avoid "Bullet-riddled corpse" anti-pattern** - Never create slides dense with bullet points
+- **Many slides with few lines** - Prefer multiple focused slides over cramped multi-column layouts
+- **One concept per slide** - Each slide should cover a single, clear idea
+- **Minimize cognitive load** - Audience should grasp content at a glance
+- **Progressive disclosure** - Break complex topics into logical slide sequences
+- **White space is valuable** - Don't feel compelled to fill every slide completely
+
 ## Current Architecture
 - Built with Slidev framework using Seriph theme
 - Main content in slides.md with 95+ slides
