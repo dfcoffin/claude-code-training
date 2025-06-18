@@ -338,82 +338,6 @@ claude
 layout: default
 ---
 
-# 💰 Claude Code Pricing & Plans
-
-## Understanding Your Options
-
-<div class="grid grid-cols-3 gap-6 mt-8">
-
-<div class="p-6 bg-blue-50 rounded-lg border-2 border-blue-200">
-
-### Pro Plan
-**$20/month**
-
-<v-clicks>
-
-- **~10-40 prompts** per 5 hours
-- **Sonnet 4 only**
-- Best for small repos (<1,000 lines)
-- Light development work
-
-</v-clicks>
-
-</div>
-
-<div class="p-6 bg-purple-50 rounded-lg border-2 border-purple-200">
-
-### Max Plan - 5x
-**$100/month**
-
-<v-clicks>
-
-- **~50-200 prompts** per 5 hours
-- **Sonnet or Opus 4**
-- Medium to large repos
-- Regular development work
-
-</v-clicks>
-
-</div>
-
-<div class="p-6 bg-green-50 rounded-lg border-2 border-green-200">
-
-### Max Plan - 20x
-**$200/month**
-
-<v-clicks>
-
-- **~200-800 prompts** per 5 hours
-- **Sonnet or Opus 4**
-- Large enterprise repos
-- Heavy development work
-
-</v-clicks>
-
-</div>
-
-</div>
-
-<v-click>
-
-<div class="mt-6 p-3 bg-yellow-100 rounded-lg border-l-4 border-yellow-500 text-sm">
-  <strong>⚠️ Important:</strong> Opus 4 uses 5x more credits. Limits reset every 5 hours.
-</div>
-
-</v-click>
-
-<v-click>
-
-<div class="mt-3 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
-  <strong>💡 Pro Tip:</strong> Start with Pro plan, then upgrade based on usage patterns and project complexity
-</div>
-
-</v-click>
-
----
-layout: default
----
-
 # What is Claude Code?
 
 ## Agentic Coding Assistant
@@ -442,6 +366,99 @@ graph TD
 
 ## Perfect For
 Spring Boot applications • Complex enterprise codebases • API development • Microservices architectures • Testing workflows
+
+---
+layout: center
+class: text-center
+---
+
+# 📚 Section 2: Claude Code Fundamentals
+
+## Understanding the Tool and Its Capabilities
+
+- What Claude Code is and how it works
+- Pricing and value proposition  
+- Core development features
+- Basic interface and operation modes
+
+<div class="mt-8 p-4 bg-blue-50 rounded-lg">
+  <strong>🎯 Goal:</strong> Establish foundation knowledge before hands-on practice
+</div>
+
+---
+layout: default
+---
+
+# 💰 Claude Code Pricing & Plans
+
+## Understanding Your Options
+
+<div class="grid grid-cols-3 gap-6 mt-8">
+
+<div class="p-6 bg-blue-50 rounded-lg border-2 border-blue-200">
+
+### Pro Plan
+**$20/month**
+
+- **~10-40 prompts** per 5 hours
+- **Sonnet 4 only**
+- Best for small repos (<1,000 lines)
+- Light development work
+
+</div>
+
+<div class="p-6 bg-purple-50 rounded-lg border-2 border-purple-200">
+
+### Max Plan - 5x
+**$100/month**
+
+- **~50-200 prompts** per 5 hours
+- **Sonnet or Opus 4**
+- Medium to large repos
+- Regular development work
+
+</div>
+
+<div class="p-6 bg-green-50 rounded-lg border-2 border-green-200">
+
+### Max Plan - 20x
+**$200/month**
+
+- **~200-800 prompts** per 5 hours
+- **Sonnet or Opus 4**
+- Large enterprise repos
+- Heavy development work
+
+</div>
+
+</div>
+
+<div class="mt-6 p-3 bg-yellow-100 rounded-lg border-l-4 border-yellow-500 text-sm">
+  <strong>⚠️ Important:</strong> Opus 4 uses 5x more credits. Limits reset every 5 hours.
+</div>
+
+<div class="mt-3 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
+  <strong>💡 Pro Tip:</strong> Start with Pro plan, then upgrade based on usage patterns and project complexity
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+# 🛠️ Section 3: Core Development Features
+
+## Essential Claude Code Workflows
+
+- Code exploration and understanding
+- File editing and refactoring
+- Testing and quality assurance
+- Git operations and debugging
+- Documentation generation
+
+<div class="mt-8 p-4 bg-green-50 rounded-lg">
+  <strong>🎯 Goal:</strong> Master the day-to-day development capabilities
+</div>
 
 ---
 layout: default
@@ -1249,17 +1266,68 @@ layout: default
 </div>
 
 ---
+layout: center
+class: text-center
+---
+
+# 🚀 Section 4: Advanced Interface & Features
+
+## Mastering Claude Code's Full Potential
+
+- Operation modes and interfaces
+- Model Context Protocol (MCP)
+- Plan Mode for complex changes
+- Memory management and context
+- Custom commands and automation
+
+<div class="mt-8 p-4 bg-purple-50 rounded-lg">
+  <strong>🎯 Goal:</strong> Leverage advanced capabilities for enterprise development
+</div>
+
+---
 layout: default
 ---
 
 # Understanding the Interface
 
-## Command Mode
+## Three Operation Modes
 
-- **Interactive chat interface** - Natural language conversation
-- **Context-aware responses** - Understands your project
-- **File system access** - Can read and modify files
-- **Git integration** - Handles version control
+<div class="grid grid-cols-3 gap-8 mt-8">
+
+<div class="p-4 bg-blue-50 rounded-lg border-2 border-blue-200">
+
+### Command Mode
+**Default interactive mode**
+- Natural language conversation
+- Context-aware responses
+- File system access
+- Git integration
+
+</div>
+
+<div class="p-4 bg-purple-50 rounded-lg border-2 border-purple-200">
+
+### Auto-Accept Mode
+**Press `Shift+Tab`**
+- Autonomous execution
+- Minimal supervision
+- Great for prototyping
+- Faster development
+
+</div>
+
+<div class="p-4 bg-green-50 rounded-lg border-2 border-green-200">
+
+### Plan Mode
+**Press `Shift+Tab+Tab`**
+- Strategic planning first
+- Review before execution
+- Perfect for complex changes
+- Enterprise-safe
+
+</div>
+
+</div>
 
 ---
 layout: default
@@ -1267,41 +1335,38 @@ layout: default
 
 # Understanding the Interface-2
 
-## Auto-Accept Mode
-
-- **Press `Shift+Tab`** - Activate autonomous mode
-- **Autonomous execution** - Runs without constant approval
-- **Minimal supervision** - Claude works independently
-- **Great for prototyping** - Rapid development cycles
-
----
-layout: default
----
-
-# Understanding the Interface-3
-
-## Plan Mode
-
-- **Press `Shift+Tab+Tab`** - Strategic implementation planning
-- **Review implementation plans first** - See the approach before coding
-- **Approve before execution** - You control when code changes
-- **Perfect for complex changes** - Ideal for major refactoring
-
----
-layout: default
----
-
-# Understanding the Interface-4
-
-## Key Features
+## Core Capabilities
 
 - **Project memory** - Remembers context across sessions
 - **File awareness** - Knows your entire codebase structure
 - **Smart suggestions** - Contextual recommendations based on patterns
 - **Error handling** - Explains issues and provides fixes
+- **Multi-language support** - Works with any programming language
+- **Enterprise integration** - Scales for team and organizational use
 
 <div class="mt-8 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
   <strong>📝 From Anthropic teams:</strong> "Claude Code becomes a primary tool, open 80% of the time alongside your IDE"
+</div>
+
+---
+layout: default
+---
+
+# Model Context Protocol (MCP)
+
+## Extending Claude Code Capabilities
+
+- **Standard protocol** - Connect AI to external systems
+- **Tool integration** - Access APIs, databases, services  
+- **Context enhancement** - Provide relevant data to AI
+- **Security controls** - Manage access and permissions
+
+<div class="mt-6 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
+  <strong>💡 Think of MCP as:</strong> Plugins that give Claude Code superpowers to integrate with your existing tools and workflows
+</div>
+
+<div class="mt-3 p-3 bg-red-100 rounded-lg border-l-4 border-red-500 text-sm">
+  <strong>🔒 Security Note:</strong> Use MCP servers instead of CLI for sensitive data access
 </div>
 
 ---
@@ -2244,24 +2309,7 @@ to weekly_report.md as a narrative." \
 layout: default
 ---
 
-# Model Context Protocol (MCP)
-
-## What is MCP?
-
-- **Standard protocol** - Connect AI to external systems
-- **Tool integration** - Access APIs, databases, services
-- **Context enhancement** - Provide relevant data to AI
-- **Security controls** - Manage access and permissions
-
-<div class="mt-4 p-3 bg-red-100 rounded-lg border-l-4 border-red-500 text-sm">
-  <strong>🔒 Security Note:</strong> Use MCP servers instead of CLI for sensitive data
-</div>
-
----
-layout: default
----
-
-# Model Context Protocol (MCP)-2
+# MCP Server Examples
 
 ## GitHub MCP Server
 
@@ -2274,7 +2322,7 @@ layout: default
 layout: default
 ---
 
-# Model Context Protocol (MCP)-3
+# MCP Server Examples-2
 
 ## Osquery MCP Server
 
@@ -3135,6 +3183,25 @@ layout: default
 </v-click>
 
 ---
+layout: center
+class: text-center
+---
+
+# 🎯 Section 5: Best Practices & Success
+
+## Enterprise Implementation Strategies
+
+- Development best practices and workflows
+- Session management and optimization
+- Real-world success stories
+- Strategic integration approaches
+- Future developments and trends
+
+<div class="mt-8 p-4 bg-yellow-50 rounded-lg">
+  <strong>🎯 Goal:</strong> Apply learning to real enterprise scenarios
+</div>
+
+---
 layout: default
 ---
 
@@ -3310,6 +3377,25 @@ layout: default
 </div>
 
 </v-click>
+
+---
+layout: center
+class: text-center
+---
+
+# 🎓 Section 6: Course Conclusion
+
+## Key Takeaways and Next Steps
+
+- Core concepts and transformative benefits
+- Technical excellence principles
+- Strategic integration approaches
+- Resources and continued learning
+- Your journey forward with Claude Code
+
+<div class="mt-8 p-4 bg-green-50 rounded-lg">
+  <strong>🎯 Goal:</strong> Consolidate learning and plan implementation
+</div>
 
 ---
 layout: default
