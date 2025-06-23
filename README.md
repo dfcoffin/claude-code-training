@@ -70,9 +70,10 @@ This presentation uses the [Seriph theme](https://github.com/slidevjs/themes/tre
 ## 📝 Course Content
 
 - **Main presentation**: [slides.md](./slides.md) - Core concepts and theory
-- **Hands-on labs**: [labs.md](./labs.md) - Progressive practical exercises
+- **Hands-on labs**: [labs.md](./labs.md) - Progressive practical exercises  
 - **Exercise projects**: [exercises/](./exercises/) - Real codebases for practice
 - **Project guidelines**: [CLAUDE.md](./CLAUDE.md) - Development standards and philosophy
+- **License**: [LICENSE](./LICENSE) - MIT License for open use
 
 ## 🛠️ Available Scripts
 
