@@ -55,18 +55,6 @@ exercises/
 
 **5-hour professional development workshop** designed for enterprise teams and individual developers who want to master Claude Code for real-world software development.
 
-## 📐 Presentation Design
-
-This course follows modern presentation principles:
-- **Anti "bullet-riddled corpse"** - Multiple focused slides instead of dense bullet lists
-- **One concept per slide** - Clear, digestible content structure
-- **Professional layout** - Clean, readable design optimized for corporate training
-- **110+ slides** - Comprehensive coverage with manageable slide density
-
-## 🎨 Theme
-
-This presentation uses the [Seriph theme](https://github.com/slidevjs/themes/tree/main/packages/theme-seriph) for a clean, professional look.
-
 ## 📝 Course Content
 
 - **Main presentation**: [slides.md](./slides.md) - Core concepts and theory
