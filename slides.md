@@ -2443,6 +2443,62 @@ claude mcp  # Configure local servers
 layout: default
 ---
 
+# Docker MCP Gateway
+
+## Enable MCP Tools in Docker Desktop
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+### Simple Setup Process
+
+1. **Open Docker Desktop** → MCP Toolkit (Beta)
+2. **Browse available servers** in Servers tab
+3. **Select clients** in Clients tab (Claude Desktop shown)
+4. **Copy the command** for other MCP clients
+
+<v-click>
+
+```bash
+# Add Docker's MCP gateway to Claude Code
+claude mcp add docker-mcp docker mcp gateway run
+```
+
+</v-click>
+
+<div class="mt-4 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
+  <strong>💡 Note:</strong> Docker Desktop shows Claude Desktop, Continue.dev, Cursor, and Gordon as available clients
+</div>
+
+</div>
+
+<div>
+
+### What You Get
+
+<v-clicks>
+
+- **All Docker MCP tools** available immediately
+- **Container management** directly from Claude Code
+- **Database connections** through Docker containers
+- **Development environments** with zero setup
+- **Enterprise tools** via containerized services
+
+</v-clicks>
+
+<div class="mt-4 p-3 bg-green-100 rounded-lg border-l-4 border-green-500 text-sm">
+  <strong>✅ Result:</strong> One command bridges Docker's entire MCP ecosystem into Claude Code
+</div>
+
+</div>
+
+</div>
+
+---
+layout: default
+---
+
 # Development MCP Servers
 
 ## Core Development Tools
