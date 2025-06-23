@@ -15,6 +15,7 @@ This is a comprehensive Slidev presentation for Claude Code training, targeting 
 - Include real-world use cases from Anthropic teams
 - Maintain professional tone suitable for corporate training
 - Keep slides concise and readable (avoid text overflow)
+- **Developer-to-developer approach** - Course is by developers for developers, avoid marketing/sales content
 
 ## Slide Design Principles
 - **Avoid "Bullet-riddled corpse" anti-pattern** - Never create slides dense with bullet points
@@ -35,13 +36,16 @@ This is a comprehensive Slidev presentation for Claude Code training, targeting 
 - **Major refactoring** - Split dense slides to follow "many slides with few lines" principle
 - **Eliminated bullet-riddled corpse** - Converted 12+ problematic slides into focused, digestible content
 - **Improved layouts** - Fixed column layouts and centering issues for better readability
+- **Separated exercises from main presentation** - Created dedicated labs.md for hands-on practice
+- **Added exercise projects** - Real-world codebases in exercises/ directory for practical training
 - Added Plan Mode functionality (Shift+Tab+Tab activation)
 - Enhanced MCP section with remote server capabilities
 - Added Claude Code SDKs for programmatic integration
 - Updated with latest Anthropic best practices
+- Removed marketing-focused content in favor of developer-to-developer approach
 
 ## Refactoring Completed
-- Course Overview → 3 focused slides (What You'll Learn, Course Structure, Why This Course Works)
+- Course Overview → 2 focused slides (What You'll Learn, Course Structure)
 - Understanding the Interface → 4 slides (Command Mode, Auto-Accept, Plan Mode, Key Features)
 - Plan Mode → 2 slides (How to Activate, Perfect For)
 - File Editing & Refactoring → 3 slides (Core Capabilities, Java Modernization, Spring Updates)
@@ -54,11 +58,26 @@ This is a comprehensive Slidev presentation for Claude Code training, targeting 
 - Key Takeaways → 3 slides (Transform Process, Technical Excellence, Strategic Integration)
 
 ## Content Organization
+
+### Main Presentation (slides.md)
 1. Installation and setup fundamentals
 2. Core Claude Code features and interfaces  
 3. Advanced capabilities (Plan Mode, MCP, SDKs)
 4. Best practices and enterprise workflows
-5. Hands-on exercises and real-world examples
+5. Real-world success stories and case studies
+
+### Hands-On Labs (labs.md)
+1. Lab 1: First Steps (5 minutes)
+2. Lab 2: Code Exploration (10 minutes)
+3. Lab 3: Test Generation (15 minutes)
+4. Lab 4: Documentation Creation (15 minutes)
+5. Lab 5: Legacy Code Refactoring (15 minutes)
+6. Lab 6: Documentation Generation (15 minutes)
+
+### Exercise Projects (exercises/)
+- **Python**: weather-app (Flask), flask-api (refactoring practice)
+- **JavaScript**: lyrics-trainer (TypeScript web app)
+- **Java**: certificate-service (Spring Boot PDF), shopping-service (REST API)
 
 ## Presentation Delivery Notes
 - 5-hour course format with hands-on exercises

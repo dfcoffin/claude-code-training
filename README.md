@@ -1,6 +1,6 @@
 # Claude Code Training Course
 
-A comprehensive training presentation on using Claude Code for professional software development, with a focus on Java and Spring Boot projects.
+A comprehensive training presentation and hands-on lab exercises for using Claude Code in professional software development, with a focus on Java and Spring Boot projects.
 
 ## 🚀 Quick Start
 
@@ -16,9 +16,10 @@ A comprehensive training presentation on using Claude Code for professional soft
 
 3. Open your browser at <http://localhost:3030>
 
-## 📖 About This Course
+## 📁 Course Structure
 
-This Slidev presentation covers:
+### Main Presentation (`slides.md`)
+Core concepts and theory covering:
 - Claude Code fundamentals, Plan Mode, and SDKs
 - Remote MCP server integration and OAuth authentication
 - Code navigation and understanding techniques
@@ -28,6 +29,31 @@ This Slidev presentation covers:
 - Multi-Claude parallel workflows for teams
 - Real-world examples from Anthropic teams
 - Best practices for enterprise development
+
+### Hands-On Labs (`labs.md`)
+Progressive exercises including:
+- **Lab 1**: First Steps (5 minutes)
+- **Lab 2**: Code Exploration (10 minutes)
+- **Lab 3**: Test Generation (15 minutes)
+- **Lab 4**: Documentation Creation (15 minutes)
+- **Lab 5**: Legacy Code Refactoring (15 minutes)
+- **Lab 6**: Documentation Generation (15 minutes)
+
+### Exercise Projects (`exercises/`)
+Real-world codebases for hands-on practice:
+```
+exercises/
+├── python/
+│   ├── weather-app/        # Python Flask weather application
+│   └── flask-api/          # Flask API example for refactoring
+├── javascript/
+│   └── lyrics-trainer/     # JavaScript/TypeScript web application
+└── java/
+    ├── certificate-service/ # Spring Boot PDF generation service
+    └── shopping-service/    # Spring Boot REST API application
+```
+
+**5-hour professional development workshop** designed for enterprise teams and individual developers who want to master Claude Code for real-world software development.
 
 ## 📐 Presentation Design
 
@@ -41,11 +67,12 @@ This course follows modern presentation principles:
 
 This presentation uses the [Seriph theme](https://github.com/slidevjs/themes/tree/main/packages/theme-seriph) for a clean, professional look.
 
-## 📝 Editing
+## 📝 Course Content
 
-- Main content: Edit [slides.md](./slides.md)
-- Additional slides: See [pages/imported-slides.md](./pages/imported-slides.md)
-- Components: Check [components/](./components/) directory
+- **Main presentation**: [slides.md](./slides.md) - Core concepts and theory
+- **Hands-on labs**: [labs.md](./labs.md) - Progressive practical exercises
+- **Exercise projects**: [exercises/](./exercises/) - Real codebases for practice
+- **Project guidelines**: [CLAUDE.md](./CLAUDE.md) - Development standards and philosophy
 
 ## 🛠️ Available Scripts
 

@@ -130,55 +130,6 @@ Production code from enterprise projects
 layout: default
 ---
 
-# Why This Course Works
-
-## Proven in Production
-
-<div class="grid grid-cols-3 gap-6 mt-8">
-
-<div class="text-center p-6 bg-green-50 rounded-lg">
-
-### ✅ Real Experience
-**Based on actual enterprise development**
-
-</div>
-
-<div class="text-center p-6 bg-blue-50 rounded-lg">
-
-### ✅ Spring Focus
-**Production Java/Spring Boot projects**
-
-</div>
-
-<div class="text-center p-6 bg-purple-50 rounded-lg">
-
-### ✅ Team Insights
-**Anthropic engineering workflows**
-
-</div>
-
-</div>
-
-<div class="mt-12 p-6 bg-yellow-50 rounded-lg border-l-4 border-yellow-500 text-center">
-  <strong>🚀 Ready to transform your development workflow?</strong>
-</div>
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
----
-layout: default
----
-
 # Installation & Setup
 
 ## Installation Methods
@@ -234,7 +185,7 @@ layout: default
 
 ```bash {1-2|4-5|7-8|all}
 # Navigate to your project
-cd /path/to/your/spring-boot-project
+cd /path/to/your/project
 
 # Start Claude Code
 claude
@@ -280,58 +231,24 @@ layout: default
 
 # 🚀 First Hands-On Exercise
 
-## Get Claude Code Running in Your Project
+## Time for Practice
 
-**Time: 5 minutes**
-
-<div class="grid grid-cols-2 gap-8 mt-6">
-
-<div>
-
-### Your Tasks
-
-<v-clicks>
-
-1. **Navigate to any code project** on your machine
-2. **Start Claude Code** with `claude`
-3. **Ask it to explore** the project structure
-4. **Try a simple request** like "explain this codebase"
-
-</v-clicks>
-
-</div>
-
-<div>
+<div class="text-center mt-12">
 
 <v-click>
 
-### Example Commands
-
-```bash
-# Navigate to your project
-cd ~/my-spring-project
-
-# Start Claude Code
-claude
-
-# Try these prompts:
-"Give me an overview of this project"
-"What files are most important here?"
-"Explain the main entry point"
-```
+### Exercise details available in separate labs.md presentation
 
 </v-click>
 
+<v-click>
+
+<div class="mt-8 p-6 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+  <strong>🎯 Goal:</strong> Get comfortable with the basic Claude Code interface and analyze real projects
 </div>
 
-</div>
+</v-click>
 
-<div class="mt-6 p-4 bg-green-50 rounded-lg border-l-4 border-green-500 text-sm">
-  <strong>🎯 Goal:</strong> Get comfortable with the basic Claude Code interface and see it analyze a real project
-</div>
-
-<div class="mt-3 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
-  <strong>💡 Don't have a project handy?</strong> Try it in this presentation's directory - Claude Code can analyze any codebase!
 </div>
 
 ---
@@ -525,55 +442,22 @@ layout: default
 
 ## Practice Code Search & Understanding
 
-**Time: 10 minutes**
-
-<div class="grid grid-cols-2 gap-8 mt-6">
-
-<div>
-
-### Your Mission
-
-<v-clicks>
-
-1. **Choose a project** (Spring Boot, Node.js, Python, etc.)
-2. **Ask Claude to map the architecture**
-3. **Find specific components** (controllers, services, etc.)
-4. **Trace execution flows**
-
-</v-clicks>
-
-</div>
-
-<div>
+<div class="text-center mt-12">
 
 <v-click>
 
-### Try These Prompts
-
-```bash
-"What's the overall architecture of this project?"
-
-"Find all the REST endpoints in this codebase"
-
-"Show me how data flows from API to database"
-
-"What design patterns are used here?"
-
-"Identify the main configuration files"
-```
+### Hands-on practice continues in the lab exercises
 
 </v-click>
 
-</div>
+<v-click>
 
-</div>
-
-<div class="mt-6 p-4 bg-green-50 rounded-lg border-l-4 border-green-500 text-sm">
+<div class="mt-8 p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
   <strong>🎯 Goal:</strong> Experience Claude Code's ability to quickly understand and explain complex codebases
 </div>
 
-<div class="mt-3 p-3 bg-purple-100 rounded-lg border-l-4 border-purple-500 text-sm">
-  <strong>⭐ Pro Tip:</strong> Start with high-level questions, then dive deeper into specific areas
+</v-click>
+
 </div>
 
 ---
@@ -864,56 +748,22 @@ layout: default
 
 ## Practice Test Creation with Claude Code
 
-**Time: 15 minutes**
-
-<div class="grid grid-cols-2 gap-8 mt-6">
-
-<div>
-
-### Your Challenge
-
-<v-clicks>
-
-1. **Pick a class or function** in your project
-2. **Ask Claude to generate unit tests**
-3. **Request edge case tests**
-4. **Add integration tests**
-5. **Review and run the tests**
-
-</v-clicks>
-
-</div>
-
-<div>
+<div class="text-center mt-12">
 
 <v-click>
 
-### Example Prompts
-
-```bash
-"Create comprehensive unit tests for this UserService class"
-
-"Add edge case tests for null inputs and empty strings"
-
-"Generate integration tests for the REST API endpoints"
-
-"Create mock objects for the database dependencies"
-
-"Add performance tests for this method"
-```
+### Exercise details available in separate labs.md presentation
 
 </v-click>
 
-</div>
+<v-click>
 
-</div>
-
-<div class="mt-6 p-4 bg-green-50 rounded-lg border-l-4 border-green-500 text-sm">
+<div class="mt-8 p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
   <strong>🎯 Goal:</strong> Experience edge case identification and comprehensive test suite creation
 </div>
 
-<div class="mt-3 p-3 bg-yellow-100 rounded-lg border-l-4 border-yellow-500 text-sm">
-  <strong>💡 Bonus:</strong> Ask Claude to explain its test case choices - learn best practices!
+</v-click>
+
 </div>
 
 ---
@@ -1175,58 +1025,22 @@ layout: default
 
 ## Practice Documentation Generation
 
-**Time: 15 minutes**
-
-<div class="grid grid-cols-2 gap-8 mt-6">
-
-<div>
-
-### Documentation Challenge
-
-<v-clicks>
-
-1. **Choose an undocumented project** or component
-2. **Generate a README.md** file
-3. **Add inline code comments**
-4. **Create API documentation**
-5. **Write setup instructions**
-
-</v-clicks>
-
-</div>
-
-<div>
+<div class="text-center mt-12">
 
 <v-click>
 
-### Powerful Prompts
-
-```bash
-"Create a comprehensive README for this project"
-
-"Add detailed comments to this complex method"
-
-"Generate API documentation for these endpoints"
-
-"Write installation and setup instructions"
-
-"Create a troubleshooting guide for common issues"
-
-"Document the architecture and design decisions"
-```
+### Hands-on practice continues in the lab exercises
 
 </v-click>
 
-</div>
-
-</div>
+<v-click>
 
 <div class="mt-8 p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
   <strong>🎯 Goal:</strong> Transform an undocumented project into professional, well-documented code
 </div>
 
-<div class="mt-4 p-4 bg-indigo-100 rounded-lg border-l-4 border-indigo-500">
-  <strong>⭐ Pro Tip:</strong> Ask Claude to follow your organization's documentation standards or create a CLAUDE.md file with documentation guidelines
+</v-click>
+
 </div>
 
 ---
@@ -2643,147 +2457,24 @@ layout: default
 
 # Practice Projects
 
-## Public GitHub Repositories for Experimentation
+## Available in Lab Exercises
 
-<div class="grid grid-cols-2 gap-8">
-
-<div>
-
-### 🔍 Analysis Example
-**Flask Example** - *See Claude Code's analysis in action*
+<div class="text-center mt-12">
 
 <v-click>
 
-**Repository:** https://github.com/XD-DENG/flask-example
-
-**Great for:**
-- Quick issue identification
-- Security problem detection
-- Code quality analysis
-- Best practice validation
-
-**Perfect for:** Seeing Claude Code analysis in action
+### Detailed project guides and repositories available in labs.md presentation
 
 </v-click>
-
-</div>
-
-<div>
-
-### 🌱 Beginner Project
-**Python Weather App** - *Solid foundation with room for growth*
 
 <v-click>
 
-**Repository:** https://github.com/rachanahegde/python-weather-app
-
-**Great for:**
-- Clear structure
-- Working functionality
-- Room for improvements
-- Beginner-friendly
-
-**Perfect for:** Adding tests, docs, modern Python
+<div class="mt-8 p-6 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+  <strong>🎯 Advantage:</strong> Real projects with guided exercises for hands-on learning
+</div>
 
 </v-click>
 
-</div>
-
-</div>
-
-<v-click>
-
-### 🌐 API Testing Resource
-**JSONPlaceholder** - *Free REST API for testing*
-
-**URL:** https://jsonplaceholder.typicode.com/
-
-**Great for:**
-- Building API clients
-- Integration testing
-- Error handling
-- Async operations
-
-**Perfect for:** API client generation and HTTP request handling
-
-</v-click>
-
-<div class="mt-6 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
-  <strong>💡 Exercise Ideas:</strong> Clone for analysis, build API clients, add tests, improve docs
-</div>
-
----
-layout: default
----
-
-# Ken's Projects for Practice
-
-<div class="grid grid-cols-3 gap-6 mt-6">
-
-<div>
-
-### 🎵 Lyrics Trainer
-<p class="text-sm">JavaScript/TypeScript Web App</p>
-
-<v-click>
-
-**Repo:** kousen/lyrics_trainer
-
-**Tech:**
-- Modern JS/TypeScript
-- Web APIs & DOM
-- Client-side architecture
-
-**Practice:** Frontend dev, API integration
-
-</v-click>
-
-</div>
-
-<div>
-
-### 📜 Certificate Service
-<p class="text-sm">Spring Boot PDF Generator</p>
-
-<v-click>
-
-**Repo:** kousen/certificate-service
-
-**Tech:**
-- Spring Boot
-- PDF generation
-- Heroku deployment
-
-**Practice:** Backend services, cloud deployment
-
-</v-click>
-
-</div>
-
-<div>
-
-### 🛒 Shopping Service
-<p class="text-sm">Spring Boot RESTful Teaching App</p>
-
-<v-click>
-
-**Repo:** kousen/shopping_v3
-
-**Tech:**
-- Spring Boot 3.x
-- RESTful architecture
-- Teaching-focused
-
-**Practice:** REST APIs, Spring patterns
-
-</v-click>
-
-</div>
-
-</div>
-
-<div class="mt-6 p-3 bg-green-100 rounded-lg border-l-4 border-green-500 text-sm">
-  <strong>🎯 Advantage:</strong> These are Ken's real projects - ask him about architecture decisions during training!
 </div>
 
 ---
@@ -2864,48 +2555,26 @@ layout: default
 
 # Hands-On Exercise Overview
 
-<div class="grid grid-cols-2 gap-12 mt-8">
+## Structured Practice Sessions
 
-<div>
-
-## Refactoring Legacy Code
-
-<v-clicks>
-
-- Modernize Java syntax
-- Update Spring configurations
-- Improve error handling
-- Add comprehensive tests
-
-</v-clicks>
-
-</div>
-
-<div>
-
-## Documentation Creation
-
-<v-clicks>
-
-- Generate README files
-- Create API documentation
-- Add inline comments
-- Write setup guides
-
-</v-clicks>
-
-</div>
-
-</div>
+<div class="text-center mt-12">
 
 <v-click>
 
-<div class="mt-12 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border-2 border-dashed border-blue-300">
-  <h3 class="text-xl font-bold text-blue-800">🚀 Coming Up: Live Exercises</h3>
-  <p class="text-blue-600 mt-2">We'll work through real examples from Spring AI and MCP projects</p>
+### Complete exercise walkthrough available in labs.md presentation
+
+</v-click>
+
+<v-click>
+
+<div class="mt-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border-2 border-dashed border-blue-300">
+  <h3 class="text-xl font-bold text-blue-800">🚀 Coming Up: Live Practice</h3>
+  <p class="text-blue-600 mt-2">Work through real examples from Spring AI and MCP projects</p>
 </div>
 
 </v-click>
+
+</div>
 
 ---
 layout: default
@@ -2913,57 +2582,24 @@ layout: default
 
 # Exercise 1: Legacy Code Refactoring
 
-## Scenario
-You have a Spring Boot service using older Java patterns. Use Claude Code to modernize it.
+## Hands-On Modernization Practice
 
-<div class="grid grid-cols-2 gap-8 mt-6">
-
-<div>
-
-## Tasks
-
-<v-clicks>
-
-1. **Convert classes to records** where appropriate
-2. **Add virtual thread support** for I/O operations
-3. **Update to modern Spring patterns**
-4. **Add comprehensive error handling**
-5. **Generate missing tests**
-
-</v-clicks>
-
-</div>
-
-<div>
+<div class="text-center mt-12">
 
 <v-click>
 
-### Example Starting Point
-
-```java
-public class UserService {
-    private final UserRepository repository;
-    
-    public UserService(UserRepository repository) {
-        this.repository = repository;
-    }
-    
-    public User findUser(String id) {
-        return repository.findById(id).orElse(null);
-    }
-}
-```
+### Full exercise details and code examples available in labs.md presentation
 
 </v-click>
 
+<v-click>
+
+<div class="mt-8 p-6 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+  <strong>🎯 Goal:</strong> Modernize Spring Boot services with Claude Code assistance
 </div>
 
-</div>
+</v-click>
 
-<div class="mt-6 flex justify-center">
-  <div class="px-6 py-3 bg-blue-500 text-white rounded-lg font-semibold">
-    ⏱️ Time: 15 minutes | 🎯 Goal: Modernize the service class completely
-  </div>
 </div>
 
 ---
@@ -2972,54 +2608,24 @@ layout: default
 
 # Exercise 2: Documentation Generation
 
-## Scenario
-Create comprehensive documentation for an undocumented Spring AI integration.
+## Professional Documentation Practice
 
-<div class="grid grid-cols-2 gap-8 mt-6">
-
-<div>
-
-## Tasks
-
-<v-clicks>
-
-1. **Generate README.md** with setup instructions
-2. **Create API documentation** for REST endpoints
-3. **Add inline comments** to complex methods
-4. **Write configuration guide** for environment variables
-
-</v-clicks>
-
-</div>
-
-<div>
-
-### Follow This Pattern
+<div class="text-center mt-12">
 
 <v-click>
 
-**From your GitHub MCP Server documentation:**
+### Exercise details available in separate labs.md presentation
 
 </v-click>
 
-<v-clicks at="2">
+<v-click>
 
-- Clear overview and features
-- Step-by-step setup guide
-- Configuration examples
-- Usage examples with code
-- Troubleshooting section
-
-</v-clicks>
-
+<div class="mt-8 p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
+  <strong>🎯 Goal:</strong> Professional-quality documentation with Claude Code assistance
 </div>
 
-</div>
+</v-click>
 
-<div class="mt-6 flex justify-center">
-  <div class="px-6 py-3 bg-green-500 text-white rounded-lg font-semibold">
-    ⏱️ Time: 15 minutes | 🎯 Goal: Professional-quality documentation
-  </div>
 </div>
 
 ---
