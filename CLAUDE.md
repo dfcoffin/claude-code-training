@@ -36,12 +36,13 @@ This is a comprehensive Slidev presentation for Claude Code training, targeting 
 - **Major refactoring** - Split dense slides to follow "many slides with few lines" principle
 - **Eliminated bullet-riddled corpse** - Converted 12+ problematic slides into focused, digestible content
 - **Improved layouts** - Fixed column layouts and centering issues for better readability
+- **Comprehensive layout fixes** - Fixed slide dividers, progressive reveals, content overflow, and alignment issues
 - **Separated exercises from main presentation** - Created dedicated labs.md for hands-on practice
 - **Added exercise projects** - Real-world codebases in exercises/ directory for practical training
 - Added Plan Mode functionality (Shift+Tab+Tab activation)
-- Enhanced MCP section with remote server capabilities
-- Added Claude Code SDKs for programmatic integration
-- Updated with latest Anthropic best practices
+- Enhanced MCP section with remote server capabilities and OAuth authentication
+- Added Claude Code SDKs (TypeScript/Python) for programmatic integration
+- Updated with latest Claude Code 1.0+ features including Sonnet 4 model
 - Removed marketing-focused content in favor of developer-to-developer approach
 
 ## Refactoring Completed

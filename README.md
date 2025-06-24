@@ -76,6 +76,8 @@ exercises/
 - [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)
 - [Remote MCP Announcement](https://www.anthropic.com/news/claude-code-remote-mcp)
 - [Claude Code SDKs](https://docs.anthropic.com/en/docs/claude-code/sdk)
+- [TypeScript SDK](https://www.npmjs.com/package/@anthropic-ai/claude-code) - `npm install @anthropic-ai/claude-code`
+- [Python SDK](https://pypi.org/project/claude-code-sdk/) - `pip install claude-code-sdk`
 - [Markdown Syntax](https://sli.dev/guide/syntax.html)
 
 ## 👤 Author
