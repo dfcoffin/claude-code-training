@@ -42,6 +42,145 @@ mdc: true
 layout: default
 ---
 
+# What is Claude Code?
+
+<div class="grid grid-cols-2 gap-12">
+
+<div>
+
+## Agentic Coding Assistant
+
+- **Command-line AI tool** that works directly in your development environment
+- **Context-aware** - understands your entire codebase
+- **Autonomous capabilities** - can work independently or collaboratively
+- **Multi-language support** - Java, Python, JavaScript, and more
+
+</div>
+
+<div class="text-center">
+  <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop" class="rounded-lg shadow-lg"/>
+</div>
+
+</div>
+
+---
+layout: default
+---
+
+# Claude Code Key Capabilities
+
+## Key Capabilities
+```mermaid
+graph TD
+    A[Claude Code] --> B[Code Generation]
+    A --> C[Intelligent Debugging]
+    A --> D[Test Creation]
+    A --> E[Documentation]
+    A --> F[Git Operations]
+    A --> G[Codebase Exploration]
+```
+
+## Perfect For
+Spring Boot applications • Complex enterprise codebases • API development • Microservices architectures • Testing workflows
+
+---
+layout: default
+---
+
+# 💰 Claude Code Pricing & Plans
+
+## Understanding Your Options
+
+<div class="grid grid-cols-3 gap-6 mt-8">
+
+<div class="p-6 bg-blue-50 rounded-lg border-2 border-blue-200">
+
+### Pro Plan
+**$20/month**
+
+- **~10-40 prompts** per 5 hours
+- **Sonnet 4 only**
+- Best for small repos (<1,000 lines)
+- Light development work
+
+</div>
+
+<div class="p-6 bg-purple-50 rounded-lg border-2 border-purple-200">
+
+### Max Plan - 5x
+**$100/month**
+
+- **~50-200 prompts** per 5 hours
+- **Sonnet or Opus 4**
+- Medium to large repos
+- Regular development work
+
+</div>
+
+<div class="p-6 bg-green-50 rounded-lg border-2 border-green-200">
+
+### Max Plan - 20x
+**$200/month**
+
+- **~200-800 prompts** per 5 hours
+- **Sonnet or Opus 4**
+- Large enterprise repos
+- Heavy development work
+
+</div>
+
+</div>
+
+<div class="mt-6 p-3 bg-yellow-100 rounded-lg border-l-4 border-yellow-500 text-sm">
+  <strong>⚠️ Important:</strong> Opus 4 uses 5x more credits. Limits reset every 5 hours.
+</div>
+
+<div class="mt-3 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
+  <strong>💡 Pro Tip:</strong> Start with Pro plan, then upgrade based on usage patterns and project complexity
+</div>
+
+---
+layout: default
+---
+
+# AI Limitations & Hallucinations
+
+## Verify & validate all outputs
+
+- Claude Code can hallucinate: always check generated code
+- Use tests & type-checking to catch errors
+- Avoid trusting multi-step transformations blindly
+
+---
+layout: default
+---
+
+# Security & Data-Privacy Considerations
+
+## Protect your proprietary code & keys
+
+- Don’t share sensitive data in prompts
+- Rotate API keys & use secure storage
+- Understand data retention & privacy policy
+
+---
+layout: default
+---
+
+# Cost Monitoring & Quota Management
+
+## Budget & usage best practices
+
+- Track prompt counts & credits regularly
+- Optimize prompts: fewer tokens, concise context
+- Set alerts for high usage & upgrade tiers appropriately
+
+---
+layout: default
+---
+layout: default
+---
+
 # About Ken Kousen
 
 ## Author • Speaker • Developer
@@ -58,6 +197,10 @@ layout: default
 - **Trainer and consultant** for Fortune 500 companies
 
 </div>
+
+---
+layout: default
+---
 
 <div class="mt-12 p-6 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-center">
   <strong class="text-lg">🎯 Mission:</strong> Making technical concepts accessible and practical for real-world development teams
@@ -125,6 +268,14 @@ Production code from enterprise projects
 <div class="mt-8 p-6 bg-purple-50 rounded-lg border-l-4 border-purple-500">
   <strong>💡 Industry Best Practices:</strong> Based on proven workflows from Anthropic teams and Fortune 500 companies
 </div>
+
+---
+layout: default
+---
+
+# 🛫 Section 1: Getting Started & Overview
+
+## Install • CLI Basics • Introduction • First Hands‑On Exercise
 
 ---
 layout: default
@@ -217,6 +368,12 @@ claude "Help me understand this Spring application"
 <div class="text-center p-6 bg-blue-50 rounded-lg border-2 border-dashed border-blue-300">
   <h3 class="text-lg font-bold text-blue-800">🚀 Demo Time!</h3>
   <p class="text-blue-600">Let's see Claude Code in action with a Spring Boot project</p>
+  <ul class="text-blue-500 list-disc list-inside mt-4">
+    <li>Code navigation & exploration</li>
+    <li>Automated test generation</li>
+    <li>Code refactoring & modernization</li>
+    <li>Git commit & PR creation</li>
+  </ul>
 </div>
 
 </v-click>
@@ -251,110 +408,6 @@ layout: default
 
 </div>
 
----
-layout: default
----
-
-# What is Claude Code?
-
-<div class="grid grid-cols-2 gap-12">
-
-<div>
-
-## Agentic Coding Assistant
-
-- **Command-line AI tool** that works directly in your development environment
-- **Context-aware** - understands your entire codebase
-- **Autonomous capabilities** - can work independently or collaboratively
-- **Multi-language support** - Java, Python, JavaScript, and more
-
-</div>
-
-<div class="text-center">
-  <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop" class="rounded-lg shadow-lg"/>
-</div>
-
-</div>
-
----
-layout: default
----
-
-# What is Claude Code?-2
-
-## Key Capabilities
-```mermaid
-graph TD
-    A[Claude Code] --> B[Code Generation]
-    A --> C[Intelligent Debugging]
-    A --> D[Test Creation]
-    A --> E[Documentation]
-    A --> F[Git Operations]
-    A --> G[Codebase Exploration]
-```
-
-## Perfect For
-Spring Boot applications • Complex enterprise codebases • API development • Microservices architectures • Testing workflows
-
----
-layout: default
----
-
-# 💰 Claude Code Pricing & Plans
-
-## Understanding Your Options
-
-<div class="grid grid-cols-3 gap-6 mt-8">
-
-<div class="p-6 bg-blue-50 rounded-lg border-2 border-blue-200">
-
-### Pro Plan
-**$20/month**
-
-- **~10-40 prompts** per 5 hours
-- **Sonnet 4 only**
-- Best for small repos (<1,000 lines)
-- Light development work
-
-</div>
-
-<div class="p-6 bg-purple-50 rounded-lg border-2 border-purple-200">
-
-### Max Plan - 5x
-**$100/month**
-
-- **~50-200 prompts** per 5 hours
-- **Sonnet or Opus 4**
-- Medium to large repos
-- Regular development work
-
-</div>
-
-<div class="p-6 bg-green-50 rounded-lg border-2 border-green-200">
-
-### Max Plan - 20x
-**$200/month**
-
-- **~200-800 prompts** per 5 hours
-- **Sonnet or Opus 4**
-- Large enterprise repos
-- Heavy development work
-
-</div>
-
-</div>
-
-<div class="mt-6 p-3 bg-yellow-100 rounded-lg border-l-4 border-yellow-500 text-sm">
-  <strong>⚠️ Important:</strong> Opus 4 uses 5x more credits. Limits reset every 5 hours.
-</div>
-
-<div class="mt-3 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
-  <strong>💡 Pro Tip:</strong> Start with Pro plan, then upgrade based on usage patterns and project complexity
-</div>
-
----
-layout: default
----
 
 <div class="text-center mb-8">
 
@@ -548,7 +601,7 @@ layout: default
 layout: default
 ---
 
-# File Editing & Refactoring-2
+# Java Modernization
 
 ## Java Modernization
 
@@ -561,7 +614,7 @@ layout: default
 layout: default
 ---
 
-# File Editing & Refactoring-3
+# Spring Framework Updates
 
 ## Spring Framework Updates
 
@@ -3167,7 +3220,7 @@ layout: default
 layout: default
 ---
 
-# Key Takeaways-2
+# Technical Excellence
 
 ## Technical Excellence
 
@@ -3180,7 +3233,7 @@ layout: default
 layout: default
 ---
 
-# Key Takeaways-3
+# Strategic Integration
 
 <div class="text-left">
 
