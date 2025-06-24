@@ -413,7 +413,7 @@ layout: default
 
 # 🛠️ Section 2: Core Development Features
 
-## Essential Claude Code Workflows
+## What We’ll Cover
 
 </div>
 
