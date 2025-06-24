@@ -1884,14 +1884,15 @@ layout: default
 
 <v-click>
 
+
 ### Creating a Slash Command
 
 ```bash
-# Create .claude/slash_commands directory
-mkdir -p .claude/slash_commands
+# Create .claude/commands directory
+mkdir -p .claude/commands
 
 # Create a command file
-touch .claude/slash_commands/spring-service.md
+touch .claude/commands/spring-service.md
 ```
 
 ```markdown
@@ -2149,8 +2150,8 @@ layout: default
 ### Slidev Integration Example
 
 ```bash
-# Create dynamic onboarding slash command
-# .claude/slash_commands/onboard.md
+# Create dynamic onboarding command
+# .claude/commands/onboard.md
 
 # Codebase Onboarding Generator
 1. Analyze project structure and key components
