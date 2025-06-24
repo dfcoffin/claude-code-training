@@ -178,8 +178,6 @@ layout: default
 ---
 layout: default
 ---
-layout: default
----
 
 # About Ken Kousen
 
@@ -196,14 +194,6 @@ layout: default
 - **30+ years** of enterprise software development
 - **Trainer and consultant** for Fortune 500 companies
 
-</div>
-
----
-layout: default
----
-
-<div class="mt-12 p-6 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-center">
-  <strong class="text-lg">🎯 Mission:</strong> Making technical concepts accessible and practical for real-world development teams
 </div>
 
 ---
@@ -283,9 +273,11 @@ layout: default
 
 # Installation & Setup
 
+<v-click>
+
 ## Installation Methods
 
-```bash {all|1-2|4-5|all}
+```bash
 # Install via npm
 npm install -g @anthropic-ai/claude-code
 
@@ -293,13 +285,17 @@ npm install -g @anthropic-ai/claude-code
 # https://github.com/anthropic-ai/claude/releases
 ```
 
+</v-click>
+
 <div class="grid grid-cols-2 gap-8 mt-8">
+
+<v-click>
 
 <div>
 
 ## Authentication Setup
 
-```bash {1-2|4-5}
+```bash
 # Set your API key
 export ANTHROPIC_API_KEY="your-api-key-here"
 
@@ -308,6 +304,10 @@ claude auth login
 ```
 
 </div>
+
+</v-click>
+
+<v-click>
 
 <div>
 
@@ -319,6 +319,8 @@ claude --help
 ```
 
 </div>
+
+</v-click>
 
 </div>
 
@@ -334,7 +336,7 @@ layout: default
 
 ## Core Commands
 
-```bash {1-2|4-5|7-8|all}
+```bash
 # Navigate to your project
 cd /path/to/your/project
 
@@ -344,10 +346,6 @@ claude
 # Or start with specific instructions
 claude "Help me understand this Spring application"
 ```
-
-<div class="grid grid-cols-2 gap-8 mt-8">
-
-<div>
 
 ## Command Syntax
 
@@ -359,25 +357,24 @@ claude "Help me understand this Spring application"
 
 </v-clicks>
 
-</div>
+---
+layout: default
+---
 
-<div>
+# 🚀 Demo Time!
 
-<v-click>
+<div class="text-center mt-12">
 
-<div class="text-center p-6 bg-blue-50 rounded-lg border-2 border-dashed border-blue-300">
-  <h3 class="text-lg font-bold text-blue-800">🚀 Demo Time!</h3>
-  <p class="text-blue-600">Let's see Claude Code in action with a Spring Boot project</p>
-  <ul class="text-blue-500 list-disc list-inside mt-4">
-    <li>Code navigation & exploration</li>
-    <li>Automated test generation</li>
-    <li>Code refactoring & modernization</li>
-    <li>Git commit & PR creation</li>
-  </ul>
-</div>
-
-</v-click>
-
+<div class="p-6 bg-blue-50 rounded-lg border-2 border-dashed border-blue-300 max-w-2xl mx-auto">
+  <p class="text-xl text-blue-600 mb-6">Let's see Claude Code in action with a Spring Boot project</p>
+  <div class="text-left">
+    <ul class="text-blue-500 list-disc pl-6 text-lg">
+      <li>Code navigation & exploration</li>
+      <li>Automated test generation</li>
+      <li>Code refactoring & modernization</li>
+      <li>Git commit & PR creation</li>
+    </ul>
+  </div>
 </div>
 
 </div>
@@ -408,6 +405,9 @@ layout: default
 
 </div>
 
+---
+layout: default
+---
 
 <div class="text-center mb-8">
 
@@ -433,10 +433,10 @@ layout: default
 <div>
 
 <div class="text-center mb-4">
-  <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop" class="rounded-lg shadow-lg"/>
+  <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop" class="rounded-lg shadow-lg"/>
 </div>
 
-<div class="mt-4 p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
+<div class="mt-4 p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
   <strong>🎯 Goal:</strong> Master the day-to-day development capabilities that transform your workflow
 </div>
 
@@ -603,7 +603,7 @@ layout: default
 
 # Java Modernization
 
-## Java Modernization
+## Modern Java Features
 
 - **Convert to Records** - Replace boilerplate POJOs
 - **Add Virtual Threads** - Modern concurrency patterns
@@ -616,7 +616,7 @@ layout: default
 
 # Spring Framework Updates
 
-## Spring Framework Updates
+## Latest Spring Patterns
 
 - **Configuration properties** - Type-safe configuration
 - **Dependency injection patterns** - Constructor injection best practices
@@ -665,11 +665,11 @@ layout: default
 
 # Testing & Quality Assurance
 
-<div class="text-center mb-6">
-  <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&h=200&fit=crop" class="rounded-lg shadow-lg mx-auto" style="height: 150px; object-fit: cover;"/>
+<div class="text-center mb-4">
+  <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&h=200&fit=crop" class="rounded-lg shadow-lg mx-auto" style="height: 100px; object-fit: cover;"/>
 </div>
 
-<div class="grid grid-cols-2 gap-8">
+<div class="grid grid-cols-2 gap-6">
 
 <div>
 
@@ -690,17 +690,17 @@ layout: default
 
 <v-click>
 
-### Example: Spring AI Training Course Tests
+### Example: Spring AI Tests
 
 ```bash
 # Generate tests for service layer
-"Create unit tests for the FilmographyService class"
+"Create unit tests for the FilmographyService"
 
 # Test Spring AI integration
-"Write integration tests for the ChatClient configuration"
+"Write integration tests for ChatClient"
 
 # Test edge cases
-"Add tests for error scenarios in the AI service"
+"Add tests for error scenarios"
 ```
 
 </v-click>
@@ -709,7 +709,7 @@ layout: default
 
 </div>
 
-<div class="mt-8 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
+<div class="mt-6 p-3 bg-green-100 rounded-lg border-l-4 border-green-500 text-sm">
   <strong>🎯 Anthropic Teams:</strong> "Claude automatically includes missed edge cases, completing what would normally take significant mental energy in minutes"
 </div>
 
@@ -868,9 +868,13 @@ layoutClass: gap-16
 
 </v-click>
 
+<v-click>
+
 <div class="mt-6 p-4 bg-blue-100 rounded-lg border-l-4 border-blue-500">
   <strong>⭐ Best Practice:</strong> Ask Claude to generate tests before writing code for better autonomous operation
 </div>
+
+</v-click>
 
 ---
 layout: default
@@ -1174,10 +1178,10 @@ layout: default
 <div>
 
 <div class="text-center mb-4">
-  <img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=400&h=300&fit=crop" class="rounded-lg shadow-lg"/>
+  <img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=400&h=200&fit=crop" class="rounded-lg shadow-lg"/>
 </div>
 
-<div class="mt-4 p-6 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+<div class="mt-4 p-4 bg-purple-50 rounded-lg border-l-4 border-purple-500">
   <strong>🎯 Goal:</strong> Leverage advanced capabilities for enterprise development at scale
 </div>
 
@@ -1286,6 +1290,32 @@ layout: default
 layout: default
 ---
 
+# MCP Server Examples
+
+## GitHub MCP Server
+
+- **Repository operations** - Clone, create, manage repositories
+- **Issue management** - Create, update, search issues
+- **Pull request handling** - Review, merge, comment on PRs
+- **File content access** - Read and modify repository files
+
+---
+layout: default
+---
+
+# MCP Server Examples-2
+
+## Osquery MCP Server
+
+- **System diagnostics** - Query system information
+- **Process monitoring** - Track running applications
+- **Network analysis** - Monitor connections and traffic
+- **Security insights** - Detect anomalies and threats
+
+---
+layout: default
+---
+
 # Plan Mode: Review Before Execute
 
 ## How to Activate
@@ -1336,10 +1366,10 @@ layout: default
 # Other Helpful Flags
 
 - Use `-c` or `--continue` to continue a conversation
-- `--allowed-tools` does what it sounds like, as does `--disallowed-tools`
+- Use `--resume` to display a conversation picker
+- `--allowed-tools` and `--disallowed-tools` to control available tools
 - `--model` to change between Sonnet or Opus
-- `claude mcp` configures MCP servers
-- `claude update` to update to the latest version
+- Update Claude Code via `npm update -g @anthropic-ai/claude-code`
 
 ---
 layout: default
@@ -1459,9 +1489,9 @@ layout: default
 layout: default
 ---
 
-# Mastering CLAUDE.md: Your AI Assistant's Knowledge Base
+# Mastering CLAUDE.md
 
-## Creating Effective Project Guidelines
+## Project Guidelines
 
 <div class="grid grid-cols-2 gap-8">
 
@@ -1675,7 +1705,7 @@ layout: default
 # 1. Screenshot monitoring dashboard
 # 2. Get diagnostic assistance
 
-"What does this Kubernetes dashboard tell us about the pod issues?"
+"What does this Kubernetes dashboard tell us?"
 ```
 
 </v-click>
@@ -1684,18 +1714,22 @@ layout: default
 
 </div>
 
-<v-click>
+---
+layout: default
+---
 
-<div class="mt-8 p-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-lg border-l-4 border-orange-500">
+<div class="text-center mt-8">
+
+<div class="p-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-lg border-l-4 border-orange-500 max-w-5xl mx-auto mb-8">
 
 **🔍 Data Infrastructure Team Example:** Used dashboard screenshots to identify and resolve Kubernetes cluster issues in minutes instead of hours - Claude provided exact commands to fix pod IP exhaustion after analyzing visual metrics
 
 </div>
 
-</v-click>
+<div class="p-6 bg-blue-100 rounded-lg border-l-4 border-blue-500 max-w-4xl mx-auto">
+  <strong class="text-xl">🎯 Key Principle:</strong> "A picture is worth a thousand words" - Visual context dramatically improves Claude's problem-solving accuracy
+</div>
 
-<div class="mt-4 p-4 bg-blue-100 rounded-lg border-l-4 border-blue-500">
-  <strong>🎯 Key Principle:</strong> "A picture is worth a thousand words" - Visual context dramatically improves Claude's problem-solving accuracy
 </div>
 
 ---
@@ -1704,10 +1738,6 @@ layout: default
 
 # Advanced Features
 
-<div class="grid grid-cols-2 gap-8">
-
-<div>
-
 ## Extended Thinking Mode
 
 <v-clicks>
@@ -1715,149 +1745,17 @@ layout: default
 - **Complex problem solving** - Multi-step reasoning
 - **Architecture decisions** - Design pattern selection
 - **Performance optimization** - Code improvement strategies
+- **Trigger deeper analysis** - Use prompts: `think` → `think hard` → `ultrathink`
 
 </v-clicks>
 
-</div>
-
-<div>
-
 <v-click>
 
-### Project Memory Setup
-
-```bash
-# Create Claude.md in your project root
-echo "# Project Guidelines
-- Use Spring Boot 3.x conventions
-- Follow Java 21 patterns
-- Prefer records over classes
-- Use virtual threads for I/O
-- Write comprehensive tests" > Claude.md
-```
-
-</v-click>
-
-</div>
-
-</div>
-
-<v-click>
-
-## Custom Slash Commands
-
-<div class="mt-6 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg border-l-4 border-purple-500">
-
-**🔧 Security Engineering:** Uses **50%** of all custom slash command implementations across the monorepo for streamlined workflows
-
+<div class="mt-6 p-4 bg-indigo-100 rounded-lg border-l-4 border-indigo-500">
+  <strong>💡 Pro Tip:</strong> Add "think deeply" or "ultrathink" to your prompts for more thorough analysis
 </div>
 
 </v-click>
-
----
-layout: default
----
-
-# Supercharge Claude with Custom Bash Scripts
-
-## Integrating Powerful Automation
-
-<div class="grid grid-cols-2 gap-8">
-
-<div>
-
-<v-clicks>
-
-- **Project-specific tools** - Custom build scripts, deployment helpers
-- **Development workflows** - Automated testing, linting, formatting
-- **Environment management** - Database setup, service orchestration
-- **Code analysis** - Custom metrics, quality checks, dependency audits
-
-</v-clicks>
-
-</div>
-
-<div>
-
-<v-click>
-
-### Example Integration Scripts
-
-```bash
-#!/bin/bash
-# project-setup.sh - Environment initialization
-
-echo "Setting up Spring Boot development environment..."
-
-# Start required services
-docker-compose -f docker/dev-compose.yml up -d
-
-# Install dependencies and build
-./gradlew clean build -x test
-
-# Run database migrations
-./gradlew flywayMigrate
-
-# Generate test data
-./gradlew loadTestData
-
-echo "Development environment ready!"
-echo "Run './gradlew bootRun' to start the application"
-```
-
-</v-click>
-
-</div>
-
-</div>
-
----
-layout: default
----
-
-# Claude Code Integration with Custom Scripts
-
-## Putting Your Automation to Work
-
-<div class="grid grid-cols-2 gap-8">
-
-<div>
-
-### Benefits
-
-- **Seamless execution** - Claude runs your scripts directly
-- **Contextual understanding** - Explains what each script does
-- **Error handling** - Helps debug script failures
-- **Workflow automation** - Chains multiple scripts together
-- **Documentation integration** - Works with your CLAUDE.md files
-- **Team consistency** - Standardized automation across projects
-
-</div>
-
-<div>
-
-### Example Commands
-
-```bash
-"Run the project setup script"
-
-"Use our deployment script for staging"
-
-"Run the test suite with coverage"
-```
-
-**Common Use Cases:**
-- Environment setup automation
-- Deployment pipeline execution
-- Testing and quality checks
-
-</div>
-
-</div>
-
-<div class="mt-8 p-4 bg-blue-100 rounded-lg border-l-4 border-blue-500">
-  <strong>🔧 Pro Tip:</strong> Document your scripts in CLAUDE.md so Claude knows when and how to use them effectively
-</div>
 
 ---
 layout: default
@@ -2223,37 +2121,11 @@ to weekly_report.md as a narrative." \
 layout: default
 ---
 
-# MCP Server Examples
-
-## GitHub MCP Server
-
-- **Repository operations** - Clone, create, manage repositories
-- **Issue management** - Create, update, search issues
-- **Pull request handling** - Review, merge, comment on PRs
-- **File content access** - Read and modify repository files
-
----
-layout: default
----
-
-# MCP Server Examples-2
-
-## Osquery MCP Server
-
-- **System diagnostics** - Query system information
-- **Process monitoring** - Track running applications
-- **Network analysis** - Monitor connections and traffic
-- **Security insights** - Detect anomalies and threats
-
----
-layout: default
----
-
 # Setting Up MCP Servers
 
 ## Local and Remote Configuration Options
 
-<div class="grid grid-cols-2 gap-8">
+<div class="grid grid-cols-2 gap-6">
 
 <div>
 
@@ -2264,7 +2136,6 @@ layout: default
 - **`claude mcp`** - Interactive local setup
 - **Self-hosted control** - Full configuration access
 - **Custom implementations** - Build your own servers
-- **Development testing** - Perfect for experimentation
 
 </v-clicks>
 
@@ -2279,7 +2150,6 @@ layout: default
 - **Cloud-hosted services** - Vendor-managed infrastructure
 - **OAuth authentication** - Enterprise-secure connections
 - **Zero maintenance** - No updates or scaling needed
-- **SaaS integrations** - Direct tool connections
 
 </v-clicks>
 
@@ -2297,14 +2167,12 @@ claude mcp  # Configure local servers
 
 # Remote services (OAuth-enabled)
 # Connect to Sentry, Linear, GitHub Enterprise
-# Authentication handled via secure OAuth flow
-# No local server management required
 ```
 
 </v-click>
 
-<div class="mt-6 p-4 bg-green-100 rounded-lg border-l-4 border-green-500 text-sm">
-  <strong>🚀 NEW:</strong> Remote MCP servers eliminate local setup complexity while providing enterprise-grade security
+<div class="mt-4 p-3 bg-green-100 rounded-lg border-l-4 border-green-500 text-sm">
+  <strong>🚀 NEW:</strong> Remote MCP servers eliminate local setup complexity
 </div>
 
 ---
@@ -2501,10 +2369,6 @@ the Linear issue requirements"
 
 </v-click>
 
-<div class="mt-4 p-4 bg-green-100 rounded-lg border-l-4 border-green-500">
-  <strong>🚀 Impact:</strong> Remote MCP transforms Claude Code into a unified development hub that eliminates context switching
-</div>
-
 ---
 layout: default
 ---
@@ -2517,7 +2381,7 @@ layout: default
 
 <v-click>
 
-### Detailed project guides and repositories available in labs.md presentation
+### Detailed project guides and repositories available in [labs.md](./labs.md) presentation
 
 </v-click>
 
@@ -2587,20 +2451,28 @@ claude "Fix the authentication bypass vulnerability"
 
 <v-click>
 
-<div class="mt-8 p-6 bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg border-l-4 border-purple-500">
-
-**🔧 Advanced Team Strategy:**
-- **Shared CLAUDE.md** templates ensure consistency across all parallel work
-- **Branch-specific instructions** guide Claude toward feature-appropriate solutions
-- **Merge coordination** with Claude helping resolve conflicts between parallel streams
-- **Quality gates** where Claude reviews and validates integration points
-
+<div class="mt-4 p-3 bg-yellow-100 rounded-lg border-l-4 border-yellow-500 text-sm">
+  <strong>⚠️ Resource Note:</strong> Multiple Claude instances consume rate limits faster
 </div>
 
 </v-click>
 
-<div class="mt-4 p-3 bg-yellow-100 rounded-lg border-l-4 border-yellow-500 text-sm">
-  <strong>⚠️ Resource Note:</strong> Multiple Claude instances consume rate limits faster - consider higher-tier plans
+---
+layout: default
+---
+
+<div class="mt-8">
+
+<div class="p-6 bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg border-l-4 border-purple-500 max-w-5xl mx-auto">
+
+**🔧 Advanced Team Strategy:**
+- **Shared CLAUDE.md** templates ensure consistency across parallel work
+- **Branch-specific instructions** guide Claude toward feature-appropriate solutions
+- **Merge coordination** with Claude helping resolve conflicts between streams
+- **Quality gates** where Claude reviews and validates integration points
+
+</div>
+
 </div>
 
 ---
@@ -2773,14 +2645,14 @@ layoutClass: gap-16
 
 ### Auto-Accept Mode (`Shift+Tab`)
 
-<v-clicks>
+<v-click>
 
 - Minimal supervision
 - Prototyping and experimentation
 - Documentation and tests
 - Routine tasks
 
-</v-clicks>
+</v-click>
 
 ::right::
 
@@ -2799,13 +2671,13 @@ layoutClass: gap-16
 
 </v-click>
 
-<div class="mt-4 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
-  <strong>🚀 NEW Plan Mode:</strong> Use `Shift+Tab+Tab` to review implementation strategies before execution - perfect for complex changes
+<v-click>
+
+<div class="mt-3 p-2 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
+  <strong>🚀 NEW Plan Mode:</strong> Use `Shift+Tab+Tab` to review strategies before execution
 </div>
 
-<div class="mt-3 p-3 bg-yellow-100 rounded-lg border-l-4 border-yellow-500 text-sm">
-  <strong>📊 Rule of Thumb:</strong> Claude works on first attempt about one-third of the time - plan accordingly
-</div>
+</v-click>
 
 ---
 layout: default
@@ -2924,15 +2796,15 @@ layout: default
 
 </div>
 
-<div class="mt-8 p-4 bg-purple-100 rounded-lg border-l-4 border-purple-500">
-  <strong>💡 Growth Marketing Insight:</strong> Focus on API-enabled repetitive tasks where Claude Code provides the most value
-</div>
+---
+layout: default
+---
 
-<v-click>
+# 💰 Plan Optimization Tips
 
-<div class="mt-6 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg border-l-4 border-green-500">
+<div class="mt-8">
 
-**💰 Plan Optimization Tips:**
+<div class="p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg border-l-4 border-green-500">
 
 - **Pro Plan ($20):** Perfect for learning and small projects
 - **Max 5x ($100):** Sweet spot for most professional developers  
@@ -2942,7 +2814,7 @@ layout: default
 
 </div>
 
-</v-click>
+</div>
 
 ---
 layout: default
@@ -2972,7 +2844,7 @@ layout: default
 <div>
 
 <div class="text-center mb-4">
-  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" class="rounded-lg shadow-lg"/>
+  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=200&fit=crop" class="rounded-lg shadow-lg"/>
 </div>
 
 <div class="mt-4 p-6 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
