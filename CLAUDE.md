@@ -7,7 +7,32 @@ This is a comprehensive Slidev presentation for Claude Code training, targeting 
 ## Build Commands
 - `pnpm dev` - Start development server with hot reload
 - `pnpm build` - Build for production
-- `pnpm export` - Export to PDF
+- `pnpm export` - Export to PDF (default)
+
+## Export Process
+The presentation supports multiple export formats for different use cases:
+
+### Setup (one-time)
+```bash
+pnpm install -D playwright-chromium
+pnpm exec playwright install
+```
+
+### Export Commands
+```bash
+# Standard exports (already in repository)
+pnpm export                                                    # → slides-export.pdf (13MB)
+pnpm export --format pptx --output claude-code-training.pptx   # → claude-code-training.pptx (31MB)
+
+# Optional: Export with click animations (larger files)
+pnpm export --with-clicks --output slides-with-clicks.pdf
+pnpm export --format pptx --output claude-code-training-with-clicks.pptx --with-clicks
+```
+
+### Distribution Strategy
+- **Live presentations**: Use Slidev (`pnpm dev`) for professional animations and navigation
+- **O'Reilly Learning Platform**: Upload PPTX format for course platform compatibility
+- **Student materials**: Provide both PPTX (editable/compatible) and PDF (compact/printable)
 
 ## Content Standards
 - Focus on technical capabilities and practical examples
