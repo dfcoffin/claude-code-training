@@ -236,48 +236,64 @@ Use the `exercises/java/shopping-service` project or any legacy code you have av
 
 ## Lab 6: Advanced Workflows
 
-**Duration**: 15 minutes  
-**Goal**: Use advanced Claude Code features for complex tasks
+**Duration**: 20 minutes  
+**Goal**: Use advanced Claude Code features for complex tasks and real-world maintenance
 
 ### Setup
 
-Create a new branch in your project: `git checkout -b claude-improvements`
+Navigate to the `exercises/python/weather-app` directory for this lab.
 
 ### Exercises
+
+#### Part A: Advanced Claude Code Features (10 minutes)
 
 1. **Plan Mode usage**:
    - Press `Shift+Tab+Tab` to activate Plan Mode
    ```
-   "Plan a comprehensive improvement to add user authentication to this application"
+   "Plan a comprehensive improvement to add error handling and logging to this Flask application"
    ```
    - Review the plan before execution
    - Execute step by step
 
 2. **CLAUDE.md creation**:
    ```
-   "Create a CLAUDE.md file for this project with coding standards, build commands, and project context"
+   "Create a CLAUDE.md file for this weather app with Python coding standards, dependencies, and project context"
    ```
 
 3. **Custom slash command**:
    ```
-   "Help me create a custom slash command for generating Spring Boot service classes"
+   "Help me create a custom slash command for updating Python dependencies safely"
    ```
 
-4. **Git integration**:
+#### Part B: Security Updates with Dependabot (10 minutes)
+
+4. **Review security updates**:
    ```
-   "Commit all our improvements with appropriate commit messages"
+   "Analyze the Dependabot pull requests for this repository and explain what vulnerabilities they fix"
    ```
 
-5. **Pull request creation**:
+5. **Accept security updates**:
    ```
-   "Create a pull request for our improvements with a detailed description"
+   "Help me safely merge the Dependabot security updates for gunicorn, jinja2, and other dependencies. Explain the risks and benefits of each update."
+   ```
+
+6. **Test after updates**:
+   ```
+   "After accepting the security updates, help me verify the application still works correctly and suggest any additional testing"
+   ```
+
+7. **Document changes**:
+   ```
+   "Create a security update log documenting what was changed and why"
    ```
 
 ### Expected Outcomes
 
 - Master advanced Claude Code features
 - Create reusable project configurations
-- Integrate AI assistance into git workflows
+- Learn real-world security update workflows
+- Practice dependency management with AI assistance
+- Understand enterprise maintenance practices
 
 [← Back to Table of Contents](#table-of-contents)
 
