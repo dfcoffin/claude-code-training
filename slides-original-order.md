@@ -251,153 +251,6 @@ Kousen IT, Inc.
 
 ---
 
-# CLAUDE.md Files
-
-<v-clicks>
-
-- **Project memory**: `./CLAUDE.md` (shared with team)
-- **User memory**: `~/.claude/CLAUDE.md` (personal preferences)
-- Auto-discovered up directory tree
-- **Quick add**: Start input with `#` to add memory
-- **Commands**: `/memory` to edit, `/init` to bootstrap
-- **Import files**: Use `@path/to/import` syntax
-
-</v-clicks>
-
----
-
-# Custom Slash Commands
-
-<v-clicks>
-
-- Automate repetitive tasks with `$ARGUMENTS` placeholder
-- **Project scope**: `.claude/commands/` (shared with team)
-- **User scope**: `~/.claude/commands/` (personal, use `/user:command`)
-- **Filename becomes command name** (e.g., `service.md` → `/service`)
-- Quick shortcuts for common workflows
-
-</v-clicks>
-
----
-
-# Creating Slash Commands
-
-<v-clicks>
-
-- **Project commands** are shared with the entire team
-- **User commands** are personal and require `/user:` prefix
-- **Use `$ARGUMENTS`** for dynamic content in commands
-
-</v-clicks>
-
-```bash
-# Project commands (shared with team)
-mkdir -p .claude/commands
-echo "Create service for $ARGUMENTS entity" > .claude/commands/service.md
-
-# User commands (personal)
-mkdir -p ~/.claude/commands  
-echo "Fix issue #$ARGUMENTS" > ~/.claude/commands/fix.md
-
-# Usage: /service User  or  /user:fix 123
-```
-
-Real example - documentation updater:
-```markdown
-# .claude/commands/docs.md
-Update both the README.md and CLAUDE.md files as appropriate.
-If either file does not exist, please create it. Generate the
-CLAUDE.md file as though the user invoked the init task.
-```
-
----
-
-# Resuming Conversations
-
-<v-clicks>
-
-- **`--continue`**: Automatically resume most recent conversation
-- **`--resume`**: Interactive picker to choose specific conversation
-- **Full history restored**: Complete message context maintained
-- **Original settings preserved**: Model and configuration retained
-- **Stored locally**: Conversations saved on your machine
-
-</v-clicks>
-
-```bash
-# Continue most recent conversation
-claude --continue
-
-# Show conversation picker with details
-claude --resume
-
-# Continue with new prompt
-claude --continue --print "Continue with my task"
-```
-
----
-
-# Working with Images
-
-<v-clicks>
-
-- **Drag and drop** images into Claude Code window
-- **Copy/paste** with `Ctrl+V` (not `Cmd+V` even on a Mac!)
-- **Provide file path**: "Analyze this image: `/path/to/screenshot.png`"
-- Analyze UI designs, error screenshots, diagrams
-- Generate code from visual mockups
-- Debug visual issues and layouts
-
-</v-clicks>
-
-```bash
-# Common image workflows
-"Analyze this error screenshot and suggest fixes"
-"Generate HTML/CSS for this UI mockup"
-"Explain what this diagram shows"
-"Convert this whiteboard sketch to code"
-```
-
----
-
-# Extended Thinking
-
-<v-clicks>
-
-- Trigger deeper analysis with "think" in your prompts
-- Use **"think more"**, **"think harder"**, **"ultrathink"** for deeper reasoning
-- Shows thinking process as *italic gray text*
-- Perfect for complex architectural decisions
-- **Verification pattern**: "Before you finish, verify your solution and fix any issues"
-- **Note**: Thinking tokens count toward usage but provide higher quality results
-
-</v-clicks>
-
-```bash
-# Examples of extended thinking prompts
-"Think deeply about the best approach for implementing OAuth2 in our API. 
-Before you finish, verify your solution and fix any issues."
-
-"Think harder about potential security vulnerabilities in this code"
-"Think more about the tradeoffs between these two design patterns"
-```
-
----
-
-# Plan Mode
-
-<v-clicks>
-
-- Press `Shift+Tab+Tab` to activate
-- Claude presents implementation plan
-- Review strategy before execution
-- Approve or modify approach
-- Perfect for complex changes
-
-</v-clicks>
-
----
-
 # Model Context Protocol (MCP)
 
 <v-clicks>
@@ -484,106 +337,65 @@ for await (const message of query({
 
 ---
 
-# Cost Monitoring
+# Plan Mode
 
 <v-clicks>
 
-- Use `/cost` command to check usage
-- Shows current usage and limits
-- Pro Plan: Displays prompt count vs limit
-- Max Plans: Shows monthly usage summary
-- Limits reset every 5 hours
-- Plan ahead for intensive work sessions
+- Press `Shift+Tab+Tab` to activate
+- Claude presents implementation plan
+- Review strategy before execution
+- Approve or modify approach
+- Perfect for complex changes
 
 </v-clicks>
-
-```bash
-# Check your current usage
-/cost
-
-# Example output (Pro Plan):
-# 📊 Cost information:
-#    - Input tokens: 1,245
-#    - Output tokens: 3,782
-#    - Total cost: $0.076
-
-# Example output (Max Plan):
-# With your Claude Max subscription, no need to monitor cost
-# — your subscription includes Claude Code usage
-```
 
 ---
 
-# Context Management
+# CLAUDE.md Files
 
 <v-clicks>
 
-- Use `/compact` command to compress conversation history
-- Claude Code automatically compacts when context limit approaches
-- Warning message appears before auto-compaction
-- Preserves essential information while reducing token usage
-- Manual compaction gives you control over timing
+- **Project memory**: `./CLAUDE.md` (shared with team)
+- **User memory**: `~/.claude/CLAUDE.md` (personal preferences)
+- Auto-discovered up directory tree
+- **Quick add**: Start input with `#` to add memory
+- **Commands**: `/memory` to edit, `/init` to bootstrap
+- **Import files**: Use `@path/to/import` syntax
 
 </v-clicks>
-
-```bash
-# Manually compact the conversation
-/compact
-
-# Warning message example:
-# ⚠️ Context limit approaching. Auto-compacting in next response
-# to preserve conversation history and continue working.
-```
 
 ---
 
-# Configuring Permissions
+# Custom Slash Commands
 
 <v-clicks>
 
-- **Fine-grained control** over Claude Code's capabilities
-- **Use `/permissions` UI** to manage tool permissions
-- **Allow/Deny rules** for specific tools and actions
-- **Enterprise policies** for organization-wide control
-- **Permission precedence**: Enterprise → CLI → Project → User
+- Automate repetitive tasks with `$ARGUMENTS` placeholder
+- **Project scope**: `.claude/commands/` (shared with team)
+- **User scope**: `~/.claude/commands/` (personal, use `/user:command`)
+- **Filename becomes command name** (e.g., `service.md` → `/service`)
+- Quick shortcuts for common workflows
 
 </v-clicks>
 
 ```bash
-# Example permission rules
-Bash(npm run test:*)     # Allow npm test commands
-Edit(docs/**)           # Allow editing docs directory
-Read(src/*)             # Allow reading source files
+# Project commands (shared with team)
+mkdir -p .claude/commands
+echo "Create service for $ARGUMENTS entity" > .claude/commands/service.md
 
-# Access permissions UI
-/permissions
+# User commands (personal)
+mkdir -p ~/.claude/commands  
+echo "Fix issue #$ARGUMENTS" > ~/.claude/commands/fix.md
+
+# Usage: /service User  or  /user:fix 123
 ```
 
----
-
-# Git Worktrees for Parallel Sessions
-
-<v-clicks>
-
-- Check out multiple branches into separate directories
-- Run Claude Code sessions independently on each branch
-- Share git history while isolating working files
-- Perfect for multi-feature development
-
-</v-clicks>
-
-```bash
-# Create worktrees for parallel work
-git worktree add ../project-feature-a -b feature-a
-git worktree add ../project-bugfix bugfix-123
-
-# Run Claude Code in each directory
-cd ../project-feature-a && claude
-cd ../project-bugfix && claude
-
-# Manage worktrees
-git worktree list
-git worktree remove ../project-feature-a
+Real example - documentation updater:
+```markdown
+# .claude/commands/docs.md
+Update both the README.md and CLAUDE.md files as appropriate.
+If either file does not exist, please create it. Generate the
+CLAUDE.md file as though the user invoked the init task.
 ```
 
 ---
@@ -616,6 +428,129 @@ git worktree remove ../project-feature-a
 - Test generated code thoroughly
 
 </v-clicks>
+
+---
+
+# Git Worktrees for Parallel Sessions
+
+<v-clicks>
+
+- Check out multiple branches into separate directories
+- Run Claude Code sessions independently on each branch
+- Share git history while isolating working files
+- Perfect for multi-feature development
+
+</v-clicks>
+
+```bash
+# Create worktrees for parallel work
+git worktree add ../project-feature-a -b feature-a
+git worktree add ../project-bugfix bugfix-123
+
+# Run Claude Code in each directory
+cd ../project-feature-a && claude
+cd ../project-bugfix && claude
+
+# Manage worktrees
+git worktree list
+git worktree remove ../project-feature-a
+```
+
+---
+
+# Extended Thinking
+
+<v-clicks>
+
+- Trigger deeper analysis with "think" in your prompts
+- Use **"think more"**, **"think harder"**, **"ultrathink"** for deeper reasoning
+- Shows thinking process as *italic gray text*
+- Perfect for complex architectural decisions
+- **Verification pattern**: "Before you finish, verify your solution and fix any issues"
+- **Note**: Thinking tokens count toward usage but provide higher quality results
+
+</v-clicks>
+
+```bash
+# Examples of extended thinking prompts
+"Think deeply about the best approach for implementing OAuth2 in our API. 
+Before you finish, verify your solution and fix any issues."
+
+"Think harder about potential security vulnerabilities in this code"
+"Think more about the tradeoffs between these two design patterns"
+```
+
+---
+
+# Resuming Conversations
+
+<v-clicks>
+
+- **`--continue`**: Automatically resume most recent conversation
+- **`--resume`**: Interactive picker to choose specific conversation
+- **Full history restored**: Complete message context maintained
+- **Original settings preserved**: Model and configuration retained
+- **Stored locally**: Conversations saved on your machine
+
+</v-clicks>
+
+```bash
+# Continue most recent conversation
+claude --continue
+
+# Show conversation picker with details
+claude --resume
+
+# Continue with new prompt
+claude --continue --print "Continue with my task"
+```
+
+---
+
+# Working with Images
+
+<v-clicks>
+
+- **Drag and drop** images into Claude Code window
+- **Copy/paste** with `Ctrl+V` (not `Cmd+V` even on a Mac!)
+- **Provide file path**: "Analyze this image: `/path/to/screenshot.png`"
+- Analyze UI designs, error screenshots, diagrams
+- Generate code from visual mockups
+- Debug visual issues and layouts
+
+</v-clicks>
+
+```bash
+# Common image workflows
+"Analyze this error screenshot and suggest fixes"
+"Generate HTML/CSS for this UI mockup"
+"Explain what this diagram shows"
+"Convert this whiteboard sketch to code"
+```
+
+---
+
+# Configuring Permissions
+
+<v-clicks>
+
+- **Fine-grained control** over Claude Code's capabilities
+- **Use `/permissions` UI** to manage tool permissions
+- **Allow/Deny rules** for specific tools and actions
+- **Enterprise policies** for organization-wide control
+- **Permission precedence**: Enterprise → CLI → Project → User
+
+</v-clicks>
+
+```bash
+# Example permission rules
+Bash(npm run test:*)     # Allow npm test commands
+Edit(docs/**)           # Allow editing docs directory
+Read(src/*)             # Allow reading source files
+
+# Access permissions UI
+/permissions
+```
 
 ---
 

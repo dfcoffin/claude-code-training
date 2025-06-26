@@ -19,16 +19,13 @@ A comprehensive training presentation and hands-on lab exercises for using Claud
 ## 📁 Course Structure
 
 ### Main Presentation (`slides.md`)
-Core concepts and theory covering:
-- Claude Code fundamentals, Plan Mode, and SDKs
-- Remote MCP server integration and OAuth authentication
-- Code navigation and understanding techniques
-- Testing strategies and documentation generation
-- Visual debugging with screenshots and mockups
-- Git operations and debugging workflows
-- Multi-Claude parallel workflows for teams
-- Real-world examples from Anthropic teams
-- Best practices for enterprise development
+Comprehensive 35-slide presentation covering:
+- **Getting Started**: Installation, basic usage, operation modes
+- **Core Productive Features**: Code exploration (@syntax), test generation, refactoring, git integration
+- **Essential Workflow Tools**: CLAUDE.md memory, custom slash commands, resuming conversations, image workflows
+- **Advanced Features**: Extended thinking, Plan Mode, MCP servers, Claude Code SDKs
+- **Management & Control**: Cost monitoring, context management, permissions
+- **Team & Best Practices**: Git worktrees, development process, team collaboration
 
 ### Hands-On Labs (`labs.md`)
 Progressive exercises including:
@@ -53,7 +50,7 @@ exercises/
     └── shopping-service/    # Spring Boot REST API application
 ```
 
-**5-hour professional development workshop** designed for enterprise teams and individual developers who want to master Claude Code for real-world software development.
+**5-hour professional development workshop** designed for enterprise teams and individual developers who want to master Claude Code for real-world software development. The presentation follows a logical learning progression from basic setup to advanced team workflows, ensuring students can be productive quickly while building comprehensive expertise.
 
 ## 📝 Course Content
 

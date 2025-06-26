@@ -27,45 +27,42 @@ This is a comprehensive Slidev presentation for Claude Code training, targeting 
 
 ## Current Architecture
 - Built with Slidev framework using Seriph theme
-- Main content in slides.md with 110+ slides
+- Main content in slides.md with 35 focused slides
 - Comprehensive coverage from basics to advanced features
 - Integration of latest Claude Code features (Plan Mode, Remote MCP, SDKs)
-- Refactored to eliminate "bullet-riddled corpse" anti-pattern
+- Logically organized for optimal learning progression
 
-## Recent Updates
-- **Major refactoring** - Split dense slides to follow "many slides with few lines" principle
-- **Eliminated bullet-riddled corpse** - Converted 12+ problematic slides into focused, digestible content
-- **Improved layouts** - Fixed column layouts and centering issues for better readability
-- **Comprehensive layout fixes** - Fixed slide dividers, progressive reveals, content overflow, and alignment issues
-- **Separated exercises from main presentation** - Created dedicated labs.md for hands-on practice
-- **Added exercise projects** - Real-world codebases in exercises/ directory for practical training
-- Added Plan Mode functionality (Shift+Tab+Tab activation)
-- Enhanced MCP section with remote server capabilities and OAuth authentication
-- Added Claude Code SDKs (TypeScript/Python) for programmatic integration
-- Updated with latest Claude Code 1.0+ features including Sonnet 4 model
-- Removed marketing-focused content in favor of developer-to-developer approach
-
-## Refactoring Completed
-- Course Overview → 2 focused slides (What You'll Learn, Course Structure)
-- Understanding the Interface → 4 slides (Command Mode, Auto-Accept, Plan Mode, Key Features)
-- Plan Mode → 2 slides (How to Activate, Perfect For)
-- File Editing & Refactoring → 3 slides (Core Capabilities, Java Modernization, Spring Updates)
-- Model Context Protocol → 3 slides (What is MCP, GitHub Server, Osquery Server)
-- Claude Code SDKs → 2 slides (Available SDKs, Key Capabilities)
-- Future Developments → 3 slides (Emerging Capabilities, Technical Evolution, Workflow Integration)
-- Real-World Success Stories → 2 slides (Dev/Data Science, Security/Marketing)
-- Good Practices → 2 slides (Development Best Practices, Session Management)
-- Available MCP Servers → 2 slides (Development Tools, Enterprise Tools)
-- Key Takeaways → 3 slides (Transform Process, Technical Excellence, Strategic Integration)
+## Recent Major Updates
+- **Complete presentation restructure** - Reorganized from 110+ dense slides to 35 focused slides
+- **Logical learning progression** - Reordered content for immediate productivity:
+  1. **Getting Started** (Installation, Basic Usage, Operation Modes)
+  2. **Core Productive Features** (Code Exploration, Test Generation, Refactoring, Git Integration)
+  3. **Essential Workflow Tools** (CLAUDE.md memory, Custom Slash Commands, Resuming Conversations, Images)
+  4. **Advanced Features** (Extended Thinking, Plan Mode, MCP, SDKs)
+  5. **Management & Control** (Cost Monitoring, Context Management, Permissions)
+  6. **Team & Best Practices** (Git Worktrees, Best Practices, Team Collaboration)
+- **Comprehensive feature coverage** - Added all major Claude Code capabilities:
+  - Cost monitoring (/cost command) and context management (/compact)
+  - Extended thinking with verification patterns and token cost awareness
+  - Resuming conversations (--continue/--resume flags)
+  - Working with images (drag/drop, copy/paste workflows)
+  - Configuring permissions (enterprise controls, /permissions UI)
+  - Git worktrees for parallel sessions
+  - Enhanced memory management (project vs user CLAUDE.md files)
+  - Custom slash commands with $ARGUMENTS and scoping details
+- **Split complex slides** - Broke down dense content (e.g., Custom Slash Commands split into concept + implementation)
+- **Eliminated marketing content** - Maintained only essential pricing information
 
 ## Content Organization
 
-### Main Presentation (slides.md)
-1. Installation and setup fundamentals
-2. Core Claude Code features and interfaces  
-3. Advanced capabilities (Plan Mode, MCP, SDKs)
-4. Best practices and enterprise workflows
-5. Real-world success stories and case studies
+### Main Presentation (slides.md) - 35 slides
+**Logical progression for student productivity:**
+1. **Introduction & Setup** (slides 1-9): Course overview, pricing, installation, basic usage
+2. **Core Productivity** (slides 10-16): Immediate-use features for daily development
+3. **Workflow Tools** (slides 17-22): Session management and customization
+4. **Advanced Features** (slides 23-28): Complex capabilities for power users
+5. **Management** (slides 29-31): Cost, context, and permission controls
+6. **Team Practices** (slides 32-35): Collaboration and best practices
 
 ### Hands-On Labs (labs.md)
 1. Lab 1: First Steps (5 minutes)
@@ -73,7 +70,7 @@ This is a comprehensive Slidev presentation for Claude Code training, targeting 
 3. Lab 3: Test Generation (15 minutes)
 4. Lab 4: Documentation Creation (15 minutes)
 5. Lab 5: Legacy Code Refactoring (15 minutes)
-6. Lab 6: Documentation Generation (15 minutes)
+6. Lab 6: Advanced Workflows (15 minutes)
 
 ### Exercise Projects (exercises/)
 - **Python**: weather-app (Flask), flask-api (refactoring practice)
@@ -84,4 +81,5 @@ This is a comprehensive Slidev presentation for Claude Code training, targeting 
 - 5-hour course format with hands-on exercises
 - July 2025 first delivery planned
 - Target audience: Professional developers and enterprise teams
+- Optimized for students to become productive quickly while building comprehensive expertise
 - Include latest features as "cutting-edge" content
