@@ -64,36 +64,7 @@ exercises/
 
 - `pnpm dev` - Start development server with hot reload
 - `pnpm build` - Build for production
-- `pnpm export` - Export to PDF (default)
-- `pnpm export --format pptx --output filename.pptx` - Export to PowerPoint
-
-## 📤 Export Process
-
-The presentation can be exported to multiple formats for distribution:
-
-### Prerequisites
-```bash
-# Install playwright for export functionality (one-time setup)
-pnpm install -D playwright-chromium
-pnpm exec playwright install
-```
-
-### Export Commands
-```bash
-# PDF export (compact, 13MB)
-pnpm export
-
-# PowerPoint export for course platforms (31MB)
-pnpm export --format pptx --output claude-code-training.pptx
-
-# With click animations (larger file size)
-pnpm export --format pptx --output filename-with-clicks.pptx --with-clicks
-```
-
-### Distribution Strategy
-- **Live presentation**: Use `pnpm dev` with Slidev for best experience
-- **Course platform upload**: Use PPTX export for O'Reilly Learning Platform
-- **Student downloads**: PPTX for compatibility, PDF for compact reading
+- `pnpm export` - Export to PDF
 
 ## 📚 Resources
 
