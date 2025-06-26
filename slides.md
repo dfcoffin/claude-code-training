@@ -154,6 +154,23 @@ Kousen IT, Inc.
 </v-clicks>
 
 ---
+layout: image-right
+image: https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80
+backgroundSize: cover
+---
+
+# Core Productivity Features
+
+<div class="text-center mt-20">
+  <h2 class="text-4xl font-bold text-white bg-black bg-opacity-60 px-6 py-3 rounded-lg">
+    Get Productive Immediately
+  </h2>
+  <p class="text-xl text-white bg-black bg-opacity-60 px-4 py-2 rounded mt-4">
+    Essential features for daily development work
+  </p>
+</div>
+
+---
 
 # Code Exploration
 
@@ -205,6 +222,9 @@ Kousen IT, Inc.
 </v-clicks>
 
 ---
+layout: image-right
+image: https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
+---
 
 # Git Integration
 
@@ -248,6 +268,23 @@ Kousen IT, Inc.
 - Integration debugging
 
 </v-clicks>
+
+---
+layout: image-left
+image: https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80
+backgroundSize: cover
+---
+
+# Essential Workflow Tools
+
+<div class="text-center mt-20">
+  <h2 class="text-4xl font-bold text-white bg-black bg-opacity-60 px-6 py-3 rounded-lg">
+    Customize Your Experience
+  </h2>
+  <p class="text-xl text-white bg-black bg-opacity-60 px-4 py-2 rounded mt-4">
+    Session management and personalization
+  </p>
+</div>
 
 ---
 
@@ -336,6 +373,9 @@ claude --continue --print "Continue with my task"
 ```
 
 ---
+layout: image-right
+image: https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
+---
 
 # Working with Images
 
@@ -358,6 +398,26 @@ claude --continue --print "Continue with my task"
 "Convert this whiteboard sketch to code"
 ```
 
+---
+layout: image-right
+image: https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80
+backgroundSize: cover
+---
+
+# Advanced Features
+
+<div class="mt-20">
+  <h2 class="text-4xl font-bold text-white bg-black bg-opacity-60 px-6 py-3 rounded-lg">
+    Power User Capabilities
+  </h2>
+  <p class="text-xl text-white bg-black bg-opacity-60 px-4 py-2 rounded mt-4">
+    Complex features for sophisticated workflows
+  </p>
+</div>
+
+---
+layout: image-right
+image: https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
 ---
 
 # Extended Thinking
@@ -483,6 +543,23 @@ for await (const message of query({
 ```
 
 ---
+layout: image-left
+image: https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80
+backgroundSize: cover
+---
+
+# Management & Control
+
+<div class="mt-20">
+  <h2 class="text-4xl font-bold text-white bg-black bg-opacity-70 px-6 py-3 rounded-lg">
+    Monitor and Control
+  </h2>
+  <p class="text-xl text-white bg-black bg-opacity-70 px-4 py-2 rounded mt-4">
+    Cost, context, and permission management
+  </p>
+</div>
+
+---
 
 # Cost Monitoring
 
@@ -558,6 +635,23 @@ Read(src/*)             # Allow reading source files
 # Access permissions UI
 /permissions
 ```
+
+---
+layout: image-left
+image: https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80
+backgroundSize: cover
+---
+
+# Team & Best Practices
+
+<div class="text-center mt-20">
+  <h2 class="text-4xl font-bold text-white bg-black bg-opacity-60 px-6 py-3 rounded-lg">
+    Collaborate Effectively
+  </h2>
+  <p class="text-xl text-white bg-black bg-opacity-60 px-4 py-2 rounded mt-4">
+    Team workflows and professional practices
+  </p>
+</div>
 
 ---
 
