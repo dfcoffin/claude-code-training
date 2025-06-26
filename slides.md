@@ -68,7 +68,7 @@ Kousen IT, Inc.
 
 <v-clicks>
 
-- **Duration**: 5-hour intensive workshop
+- **Duration**: 5-hours
 - **Topics Covered**:
   - Installation and CLI basics
   - Code exploration and understanding
@@ -99,6 +99,59 @@ Kousen IT, Inc.
 - **Limits reset**: Every 5 hours
 
 </v-clicks>
+
+---
+
+# Cost Monitoring
+
+<v-clicks>
+
+- Use `/cost` command to check usage
+- Shows current usage and limits
+- Pro Plan: Displays prompt count vs limit
+- Max Plans: Shows monthly usage summary
+- Limits reset every 5 hours
+- Plan ahead for intensive work sessions
+
+</v-clicks>
+
+```bash
+# Check your current usage
+/cost
+
+# Example output (Pro Plan):
+# 📊 Cost information:
+#    - Input tokens: 1,245
+#    - Output tokens: 3,782
+#    - Total cost: $0.076
+
+# Example output (Max Plan):
+# With your Claude Max subscription, no need to monitor cost
+# — your subscription includes Claude Code usage
+```
+
+---
+
+# Context Management
+
+<v-clicks>
+
+- Use `/compact` command to compress conversation history
+- Claude Code automatically compacts when context limit approaches
+- Warning message appears before auto-compaction
+- Preserves essential information while reducing token usage
+- Manual compaction gives you control over timing
+
+</v-clicks>
+
+```bash
+# Manually compact the conversation
+/compact
+
+# Warning message example:
+# ⚠️ Context limit approaching. Auto-compacting in next response
+# to preserve conversation history and continue working.
+```
 
 ---
 
@@ -163,8 +216,15 @@ Kousen IT, Inc.
 - Understand system architecture
 - Trace dependencies
 - Identify frameworks
+- Reference specific files with `@path/to/file.java`
 
 </v-clicks>
+
+```bash
+"Analyze the UserService class"
+"Explain @src/main/java/com/example/UserController.java"
+"How does @pom.xml configure Spring Boot?"
+```
 
 ---
 
@@ -222,9 +282,10 @@ Kousen IT, Inc.
 <v-clicks>
 
 - Inline comments
-- README files
+- `README.md` files
 - API documentation
 - Architecture docs
+- `CLAUDE.md` project configuration (covered later)
 
 </v-clicks>
 
@@ -270,6 +331,65 @@ Kousen IT, Inc.
 
 ---
 
+# Setting Up MCP Servers
+
+<v-clicks>
+
+- Interactive setup: `claude mcp`
+- Local servers: Full configuration control
+- Remote servers: OAuth authentication, zero maintenance
+- Docker MCP Gateway: `docker mcp gateway run`
+
+</v-clicks>
+
+```bash
+# List existing MCP servers
+claude mcp list
+
+# Add local server
+claude mcp add my-server -e API_KEY=123 -- /path/to/server
+
+# Add remote server (HTTP)
+claude mcp add --transport http remote-server https://example.com/mcp
+
+# Add Docker MCP gateway
+claude mcp add docker-mcp docker mcp gateway run
+```
+
+---
+
+# Claude Code SDKs
+
+<v-clicks>
+
+- **Available SDKs**: TypeScript, Python, Command Line
+- **Build AI-powered coding assistants** into your workflows
+- **Multi-turn conversations** and session management
+- **Custom system prompts** and flexible I/O formats
+- **MCP integration** for extended capabilities
+
+</v-clicks>
+
+```bash
+# Command line usage
+claude -p "Write a function to calculate Fibonacci numbers"
+claude -p "Generate a hello world function" --output-format json
+```
+
+```typescript
+// TypeScript SDK
+import { query } from "@anthropic-ai/claude-code";
+
+for await (const message of query({
+  prompt: "Write a haiku about foo.py",
+  options: { maxTurns: 3 }
+})) {
+  // Process messages
+}
+```
+
+---
+
 # Plan Mode
 
 <v-clicks>
@@ -288,11 +408,12 @@ Kousen IT, Inc.
 
 <v-clicks>
 
-- Project-specific instructions
-- Coding standards and conventions
-- Architecture decisions
-- Testing preferences
-- Build commands and workflows
+- **Project memory**: `./CLAUDE.md` (shared with team)
+- **User memory**: `~/.claude/CLAUDE.md` (personal preferences)
+- Auto-discovered up directory tree
+- **Quick add**: Start input with `#` to add memory
+- **Commands**: `/memory` to edit, `/init` to bootstrap
+- **Import files**: Use `@path/to/import` syntax
 
 </v-clicks>
 
@@ -302,19 +423,32 @@ Kousen IT, Inc.
 
 <v-clicks>
 
-- Automate repetitive tasks
-- Team standardization
-- Domain-specific actions
-- Quick shortcuts
+- Automate repetitive tasks with `$ARGUMENTS` placeholder
+- **Project scope**: `.claude/commands/` (shared with team)
+- **User scope**: `~/.claude/commands/` (personal, use `/user:command`)
+- **Filename becomes command name** (e.g., `service.md` → `/service`)
+- Quick shortcuts for common workflows
 
 </v-clicks>
 
 ```bash
-# Create .claude/commands directory
+# Project commands (shared with team)
 mkdir -p .claude/commands
+echo "Create service for $ARGUMENTS entity" > .claude/commands/service.md
 
-# Create a command file
-touch .claude/commands/spring-service.md
+# User commands (personal)
+mkdir -p ~/.claude/commands  
+echo "Fix issue #$ARGUMENTS" > ~/.claude/commands/fix.md
+
+# Usage: /service User  or  /user:fix 123
+```
+
+Real example - documentation updater:
+```markdown
+# .claude/commands/docs.md
+Update both the README.md and CLAUDE.md files as appropriate.
+If either file does not exist, please create it. Generate the
+CLAUDE.md file as though the user invoked the init task.
 ```
 
 ---
@@ -323,6 +457,8 @@ touch .claude/commands/spring-service.md
 
 <v-clicks>
 
+- **Create a git branch first** - Safe experimentation, easy rollback
+- **Update `README.md` and `CLAUDE.md`** - Keep documentation current
 - **Be specific** - Clear, detailed instructions work better
 - **Provide context** - Explain your goals and constraints
 - **Iterate gradually** - Make incremental improvements
@@ -337,7 +473,10 @@ touch .claude/commands/spring-service.md
 <v-clicks>
 
 - Start with clean git state
+- Generate tests if none exist
 - Commit checkpoints regularly
+- Use Claude for git workflows (commits, issues, merges)
+- Use git worktrees for parallel sessions on different branches
 - Review changes before accepting
 - Test generated code thoroughly
 
@@ -345,11 +484,134 @@ touch .claude/commands/spring-service.md
 
 ---
 
+# Git Worktrees for Parallel Sessions
+
+<v-clicks>
+
+- Check out multiple branches into separate directories
+- Run Claude Code sessions independently on each branch
+- Share git history while isolating working files
+- Perfect for multi-feature development
+
+</v-clicks>
+
+```bash
+# Create worktrees for parallel work
+git worktree add ../project-feature-a -b feature-a
+git worktree add ../project-bugfix bugfix-123
+
+# Run Claude Code in each directory
+cd ../project-feature-a && claude
+cd ../project-bugfix && claude
+
+# Manage worktrees
+git worktree list
+git worktree remove ../project-feature-a
+```
+
+---
+
+# Extended Thinking
+
+<v-clicks>
+
+- Trigger deeper analysis with "think" in your prompts
+- Use **"think more"**, **"think harder"**, **"ultrathink"** for deeper reasoning
+- Shows thinking process as *italic gray text*
+- Perfect for complex architectural decisions
+- **Verification pattern**: "Before you finish, verify your solution and fix any issues"
+- **Note**: Thinking tokens count toward usage but provide higher quality results
+
+</v-clicks>
+
+```bash
+# Examples of extended thinking prompts
+"Think deeply about the best approach for implementing OAuth2 in our API. 
+Before you finish, verify your solution and fix any issues."
+
+"Think harder about potential security vulnerabilities in this code"
+"Think more about the tradeoffs between these two design patterns"
+```
+
+---
+
+# Resuming Conversations
+
+<v-clicks>
+
+- **`--continue`**: Automatically resume most recent conversation
+- **`--resume`**: Interactive picker to choose specific conversation
+- **Full history restored**: Complete message context maintained
+- **Original settings preserved**: Model and configuration retained
+- **Stored locally**: Conversations saved on your machine
+
+</v-clicks>
+
+```bash
+# Continue most recent conversation
+claude --continue
+
+# Show conversation picker with details
+claude --resume
+
+# Continue with new prompt
+claude --continue --print "Continue with my task"
+```
+
+---
+
+# Working with Images
+
+<v-clicks>
+
+- **Drag and drop** images into Claude Code window
+- **Copy/paste** with `Ctrl+V` (not `Cmd+V` even on a Mac!)
+- **Provide file path**: "Analyze this image: `/path/to/screenshot.png`"
+- Analyze UI designs, error screenshots, diagrams
+- Generate code from visual mockups
+- Debug visual issues and layouts
+
+</v-clicks>
+
+```bash
+# Common image workflows
+"Analyze this error screenshot and suggest fixes"
+"Generate HTML/CSS for this UI mockup"
+"Explain what this diagram shows"
+"Convert this whiteboard sketch to code"
+```
+
+---
+
+# Configuring Permissions
+
+<v-clicks>
+
+- **Fine-grained control** over Claude Code's capabilities
+- **Use `/permissions` UI** to manage tool permissions
+- **Allow/Deny rules** for specific tools and actions
+- **Enterprise policies** for organization-wide control
+- **Permission precedence**: Enterprise → CLI → Project → User
+
+</v-clicks>
+
+```bash
+# Example permission rules
+Bash(npm run test:*)     # Allow npm test commands
+Edit(docs/**)           # Allow editing docs directory
+Read(src/*)             # Allow reading source files
+
+# Access permissions UI
+/permissions
+```
+
+---
+
 # Team Collaboration
 
 <v-clicks>
 
-- Share CLAUDE.md configurations
+- Share `CLAUDE.md` configurations
 - Document successful patterns
 - Review AI-generated code together
 - Establish team conventions
