@@ -10,20 +10,20 @@ This is a comprehensive Slidev presentation for Claude Code training, targeting 
 - `pnpm export` - Export to PDF
 
 ## Content Standards
-- Focus on practical, enterprise-ready examples
-- Use Java/Spring Boot as primary technology examples
-- Include real-world use cases from Anthropic teams
-- Maintain professional tone suitable for corporate training
-- Keep slides concise and readable (avoid text overflow)
-- **Developer-to-developer approach** - Course is by developers for developers, avoid marketing/sales content
+- Focus on technical capabilities and practical examples
+- Developer-focused content without marketing language
+- Clean, simple slide structure following technical presentation patterns
+- Progressive disclosure using v-clicks
+- Code examples where appropriate
+- Concise, direct explanations
 
 ## Slide Design Principles
-- **Avoid "Bullet-riddled corpse" anti-pattern** - Never create slides dense with bullet points
-- **Many slides with few lines** - Prefer multiple focused slides over cramped multi-column layouts
-- **One concept per slide** - Each slide should cover a single, clear idea
-- **Minimize cognitive load** - Audience should grasp content at a glance
-- **Progressive disclosure** - Break complex topics into logical slide sequences
-- **White space is valuable** - Don't feel compelled to fill every slide completely
+- **Clean, technical style** - Similar to academic/technical conferences
+- **Minimal bullet points** - Each slide covers one focused concept
+- **Progressive disclosure** - Use v-clicks for step-by-step revelation
+- **No decorative elements** - Focus on content, not visuals
+- **Consistent structure** - Simple title + focused content
+- **Code-focused** - Include relevant code examples and commands
 
 ## Current Architecture
 - Built with Slidev framework using Seriph theme

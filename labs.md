@@ -1,625 +1,327 @@
----
-theme: seriph
-background: https://source.unsplash.com/1920x1080/?coding,ai
-class: text-center
-highlighter: shiki
-lineNumbers: false
-info: |
-  ## Claude Code Training Labs
-  Hands-On Exercises for Professional Development Workshop
-drawings:
-  persist: false
-transition: slide-left
-title: Claude Code Training Labs
-mdc: true
----
-
 # Claude Code Training Labs
-## Hands-On Exercises
 
-**Ken Kousen**  
-*Author • Speaker • Developer*
+This document contains hands-on exercises for learning to use Claude Code for professional development workflows.
 
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Practice exercises to master Claude Code workflows <carbon:arrow-right class="inline"/>
-  </span>
-</div>
+## Table of Contents
 
----
-layout: default
----
+1. [Lab 1: First Steps with Claude Code](#lab-1-first-steps-with-claude-code)
+2. [Lab 2: Code Exploration](#lab-2-code-exploration)
+3. [Lab 3: Test Generation](#lab-3-test-generation)
+4. [Lab 4: Documentation Creation](#lab-4-documentation-creation)
+5. [Lab 5: Legacy Code Refactoring](#lab-5-legacy-code-refactoring)
+6. [Lab 6: Advanced Workflows](#lab-6-advanced-workflows)
 
-# Labs Overview
+## Prerequisites
 
-## Exercise Structure
+- Claude Code installed and configured
+- API key set in environment: `export ANTHROPIC_API_KEY="your-key"`
+- Git repository access
+- Java/Spring Boot development environment
 
-<div class="grid grid-cols-2 gap-8 mt-8">
+## Lab 1: First Steps with Claude Code
 
-<div>
+**Duration**: 5 minutes  
+**Goal**: Get comfortable with the basic Claude Code interface
 
-### Progressive Learning
-- **Lab 1**: First Steps (5 minutes)
-- **Lab 2**: Code Exploration (10 minutes)  
-- **Lab 3**: Test Generation (15 minutes)
-- **Lab 4**: Documentation (15 minutes)
-- **Lab 5**: Legacy Refactoring (15 minutes)
-- **Lab 6**: Documentation Creation (15 minutes)
+### Setup
 
-</div>
+1. Navigate to any existing project directory
+2. Start Claude Code: `claude`
+3. Verify the interface responds to basic commands
 
-<div>
+### Exercises
 
-### Skills Developed
-- Project exploration and understanding
-- Comprehensive test suite creation
-- Professional documentation generation
-- Legacy code modernization
-- Spring Boot refactoring patterns
-- Real-world debugging scenarios
+1. **Basic interaction**: Ask Claude Code to explain what it can do
+   ```
+   "What are your main capabilities for helping with development?"
+   ```
 
-</div>
+2. **Project overview**: Get a high-level understanding
+   ```
+   "Give me an overview of this project structure"
+   ```
 
-</div>
+3. **File exploration**: Find specific files
+   ```
+   "Show me the main application files in this project"
+   ```
 
-<div class="mt-8 p-4 bg-blue-100 rounded-lg border-l-4 border-blue-500">
-  <strong>🎯 Goal:</strong> Build confidence with Claude Code through hands-on practice using real-world scenarios
-</div>
+### Expected Outcomes
 
----
-layout: default
----
+- Understand Claude Code's conversational interface
+- See how it analyzes project structure
+- Practice natural language interaction
 
-# Lab 1: First Steps with Claude Code
+[← Back to Table of Contents](#table-of-contents)
 
-## Get Claude Code Running in Your Project
+## Lab 2: Code Exploration
 
-**Time: 5 minutes**
+**Duration**: 10 minutes  
+**Goal**: Use Claude Code to understand a complex codebase
 
-<div class="grid grid-cols-2 gap-8 mt-6">
+### Setup
 
-<div>
+Choose one of the provided exercise projects:
+- `exercises/java/certificate-service` (Spring Boot PDF generation)
+- `exercises/java/shopping-service` (REST API)
+- `exercises/javascript/lyrics-trainer` (TypeScript web app)
+- `exercises/python/weather-app` (Flask application)
 
-### Your Tasks
+### Exercises
 
-<v-clicks>
+1. **Architecture analysis**: 
+   ```
+   "Analyze the architecture of this application and explain the main components"
+   ```
 
-1. **Navigate to any code project** on your machine
-2. **Start Claude Code** with `claude`
-3. **Ask it to explore** the project structure
-4. **Try a simple request** like "explain this codebase"
+2. **Technology stack identification**:
+   ```
+   "What frameworks and libraries does this project use?"
+   ```
 
-</v-clicks>
+3. **Entry point discovery**:
+   ```
+   "Show me the main entry points and how the application starts"
+   ```
 
-</div>
+4. **Configuration analysis**:
+   ```
+   "Explain the configuration files and their purposes"
+   ```
 
-<div>
+5. **Dependency mapping**:
+   ```
+   "Trace the flow from the main controller to the service layer"
+   ```
 
-<v-click>
+### Expected Outcomes
 
-### Example Commands
+- Quickly understand unfamiliar codebases
+- Identify key architectural patterns
+- Learn to ask effective exploration questions
 
-```bash
-# Navigate to your project
-cd ~/my-spring-project
+[← Back to Table of Contents](#table-of-contents)
 
-# Start Claude Code
-claude
+## Lab 3: Test Generation
 
-# Try these prompts:
-"Give me an overview of this project"
-"What files are most important here?"
-"Explain the main entry point"
-```
+**Duration**: 15 minutes  
+**Goal**: Generate comprehensive test suites with Claude Code
 
-</v-click>
+### Setup
 
-</div>
+Use the same project from Lab 2, focusing on service classes or core business logic.
 
-</div>
+### Exercises
 
-<div class="mt-6 p-4 bg-green-50 rounded-lg border-l-4 border-green-500 text-sm">
-  <strong>🎯 Goal:</strong> Get comfortable with the basic Claude Code interface and see it analyze a real project
-</div>
+1. **Unit test generation**:
+   ```
+   "Create unit tests for the [ServiceName] class with comprehensive coverage"
+   ```
 
-<div class="mt-3 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
-  <strong>💡 Don't have a project handy?</strong> Try it in this presentation's directory - Claude Code can analyze any codebase!
-</div>
+2. **Edge case identification**:
+   ```
+   "What edge cases should I test for the [methodName] method? Generate tests for them"
+   ```
 
----
-layout: default
----
+3. **Integration test creation**:
+   ```
+   "Create integration tests for the [ControllerName] that test the full request/response cycle"
+   ```
 
-# Lab 2: Explore a Codebase
+4. **Mock setup**:
+   ```
+   "Generate tests with proper mocking for external dependencies"
+   ```
 
-## Practice Code Search & Understanding
+5. **Test data generation**:
+   ```
+   "Create realistic test data and fixtures for these test cases"
+   ```
 
-**Time: 10 minutes**
+### Expected Outcomes
 
-<div class="grid grid-cols-2 gap-8 mt-6">
+- Understand automated test generation
+- Learn about edge case identification
+- Practice test-driven development with AI assistance
 
-<div>
+[← Back to Table of Contents](#table-of-contents)
 
-### Your Mission
+## Lab 4: Documentation Creation
 
-<v-clicks>
+**Duration**: 15 minutes  
+**Goal**: Generate professional documentation with Claude Code
 
-1. **Choose a project** (Spring Boot, Node.js, Python, etc.)
-2. **Ask Claude to map the architecture**
-3. **Find specific components** (controllers, services, etc.)
-4. **Trace execution flows**
+### Setup
 
-</v-clicks>
+Continue with your chosen project, focusing on undocumented areas.
 
-</div>
+### Exercises
 
-<div>
+1. **README generation**:
+   ```
+   "Create a comprehensive README file for this project including setup, usage, and examples"
+   ```
 
-<v-click>
+2. **API documentation**:
+   ```
+   "Generate API documentation for all the REST endpoints in this application"
+   ```
 
-### Try These Prompts
+3. **Code comments**:
+   ```
+   "Add meaningful JavaDoc/docstring comments to the main service classes"
+   ```
 
-```bash
-"What's the overall architecture of this project?"
+4. **Architecture documentation**:
+   ```
+   "Create an architectural overview document explaining the system design"
+   ```
 
-"Find all the REST endpoints in this codebase"
+5. **Troubleshooting guide**:
+   ```
+   "Generate a troubleshooting guide for common issues with this application"
+   ```
 
-"Show me how data flows from API to database"
+### Expected Outcomes
 
-"What design patterns are used here?"
+- Create professional-quality documentation
+- Learn different documentation formats
+- Understand how to maintain documentation
 
-"Identify the main configuration files"
-```
+[← Back to Table of Contents](#table-of-contents)
 
-</v-click>
+## Lab 5: Legacy Code Refactoring
 
-</div>
+**Duration**: 15 minutes  
+**Goal**: Modernize legacy code using Claude Code assistance
 
-</div>
+### Setup
 
-<div class="mt-6 p-4 bg-green-50 rounded-lg border-l-4 border-green-500 text-sm">
-  <strong>🎯 Goal:</strong> Experience Claude Code's ability to quickly understand and explain complex codebases
-</div>
+Use the `exercises/java/shopping-service` project or any legacy code you have available.
 
-<div class="mt-3 p-3 bg-purple-100 rounded-lg border-l-4 border-purple-500 text-sm">
-  <strong>⭐ Pro Tip:</strong> Start with high-level questions, then dive deeper into specific areas
-</div>
+### Exercises
 
----
-layout: default
----
+1. **Code modernization**:
+   ```
+   "Refactor this class to use modern Java features like records, switch expressions, and optional"
+   ```
 
-# Lab 3: Generate Tests
+2. **Spring Boot updates**:
+   ```
+   "Update this Spring configuration to use modern Spring Boot patterns and annotations"
+   ```
 
-## Practice Test Creation with Claude Code
+3. **Exception handling improvement**:
+   ```
+   "Improve the error handling in this service class with proper exception types and messages"
+   ```
 
-**Time: 15 minutes**
+4. **Performance optimization**:
+   ```
+   "Review this code for performance issues and suggest optimizations"
+   ```
 
-<div class="grid grid-cols-2 gap-8 mt-6">
+5. **Security review**:
+   ```
+   "Review this controller for security vulnerabilities and suggest fixes"
+   ```
 
-<div>
+### Expected Outcomes
 
-### Your Challenge
+- Learn systematic refactoring approaches
+- Understand modern development patterns
+- Practice security-focused code review
 
-<v-clicks>
+[← Back to Table of Contents](#table-of-contents)
 
-1. **Pick a class or function** in your project
-2. **Ask Claude to generate unit tests**
-3. **Request edge case tests**
-4. **Add integration tests**
-5. **Review and run the tests**
+## Lab 6: Advanced Workflows
 
-</v-clicks>
+**Duration**: 15 minutes  
+**Goal**: Use advanced Claude Code features for complex tasks
 
-</div>
+### Setup
 
-<div>
+Create a new branch in your project: `git checkout -b claude-improvements`
 
-<v-click>
+### Exercises
 
-### Example Prompts
+1. **Plan Mode usage**:
+   - Press `Shift+Tab+Tab` to activate Plan Mode
+   ```
+   "Plan a comprehensive improvement to add user authentication to this application"
+   ```
+   - Review the plan before execution
+   - Execute step by step
 
-```bash
-"Create comprehensive unit tests for this UserService class"
+2. **CLAUDE.md creation**:
+   ```
+   "Create a CLAUDE.md file for this project with coding standards, build commands, and project context"
+   ```
 
-"Add edge case tests for null inputs and empty strings"
+3. **Custom slash command**:
+   ```
+   "Help me create a custom slash command for generating Spring Boot service classes"
+   ```
 
-"Generate integration tests for the REST API endpoints"
+4. **Git integration**:
+   ```
+   "Commit all our improvements with appropriate commit messages"
+   ```
 
-"Create mock objects for the database dependencies"
+5. **Pull request creation**:
+   ```
+   "Create a pull request for our improvements with a detailed description"
+   ```
 
-"Add performance tests for this method"
-```
+### Expected Outcomes
 
-</v-click>
+- Master advanced Claude Code features
+- Create reusable project configurations
+- Integrate AI assistance into git workflows
 
-</div>
+[← Back to Table of Contents](#table-of-contents)
 
-</div>
+## Tips for Success
 
-<div class="mt-6 p-4 bg-green-50 rounded-lg border-l-4 border-green-500 text-sm">
-  <strong>🎯 Goal:</strong> Experience edge case identification and comprehensive test suite creation
-</div>
+### Effective Prompting
+- Be specific about what you want to achieve
+- Provide context about your goals and constraints
+- Use iterative refinement for complex tasks
+- Include examples when possible
 
-<div class="mt-3 p-3 bg-yellow-100 rounded-lg border-l-4 border-yellow-500 text-sm">
-  <strong>💡 Bonus:</strong> Ask Claude to explain its test case choices - learn best practices!
-</div>
+### Best Practices
+- Start with clean git state before major changes
+- Commit checkpoints regularly during development
+- Review all AI-generated code before accepting
+- Test generated code thoroughly
 
----
-layout: default
----
+### Common Issues and Solutions
 
-# Lab 4: Create Documentation
+**Issue**: Claude Code doesn't understand project structure  
+**Solution**: Ask it to explore the project first: "Analyze this project structure"
 
-## Practice Documentation Generation
+**Issue**: Generated code doesn't follow project conventions  
+**Solution**: Create a CLAUDE.md file with your coding standards
 
-**Time: 15 minutes**
+**Issue**: Tests fail after code generation  
+**Solution**: Ask Claude to fix: "These tests are failing, please analyze and fix them"
 
-<div class="grid grid-cols-2 gap-8 mt-6">
+**Issue**: Code is too verbose or not optimized  
+**Solution**: Request refinement: "Make this code more concise and efficient"
 
-<div>
+## Next Steps
 
-### Documentation Challenge
+After completing these labs:
 
-<v-clicks>
+1. **Practice regularly**: Use Claude Code for daily development tasks
+2. **Share with team**: Introduce colleagues to effective workflows
+3. **Customize**: Create project-specific CLAUDE.md files and slash commands
+4. **Iterate**: Refine your prompting techniques based on results
+5. **Stay updated**: Follow Claude Code updates and new features
 
-1. **Choose an undocumented project** or component
-2. **Generate a README.md** file
-3. **Add inline code comments**
-4. **Create API documentation**
-5. **Write setup instructions**
+## Additional Resources
 
-</v-clicks>
-
-</div>
-
-<div>
-
-<v-click>
-
-### Powerful Prompts
-
-```bash
-"Create a comprehensive README for this project"
-
-"Add detailed comments to this complex method"
-
-"Generate API documentation for these endpoints"
-
-"Write installation and setup instructions"
-
-"Create a troubleshooting guide for common issues"
-
-"Document the architecture and design decisions"
-```
-
-</v-click>
-
-</div>
-
-</div>
-
-<div class="mt-8 p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
-  <strong>🎯 Goal:</strong> Transform an undocumented project into professional, well-documented code
-</div>
-
-<div class="mt-4 p-4 bg-indigo-100 rounded-lg border-l-4 border-indigo-500">
-  <strong>⭐ Pro Tip:</strong> Ask Claude to follow your organization's documentation standards or create a CLAUDE.md file with documentation guidelines
-</div>
-
----
-layout: default
----
-
-# Practice Projects
-
-## Public GitHub Repositories for Experimentation
-
-<div class="grid grid-cols-2 gap-8">
-
-<div>
-
-### 🔍 Analysis Example
-**Flask Example** - *See Claude Code's analysis in action*
-
-<v-click>
-
-**Repository:** https://github.com/XD-DENG/flask-example
-
-**Great for:**
-- Quick issue identification
-- Security problem detection
-- Code quality analysis
-- Best practice validation
-
-**Perfect for:** Seeing Claude Code analysis in action
-
-</v-click>
-
-</div>
-
-<div>
-
-### 🌱 Beginner Project
-**Python Weather App** - *Solid foundation with room for growth*
-
-<v-click>
-
-**Repository:** https://github.com/rachanahegde/python-weather-app
-
-**Great for:**
-- Clear structure
-- Working functionality
-- Room for improvements
-- Beginner-friendly
-
-**Perfect for:** Adding tests, docs, modern Python
-
-</v-click>
-
-</div>
-
-</div>
-
-<v-click>
-
-### 🌐 API Testing Resource
-**JSONPlaceholder** - *Free REST API for testing*
-
-**URL:** https://jsonplaceholder.typicode.com/
-
-**Great for:**
-- Building API clients
-- Integration testing
-- Error handling
-- Async operations
-
-**Perfect for:** API client generation and HTTP request handling
-
-</v-click>
-
-<div class="mt-6 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500 text-sm">
-  <strong>💡 Exercise Ideas:</strong> Clone for analysis, build API clients, add tests, improve docs
-</div>
-
----
-layout: default
----
-
-# Ken's Projects for Practice
-
-<div class="grid grid-cols-3 gap-6 mt-6">
-
-<div>
-
-### 🎵 Lyrics Trainer
-<p class="text-sm">JavaScript/TypeScript Web App</p>
-
-<v-click>
-
-**Repo:** kousen/lyrics_trainer
-
-**Tech:**
-- Modern JS/TypeScript
-- Web APIs & DOM
-- Client-side architecture
-
-**Practice:** Frontend dev, API integration
-
-</v-click>
-
-</div>
-
-<div>
-
-### 📜 Certificate Service
-<p class="text-sm">Spring Boot PDF Generator</p>
-
-<v-click>
-
-**Repo:** kousen/certificate-service
-
-**Tech:**
-- Spring Boot
-- PDF generation
-- Heroku deployment
-
-**Practice:** Backend services, cloud deployment
-
-</v-click>
-
-</div>
-
-<div>
-
-### 🛒 Shopping Service
-<p class="text-sm">Spring Boot RESTful Teaching App</p>
-
-<v-click>
-
-**Repo:** kousen/shopping_v3
-
-**Tech:**
-- Spring Boot 3.x
-- RESTful architecture
-- Teaching-focused
-
-**Practice:** REST APIs, Spring patterns
-
-</v-click>
-
-</div>
-
-</div>
-
-<div class="mt-6 p-3 bg-green-100 rounded-lg border-l-4 border-green-500 text-sm">
-  <strong>🎯 Advantage:</strong> These are Ken's real projects - ask him about architecture decisions during training!
-</div>
-
----
-layout: default
----
-
-# Hands-On Exercise Overview
-
-<div class="grid grid-cols-2 gap-12 mt-8">
-
-<div>
-
-## Refactoring Legacy Code
-
-<v-clicks>
-
-- Modernize Java syntax
-- Update Spring configurations
-- Improve error handling
-- Add comprehensive tests
-
-</v-clicks>
-
-</div>
-
-<div>
-
-## Documentation Creation
-
-<v-clicks>
-
-- Generate README files
-- Create API documentation
-- Add inline comments
-- Write setup guides
-
-</v-clicks>
-
-</div>
-
-</div>
-
-<v-click>
-
-<div class="mt-12 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border-2 border-dashed border-blue-300">
-  <h3 class="text-xl font-bold text-blue-800">🚀 Coming Up: Live Exercises</h3>
-  <p class="text-blue-600 mt-2">We'll work through real examples from Spring AI and MCP projects</p>
-</div>
-
-</v-click>
-
----
-layout: default
----
-
-# Lab 5: Legacy Code Refactoring
-
-## Scenario
-You have a Spring Boot service using older Java patterns. Use Claude Code to modernize it.
-
-<div class="grid grid-cols-2 gap-8 mt-6">
-
-<div>
-
-## Tasks
-
-<v-clicks>
-
-1. **Convert classes to records** where appropriate
-2. **Add virtual thread support** for I/O operations
-3. **Update to modern Spring patterns**
-4. **Add comprehensive error handling**
-5. **Generate missing tests**
-
-</v-clicks>
-
-</div>
-
-<div>
-
-<v-click>
-
-### Example Starting Point
-
-```java
-public class UserService {
-    private final UserRepository repository;
-    
-    public UserService(UserRepository repository) {
-        this.repository = repository;
-    }
-    
-    public User findUser(String id) {
-        return repository.findById(id).orElse(null);
-    }
-}
-```
-
-</v-click>
-
-</div>
-
-</div>
-
-<div class="mt-6 flex justify-center">
-  <div class="px-6 py-3 bg-blue-500 text-white rounded-lg font-semibold">
-    ⏱️ Time: 15 minutes | 🎯 Goal: Modernize the service class completely
-  </div>
-</div>
-
----
-layout: default
----
-
-# Lab 6: Documentation Generation
-
-## Scenario
-Create comprehensive documentation for an undocumented Spring AI integration.
-
-<div class="grid grid-cols-2 gap-8 mt-6">
-
-<div>
-
-## Tasks
-
-<v-clicks>
-
-1. **Generate README.md** with setup instructions
-2. **Create API documentation** for REST endpoints
-3. **Add inline comments** to complex methods
-4. **Write configuration guide** for environment variables
-
-</v-clicks>
-
-</div>
-
-<div>
-
-### Follow This Pattern
-
-<v-click>
-
-**From your GitHub MCP Server documentation:**
-
-</v-click>
-
-<v-clicks at="2">
-
-- Clear overview and features
-- Step-by-step setup guide
-- Configuration examples
-- Usage examples with code
-- Troubleshooting section
-
-</v-clicks>
-
-</div>
-
-</div>
-
-<div class="mt-6 flex justify-center">
-  <div class="px-6 py-3 bg-green-500 text-white rounded-lg font-semibold">
-    ⏱️ Time: 15 minutes | 🎯 Goal: Professional-quality documentation
-  </div>
-</div>
-
----
-layout: default
----
+- [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)
+- [Best Practices Guide](https://www.anthropic.com/engineering/claude-code-best-practices)
+- [MCP Server Directory](https://github.com/modelcontextprotocol/servers)
+- [Community Examples](https://github.com/anthropics/claude-code-examples)
