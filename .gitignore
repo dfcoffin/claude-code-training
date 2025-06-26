@@ -8,3 +8,9 @@ components.d.ts
 /.idea/
 .claude/
 .vscode/
+
+# Backup files
+*-backup.md
+*-old.md
+labs-slidev.md
+slides-original-order.md
