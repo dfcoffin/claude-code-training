@@ -171,7 +171,7 @@ layout: default
 
 ## Budget & usage best practices
 
-- Track prompt counts & credits regularly
+- Track prompt counts & credits regularly using `/cost`
 - Optimize prompts: fewer tokens, concise context
 - Set alerts for high usage & upgrade tiers appropriately
 
@@ -208,7 +208,7 @@ layout: default
 
 <div>
 
-- **Claude Code fundamentals** - Installation, setup, and core concepts
+- **Fundamentals** - Installation, setup, and core concepts
 - **Codebase navigation** - Intelligent search and understanding
 - **Testing strategies** - Automated test generation and debugging
 - **Git operations** - Streamlined version control workflows  
@@ -228,8 +228,6 @@ layout: default
 ---
 
 # Course Structure
-
-## Professional Training Format
 
 <div class="text-center mt-8">
 
