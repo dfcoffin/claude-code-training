@@ -100,6 +100,8 @@ Kousen IT, Inc.
 
 </v-clicks>
 
+📖 **Full details**: [Using Claude Code with your Pro or Max plan](https://support.anthropic.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan)
+
 ---
 
 # What is Claude Code?
@@ -307,7 +309,6 @@ backgroundSize: cover
 
 <v-clicks>
 
-- Automate repetitive tasks with `$ARGUMENTS` placeholder
 - **Project scope**: `.claude/commands/` (shared with team)
 - **User scope**: `~/.claude/commands/` (personal, use `/user:command`)
 - **Filename becomes command name** (e.g., `service.md` → `/service`)
@@ -354,10 +355,10 @@ CLAUDE.md file as though the user invoked the init task.
 <v-clicks>
 
 - **`--continue`**: Automatically resume most recent conversation
-- **`--resume`**: Interactive picker to choose specific conversation
-- **Full history restored**: Complete message context maintained
+- **`--resume`**: Interactive picker showing conversation history with timestamps and message counts
+- **Full history restored**: Complete message context maintained (even hundreds of messages)
 - **Original settings preserved**: Model and configuration retained
-- **Stored locally**: Conversations saved on your machine
+- **Stored locally**: Complete conversation database maintained on your machine
 
 </v-clicks>
 
