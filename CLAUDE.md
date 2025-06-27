@@ -8,6 +8,8 @@ This is a comprehensive Slidev presentation for Claude Code training, targeting 
 - `pnpm dev` - Start development server with hot reload
 - `pnpm build` - Build for production
 - `pnpm export` - Export to PDF (default)
+- `pnpm typecheck` - Run TypeScript type checking (if needed)
+- `pnpm lint` - Run linting checks (if configured)
 
 ## Export Process
 The presentation supports multiple export formats for different use cases:
@@ -58,7 +60,7 @@ pnpm export --format pptx --output claude-code-training-with-clicks.pptx --with-
 - Logically organized for optimal learning progression
 
 ## Recent Major Updates
-- **Complete presentation restructure** - Reorganized from 110+ dense slides to 35 focused slides
+- **Complete presentation restructure** - Reorganized from 110+ dense slides to 38 focused slides
 - **Logical learning progression** - Reordered content for immediate productivity:
   1. **Getting Started** (Installation, Basic Usage, Operation Modes)
   2. **Core Productive Features** (Code Exploration, Test Generation, Refactoring, Git Integration)
@@ -77,17 +79,29 @@ pnpm export --format pptx --output claude-code-training-with-clicks.pptx --with-
   - Custom slash commands with $ARGUMENTS and scoping details
 - **Split complex slides** - Broke down dense content (e.g., Custom Slash Commands split into concept + implementation)
 - **Eliminated marketing content** - Maintained only essential pricing information
+- **Added presentation enhancements**:
+  - Progress bar component for visual slide progress tracking
+  - QR code functionality for easy link sharing (docs and repository)
+  - Bluesky integration for embedding social media posts
+  - Clean resource slides with important links
+- **Added troubleshooting section**:
+  - System health diagnostics with `/doctor` command
+  - Global configuration settings
+  - Security-focused aliases and tool restrictions
+  - Common issues and solutions
+  - WSL requirement for Windows users
 
 ## Content Organization
 
-### Main Presentation (slides.md) - 35 slides
+### Main Presentation (slides.md) - 38 slides
 **Logical progression for student productivity:**
 1. **Introduction & Setup** (slides 1-9): Course overview, pricing, installation, basic usage
 2. **Core Productivity** (slides 10-16): Immediate-use features for daily development
 3. **Workflow Tools** (slides 17-22): Session management and customization
 4. **Advanced Features** (slides 23-28): Complex capabilities for power users
 5. **Management** (slides 29-31): Cost, context, and permission controls
-6. **Team Practices** (slides 32-35): Collaboration and best practices
+6. **Troubleshooting** (slides 32-34): Diagnostics, security, and common issues
+7. **Team Practices** (slides 35-38): Collaboration, best practices, and resources
 
 ### Hands-On Labs (labs.md)
 1. Lab 1: First Steps (5 minutes)
@@ -108,3 +122,22 @@ pnpm export --format pptx --output claude-code-training-with-clicks.pptx --with-
 - Target audience: Professional developers and enterprise teams
 - Optimized for students to become productive quickly while building comprehensive expertise
 - Include latest features as "cutting-edge" content
+
+## Technical Setup
+### Slidev Addons Installed
+- `slidev-component-progress` - Progress bar at top of slides
+- `slidev-addon-qrcode` - QR code generation for links
+- `slidev-addon-bluesky` - Embed Bluesky social media posts
+
+### Known Issues
+- Initial QR code addon (@katzumi/slidev-addon-qrcode) had caching bugs - replaced with slidev-addon-qrcode
+- Peer dependency warnings with slidev-component-progress can be ignored
+- Bluesky posts require full DID format (e.g., `did:plc:...`)
+
+### Security Review Notes
+- Presentation files contain no sensitive information
+- Exercise projects contain intentional security vulnerabilities for educational purposes:
+  - SQL injection examples in Flask API
+  - Hardcoded credentials for demonstration
+  - XSS vulnerabilities in shopping service
+  - These are clearly marked as training exercises

@@ -1,6 +1,13 @@
 ---
 theme: seriph
 background: https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80
+
+addons:
+  - slidev-component-progress
+  - slidev-addon-asciinema
+  - slidev-addon-qrcode
+  - slidev-addon-bluesky
+
 class: text-center
 highlighter: shiki
 lineNumbers: false
@@ -472,6 +479,31 @@ Before you finish, verify your solution and fix any issues."
 
 ---
 
+# MCP Configuration
+
+<v-clicks>
+
+### Import from Claude Desktop
+```bash
+claude mcp add-from-claude-desktop
+```
+Automatically imports MCP servers from Claude Desktop config
+
+### Manual Configuration
+```bash
+claude mcp add <server-name>
+claude mcp list
+claude mcp remove <server-name>
+```
+
+### Config Locations
+- **Claude Desktop**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+- **Claude Code (project)**: `.mcp.json` in project root
+
+</v-clicks>
+
+---
+
 # MCP Server Examples
 
 <v-clicks>
@@ -698,6 +730,89 @@ git worktree remove ../project-feature-a
 
 ---
 
+# Troubleshooting & Configuration
+
+<v-clicks>
+
+### System Health Check
+```bash
+claude /doctor  # Diagnose installation issues
+```
+
+### Global Configuration
+```bash
+claude config set -g model claude-sonnet-4
+claude config set -g verbose true
+claude config set -g max_conversation_turns 10
+```
+
+### Check Current Settings
+```bash
+claude config list  # View all settings
+echo $ANTHROPIC_API_KEY  # Verify API key
+```
+
+</v-clicks>
+
+---
+
+# Security & Permissions
+
+<v-clicks>
+
+### Security-Focused Aliases
+```bash
+# Safe mode - limited tools
+alias claude-safe='claude --allowed-tools read,write,edit'
+
+# Review mode - read-only
+alias claude-review='claude --allowed-tools read,grep'
+
+# Development mode - all tools
+alias claude-dev='claude --allowed-tools all'
+```
+
+### Tool Restrictions
+```bash
+# Disable specific tools
+claude --disabled-tools bash,webfetch
+
+# Allow only specific tools
+claude --allowed-tools read,write,edit,task
+```
+
+</v-clicks>
+
+---
+
+# Common Issues & Solutions
+
+<v-clicks>
+
+### Installation Problems
+- **Command not found** → Check PATH: `npm list -g @anthropic/claude-code`
+- **Permission denied** → Use correct npm prefix or sudo
+- **Windows users** → WSL is required (Claude Code doesn't run natively on Windows)
+
+### Runtime Issues
+- **API key not found** → Set `ANTHROPIC_API_KEY` environment variable
+- **Rate limits** → Use `/cost` to monitor usage
+- **Context too large** → Use `/compact` to reduce conversation size
+
+### Quick Fixes
+```bash
+# Reinstall globally
+npm uninstall -g @anthropic/claude-code
+npm install -g @anthropic/claude-code
+
+# Alternative: Direct binary
+curl -fsSL https://storage.googleapis.com/anthropic-releases/claude-cli/install.sh | bash
+```
+
+</v-clicks>
+
+---
+
 # Development Process
 
 <v-clicks>
@@ -724,6 +839,75 @@ git worktree remove ../project-feature-a
 - Establish team conventions
 
 </v-clicks>
+
+---
+
+# Quick Access
+
+<div class="grid grid-cols-2 gap-8 mt-8 place-items-center">
+  <div class="flex flex-col items-center">
+    <h3>Claude Code Docs</h3>
+    <QRCode
+      :width="200"
+      :height="200"
+      type="svg"
+      data="https://docs.anthropic.com/en/docs/claude-code/overview"
+      :margin="5"
+      :dotsOptions="{ type: 'rounded', color: '#3b82f6' }"
+    />
+    <p class="text-sm mt-2">docs.anthropic.com/claude-code</p>
+  </div>
+  <div class="flex flex-col items-center">
+    <h3>Course Repository</h3>
+    <QRCode
+      :width="200"
+      :height="200"
+      type="svg"
+      data="https://github.com/kousen/claude-code-training"
+      :margin="5"
+      :dotsOptions="{ type: 'rounded', color: '#10b981' }"
+    />
+    <p class="text-sm mt-2">github.com/kousen/claude-code-training</p>
+  </div>
+</div>
+
+---
+
+# Important Links
+
+<div class="mt-8 space-y-6 text-xl">
+
+<v-clicks>
+
+### 📚 Claude Code Documentation
+`https://docs.anthropic.com/en/docs/claude-code`
+
+### 🐙 Official GitHub Repository  
+`https://github.com/anthropics/claude-code`
+
+### 💻 Course Source Code & Exercises
+`https://github.com/kousen/claude-code-training`
+
+### 🆘 Support & Issues
+`https://github.com/anthropics/claude-code/issues`
+
+</v-clicks>
+
+</div>
+
+---
+
+# Community & Social
+
+<div class="flex flex-col items-center mt-4">
+  <div class="max-w-md mx-auto scale-90">
+    <Bluesky id="at://did:plc:dfl6zqxuwaytxeyankzivs76/app.bsky.feed.post/3lsmcosqat22d" />
+  </div>
+  
+  <p class="text-center mt-2 text-gray-500 text-sm">
+    Follow the Claude Code community for updates and tips
+  </p>
+</div>
 
 ---
 

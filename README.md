@@ -16,16 +16,26 @@ A comprehensive training presentation and hands-on lab exercises for using Claud
 
 3. Open your browser at <http://localhost:3030>
 
+## 🎨 Presentation Features
+
+This Slidev presentation includes:
+- **Progress Bar**: Visual progress indicator at the top of slides
+- **QR Codes**: Quick access to documentation and course repository
+- **Bluesky Integration**: Embedded social media posts for community content
+- **Professional Theme**: Clean, technical presentation style
+
 ## 📁 Course Structure
 
 ### Main Presentation (`slides.md`)
-Comprehensive 35-slide presentation covering:
+Comprehensive 38-slide presentation covering:
 - **Getting Started**: Installation, basic usage, operation modes
 - **Core Productive Features**: Code exploration (@syntax), test generation, refactoring, git integration
 - **Essential Workflow Tools**: CLAUDE.md memory, custom slash commands, resuming conversations, image workflows
 - **Advanced Features**: Extended thinking, Plan Mode, MCP servers, Claude Code SDKs
 - **Management & Control**: Cost monitoring, context management, permissions
+- **Troubleshooting**: System diagnostics, security configurations, common issues
 - **Team & Best Practices**: Git worktrees, development process, team collaboration
+- **Resources**: QR codes for documentation links and community content
 
 ### Hands-On Labs (`labs.md`)
 Progressive exercises including:
@@ -64,7 +74,15 @@ exercises/
 
 - `pnpm dev` - Start development server with hot reload
 - `pnpm build` - Build for production
-- `pnpm export` - Export to PDF
+- `pnpm export` - Export to PDF (default)
+- `pnpm export --format pptx --output claude-code-training.pptx` - Export to PowerPoint
+
+### Export Process
+For exporting presentations, first install Playwright:
+```bash
+pnpm install -D playwright-chromium
+pnpm exec playwright install
+```
 
 ## 📚 Resources
 
