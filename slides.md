@@ -491,7 +491,13 @@ Automatically imports MCP servers from Claude Desktop config
 
 ### Manual Configuration
 ```bash
+# Project-scoped (default)
 claude mcp add <server-name>
+
+# User-scoped (available across all projects)
+claude mcp add context7 -s user npx @upstash/context7
+
+# Management commands
 claude mcp list
 claude mcp remove <server-name>
 ```
