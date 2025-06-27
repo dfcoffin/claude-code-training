@@ -509,10 +509,10 @@ claude mcp remove <server-name>
 <v-clicks>
 
 - **GitHub MCP** - Repository operations, issues, PRs
-- **Sentry MCP** - Error tracking and debugging
-- **Linear MCP** - Project management integration
-- **Docker MCP** - Container management
-- **Database MCP** - Query and schema operations
+- **Context7** - Downloads latest API docs and examples for modern code
+- **Docker MCP Toolkit** - Container management and operations
+- **Playwright MCP** - UI test generation and browser automation
+- **Heroku MCP** - Deployment and app management
 
 </v-clicks>
 
