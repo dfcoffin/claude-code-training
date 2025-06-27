@@ -22,7 +22,21 @@ This Slidev presentation includes:
 - **Progress Bar**: Visual progress indicator at the top of slides
 - **QR Codes**: Quick access to documentation and course repository
 - **Bluesky Integration**: Embedded social media posts for community content
+- **Asciinema Support**: Terminal recording playback for demos
 - **Professional Theme**: Clean, technical presentation style
+
+## 🔌 MCP Server Integration
+
+The course covers practical MCP server integration with real-world examples:
+- **Context7**: Downloads latest API docs and examples for modern code development
+- **GitHub MCP**: Repository operations, issues, and pull request management
+- **Docker MCP Toolkit**: Container management and operations
+- **Playwright MCP**: UI test generation and browser automation
+- **Heroku MCP**: Deployment and application management
+
+Learn both deployment models:
+- **Remote HTTP transport**: Connect to hosted MCP services
+- **Local execution**: Run MCP servers as local processes
 
 ## 📁 Course Structure
 

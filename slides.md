@@ -495,7 +495,10 @@ Automatically imports MCP servers from Claude Desktop config
 claude mcp add <server-name>
 
 # User-scoped (available across all projects)
-claude mcp add context7 -s user npx @upstash/context7
+# Remote HTTP transport
+claude mcp add --transport http context7 https://mcp.context7.com/mcp
+# Local execution
+claude mcp add context7 -- npx -y @upstash/context7-mcp
 
 # Management commands
 claude mcp list

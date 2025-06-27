@@ -126,13 +126,26 @@ pnpm export --format pptx --output claude-code-training-with-clicks.pptx --with-
 ## Technical Setup
 ### Slidev Addons Installed
 - `slidev-component-progress` - Progress bar at top of slides
-- `slidev-addon-qrcode` - QR code generation for links
+- `slidev-addon-qrcode` - QR code generation for links (replaced buggy @katzumi version)
 - `slidev-addon-bluesky` - Embed Bluesky social media posts
+- `slidev-addon-asciinema` - Terminal recording playback (ready for future demos)
 
 ### Known Issues
 - Initial QR code addon (@katzumi/slidev-addon-qrcode) had caching bugs - replaced with slidev-addon-qrcode
 - Peer dependency warnings with slidev-component-progress can be ignored
 - Bluesky posts require full DID format (e.g., `did:plc:...`)
+
+### MCP Server Integration Examples
+Real-world MCP servers covered in presentation:
+- **Context7**: Latest API documentation and examples for modern development
+- **GitHub MCP**: Repository operations, issues, and pull request management
+- **Docker MCP Toolkit**: Container management and operations
+- **Playwright MCP**: UI test generation and browser automation
+- **Heroku MCP**: Deployment and application management
+
+Shows both deployment models:
+- **Remote HTTP transport**: `claude mcp add --transport http context7 https://mcp.context7.com/mcp`
+- **Local execution**: `claude mcp add context7 -- npx -y @upstash/context7-mcp`
 
 ### Security Review Notes
 - Presentation files contain no sensitive information
