@@ -347,9 +347,9 @@ echo "Fix issue #$ARGUMENTS" > ~/.claude/commands/fix.md
 # Usage: /service User  or  /user:fix 123
 ```
 
-Real example - documentation updater:
+Real-world example - a powerful, personal documentation command:
 ```markdown
-# .claude/commands/docs.md
+# ~/.claude/commands/docs.md
 Update both the README.md and CLAUDE.md files as appropriate.
 If either file does not exist, please create it. Generate the
 CLAUDE.md file as though the user invoked the init task.
@@ -724,18 +724,36 @@ git worktree remove ../project-feature-a
 
 ---
 
-# Best Practices
+# Effective Prompting & Best Practices
 
+<div class="grid grid-cols-2 gap-8">
+<div>
+
+### Effective Prompting
 <v-clicks>
 
-- **Create a git branch first** - Safe experimentation, easy rollback
-- **Update `README.md` and `CLAUDE.md`** - Keep documentation current
-- **Be specific** - Clear, detailed instructions work better
-- **Provide context** - Explain your goals and constraints
-- **Iterate gradually** - Make incremental improvements
-- **Use examples** - Show desired patterns or styles
+- **Be specific** about what you want to achieve
+- **Provide context** about your goals and constraints
+- **Use iterative refinement** for complex tasks
+- **Include examples** when possible to show desired patterns
 
 </v-clicks>
+
+</div>
+<div>
+
+### Best Practices
+<v-clicks>
+
+- **Create a git branch first** for any significant changes
+- **Commit checkpoints regularly** during development
+- **Review all AI-generated code** before accepting
+- **Test generated code** thoroughly
+
+</v-clicks>
+
+</div>
+</div>
 
 ---
 
