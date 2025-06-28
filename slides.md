@@ -534,7 +534,7 @@ claude mcp remove <server-name>
 - Interactive setup: `claude mcp`
 - Local servers: Full configuration control
 - Remote servers: OAuth authentication, zero maintenance
-- Docker MCP Gateway: `docker mcp gateway run`
+- Docker MCP Toolkit: `docker mcp gateway run`
 
 </v-clicks>
 
@@ -548,7 +548,7 @@ claude mcp add my-server -e API_KEY=123 -- /path/to/server
 # Add remote server (HTTP)
 claude mcp add --transport http remote-server https://example.com/mcp
 
-# Add Docker MCP gateway
+# Add Docker MCP toolkit
 claude mcp add docker-mcp docker mcp gateway run
 ```
 
