@@ -38,6 +38,17 @@ Before starting any exercise that involves significant code changes, get into th
 *   **Exercise: Documentation**
     *   **Prompt:** `Create a complete README.md for this project, including setup instructions and API endpoint documentation.`
 
+*   **Exercise: Vulnerability Remediation**
+    *   This exercise demonstrates a real-world security workflow.
+    *   **Step 1: Identify Vulnerabilities.** Have students ask the assistant to check for outdated packages.
+    *   **Prompt:** `Analyze the requirements.txt file. Are these packages up-to-date? Are there any known security vulnerabilities in these specific versions?`
+    *   **Step 2: Plan the Upgrade.** Ask the assistant to create a plan to upgrade the packages to secure versions.
+    *   **Prompt:** `Create a plan to upgrade the packages in requirements.txt to the latest secure versions. What are the potential breaking changes I should be aware of?`
+    *   **Step 3: Execute the Upgrade.** Have the students instruct the assistant to perform the upgrade.
+    *   **Prompt:** `Now, please update the requirements.txt file to the latest stable and secure versions of Flask, Werkzeug, and MarkupSafe.`
+    *   **Step 4: Verify the Fix.** After updating, students should run the tests to ensure the application still works.
+    *   **Prompt:** `Run the tests to ensure the application is still functional after the upgrade.`
+
 ---
 
 ### 2. Python: `weather-app` (The "Beginner" Project)
