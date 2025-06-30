@@ -4,6 +4,7 @@ This document contains hands-on exercises for learning to use Claude Code for pr
 
 ## Table of Contents
 
+0. [Lab 0: Project Creation from Scratch](#lab-0-project-creation-from-scratch)
 1. [Lab 1: First Steps with Claude Code](#lab-1-first-steps-with-claude-code)
 2. [Lab 2: Code Exploration](#lab-2-code-exploration)
 3. [Lab 3: Test Generation](#lab-3-test-generation)
@@ -16,9 +17,66 @@ This document contains hands-on exercises for learning to use Claude Code for pr
 - Claude Code installed and configured
 - API key set in environment: `export ANTHROPIC_API_KEY="your-key"`
 - Git repository access
-- Java/Spring Boot development environment
+- Development environment for multiple languages (Python, JavaScript/TypeScript, Java)
 
-## Lab 1: First Steps with Claude Code
+## Lab 0: Project Creation from Scratch
+
+**Duration**: 20 minutes  
+**Goal**: Create a lyrics display application from scratch (this is how the `lyrics-trainer` project began, which we'll look at later)
+
+### Setup
+
+1. Create a new empty directory: `mkdir lyrics-display && cd lyrics-display`
+2. Initialize git: `git init`
+3. Start Claude Code: `claude`
+4. Create your first branch: `git checkout -b basic-lyrics-app`
+5. Find song lyrics: Google any song title + "lyrics" and copy the lyrics to a text file called `lyrics.txt`
+
+### Exercises
+
+1. **Project foundation**:
+   ```
+   "I have song lyrics saved in lyrics.txt. Create a web application that displays these lyrics one line at a time with three buttons: Next, Previous, and Play. The Play button should automatically advance through lines with a 2-second delay."
+   ```
+
+2. **Enhanced functionality**:
+   ```
+   "Add line numbering, show progress (e.g., 'Line 5 of 32'), and make the Play button toggle to Pause when active. Style it to look modern and clean."
+   ```
+
+3. **Visual improvements**:
+   ```
+   "Add smooth transitions between lines, better typography, and responsive design. Make it visually appealing with a music-themed color scheme."
+   ```
+
+4. **Advanced features**:
+   ```
+   "Add keyboard shortcuts: spacebar for play/pause, arrow keys for next/previous. Also add a progress bar showing position in the song."
+   ```
+
+5. **Documentation and structure**:
+   ```
+   "Create a README.md explaining the project, and organize the code into separate CSS and JavaScript files for better maintainability."
+   ```
+
+6. **Version control and experimentation**:
+   ```
+   "Help me commit this work, then create a new branch called 'speed-control' and add a slider to control the playback speed."
+   ```
+
+### Expected Outcomes
+
+- Build a real, useful application from nothing
+- See how Claude Code handles file interactions and user interface logic
+- Experience the full development cycle: concept → working app → enhancements
+- Understand that this is exactly how the `lyrics-trainer` project started
+- Practice iterative development with AI assistance
+
+**Note**: This exercise recreates the origin story of the `lyrics-trainer` project in the exercises folder - you're experiencing the same process that created one of our example applications!
+
+[← Back to Table of Contents](#table-of-contents)
+
+## Lab 1: Claude Code on an Existing Project
 
 **Duration**: 5 minutes  
 **Goal**: Get comfortable with the basic Claude Code interface
@@ -63,7 +121,7 @@ This document contains hands-on exercises for learning to use Claude Code for pr
 
 Choose one of the provided exercise projects:
 - `exercises/java/certificate-service` (Spring Boot PDF generation)
-- `exercises/java/shopping-service` (REST API)
+- `exercises/java/shopping-service` (Legacy Grails/Groovy application)
 - `exercises/javascript/lyrics-trainer` (TypeScript web app)
 - `exercises/python/weather-app` (Flask application)
 
@@ -197,7 +255,7 @@ Continue with your chosen project, focusing on undocumented areas.
 
 ### Setup
 
-Use the `exercises/java/shopping-service` project or any legacy code you have available.
+Use the `exercises/java/shopping-service` (Grails/Groovy) project or any legacy code you have available.
 
 ### Exercises
 
@@ -260,40 +318,42 @@ Navigate to the `exercises/python/weather-app` directory for this lab.
    "Create a CLAUDE.md file for this weather app with Python coding standards, dependencies, and project context"
    ```
 
+   Note that the built-in slash command `/init` creates the `CLAUDE.md` file, but you can simply ask Claude to create it if you like.
+
 3. **Custom slash command**:
    ```
    "Help me create a custom slash command for updating Python dependencies safely"
    ```
 
-#### Part B: Security Updates with Dependabot (10 minutes)
+#### Part B: Feature Enhancement (10 minutes)
 
-4. **Review security updates**:
+4. **Error handling enhancement**:
    ```
-   "Analyze the Dependabot pull requests for this repository and explain what vulnerabilities they fix"
-   ```
-
-5. **Accept security updates**:
-   ```
-   "Help me safely merge the Dependabot security updates for gunicorn, jinja2, and other dependencies. Explain the risks and benefits of each update."
+   "Add comprehensive error handling to this Flask application including proper status codes and user-friendly error pages"
    ```
 
-6. **Test after updates**:
+5. **Logging integration**:
    ```
-   "After accepting the security updates, help me verify the application still works correctly and suggest any additional testing"
+   "Implement structured logging throughout the application with appropriate log levels"
    ```
 
-7. **Document changes**:
+6. **Configuration management**:
    ```
-   "Create a security update log documenting what was changed and why"
+   "Improve the configuration system to support environment-specific settings"
+   ```
+
+7. **Testing validation**:
+   ```
+   "Create tests to verify the new error handling and logging functionality works correctly"
    ```
 
 ### Expected Outcomes
 
 - Master advanced Claude Code features
 - Create reusable project configurations
-- Learn real-world security update workflows
-- Practice dependency management with AI assistance
-- Understand enterprise maintenance practices
+- Learn systematic feature enhancement workflows
+- Practice comprehensive application improvement with AI assistance
+- Understand enterprise development practices
 
 [← Back to Table of Contents](#table-of-contents)
 
@@ -313,7 +373,7 @@ Navigate to the `exercises/python/weather-app` directory for this lab.
 
 ### Common Issues and Solutions
 
-**Issue**: Claude Code doesn't understand project structure  
+**Issue**: Claude Code doesn't understand the project  
 **Solution**: Ask it to explore the project first: "Analyze this project structure"
 
 **Issue**: Generated code doesn't follow project conventions  
@@ -340,4 +400,3 @@ After completing these labs:
 - [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)
 - [Best Practices Guide](https://www.anthropic.com/engineering/claude-code-best-practices)
 - [MCP Server Directory](https://github.com/modelcontextprotocol/servers)
-- [Community Examples](https://github.com/anthropics/claude-code-examples)

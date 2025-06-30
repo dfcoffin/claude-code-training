@@ -8,7 +8,28 @@ This document outlines suggested demos and exercises for the projects in the `ex
 
 Before starting any exercise that involves significant code changes, get into the habit of creating a new Git branch. This is the most important safety measure you can take. It isolates your work, allows for fearless experimentation, and makes it easy to discard changes if they don't work out, all without affecting the `main` branch.
 
-**Example Prompt:** `Using git, create a new feature branch called 'refactor-api' and switch to it.`
+**Recommended Branching Strategy for Exercises:**
+
+Since this is a training course with multiple projects in one repository, use a simple local branching approach:
+
+1. **Create a branch for each exercise:** Use descriptive names based on the exercise
+   - Examples: `flask-api-refactor`, `weather-app-forecast`, `lyrics-trainer-debug`
+   
+2. **Work locally:** No need to push branches - this is just for practice and experimentation
+
+3. **Easy reset:** If you want to start over, simply:
+   ```bash
+   git checkout main
+   git checkout -b new-attempt
+   ```
+
+4. **Commit as you go:** Create checkpoints for your progress
+   ```bash
+   git commit -m "test: add pytest suite"
+   git commit -m "refactor: extract database logic"
+   ```
+
+**Example Prompt:** `Using git, create a new feature branch called 'flask-api-refactor' and switch to it.`
 
 ---
 
@@ -23,7 +44,7 @@ Before starting any exercise that involves significant code changes, get into th
 
 *   **Demo: Branching for Safety**
     *   Demonstrate the "branch-first" workflow before making any changes.
-    *   **Prompt:** `Using git, create a new feature branch called 'refactor-initial-api' and switch to it.`
+    *   **Prompt:** `Using git, create a new feature branch called 'flask-api-refactor' and switch to it.`
 
 *   **Exercise: Add a Safety Net (Testing)**
     *   **Prompt:** `Write unit tests for the main endpoints in app.py. Use the pytest framework and mock any database interactions.`
