@@ -14,3 +14,7 @@ components.d.ts
 *-old.md
 labs-slidev.md
 slides-original-order.md
+
+# Test artifacts
+playwright-report/
+test-results/

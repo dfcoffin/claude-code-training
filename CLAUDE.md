@@ -20,6 +20,11 @@ This project contains comprehensive training materials for teaching Claude Code 
   - `certificate-service`: Modern Spring Boot application with PDF generation
   - `shopping-service`: Legacy Grails/Groovy application for modernization exercises
 
+### Custom Commands Integration
+- **`custom-commands.md`**: Comprehensive showcase of workflow automation commands
+- **`commands/`**: Ready-to-use command files for immediate copying to `~/.claude/commands/`
+- Commands cover Java modernization, Spring scaffolding, security reviews, documentation generation, and onboarding automation
+
 ## Development Workflow
 
 ### Presentation Development
@@ -44,6 +49,12 @@ pnpm exec playwright install
 - **Lab 0**: Project creation from scratch (lyrics display app - origins of lyrics-trainer)
 - **Labs 1-3**: Foundation skills (exploration, testing, documentation)
 - **Labs 4-6**: Advanced workflows (refactoring, Plan Mode, custom commands)
+
+### Custom Commands Teaching Integration
+- **Demonstration**: Showcase commands during Lab 6 advanced workflows
+- **Hands-on Practice**: Students copy and customize commands for their workflows  
+- **Real-world Application**: Use Java commands with certificate-service, security commands with vulnerable examples
+- **Team Sharing**: Demonstrate how teams can standardize workflows through shared commands
 
 ## Teaching Philosophy
 

@@ -19,6 +19,8 @@ This repository contains all the materials for the Claude Code Training course:
 - **`slides.md`**: The main Slidev presentation with interactive demos
 - **`lab_handout.md`**: Progressive hands-on labs from beginner to advanced
 - **`exercises.md`**: Instructor-led demos and exercises using real codebases
+- **`custom-commands.md`**: Showcase of powerful custom slash commands for workflow automation
+- **`commands/`**: Ready-to-use custom command files for students
 - **`exercises/`**: A collection of diverse sample projects:
   - **Python**: Flask web app (`weather-app`) and legacy API (`flask-api`)
   - **JavaScript/TypeScript**: Interactive web application (`lyrics-trainer`)
@@ -55,6 +57,12 @@ The `lab_handout.md` contains six progressive labs:
 4. **Documentation Creation** - Professional documentation workflows
 5. **Legacy Code Refactoring** - Modernizing Grails/Groovy applications
 6. **Advanced Workflows** - Plan Mode, CLAUDE.md, and custom commands
+
+### Custom Commands
+Students can explore and use pre-built custom slash commands:
+- Copy commands from `commands/` to `~/.claude/commands/`
+- See `custom-commands.md` for detailed explanations and usage examples
+- Commands include Java modernization, Spring generators, security reviews, and more
 
 ### Teaching Notes
 The `exercises.md` file contains detailed instructor guidance with specific prompts and a progressive story arc using the `flask-api` project as the primary demonstration vehicle.
