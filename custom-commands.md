@@ -144,6 +144,16 @@ Try creating a simple command for your workflow:
    ```
 3. Use it: `/test-generator UserService`
 
+## Ready-to-Use Command Files
+
+All commands shown above are available as ready-to-use files in the `commands/` directory of this repository. Simply copy them to your `~/.claude/commands/` directory to start using them immediately.
+
+### Quick Setup
+```bash
+# Copy all commands to your Claude commands directory
+cp commands/*.md ~/.claude/commands/
+```
+
 ## Integration with Course Labs
 
 These commands can enhance the lab exercises:
